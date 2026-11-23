@@ -3,191 +3,129 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f6f7f5" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141816" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="CUBE 權益">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>CUBE 權益查詢</title>
-<style>
-  :root {
-    --bg: #f6f7f5; --card: #fff; --text: #1d2420; --muted: #6b746e; --line: #e3e7e4;
-    --accent: #1f7a4d; --accent-soft: #e6f3ec; --warn: #b35c00; --warn-soft: #fdf1e3;
-    --hi: #fff1a8; --shadow: 0 1px 2px rgba(0,0,0,.05), 0 2px 8px rgba(0,0,0,.04);
+<script>
+  // 跟著系統切換深色模式（Basecoat 用 html.dark）
+  (() => {
+    const mq = matchMedia("(prefers-color-scheme: dark)");
+    const set = () => document.documentElement.classList.toggle("dark", mq.matches);
+    set(); mq.addEventListener("change", set);
+  })();
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basecoat-css@1.3.0/dist/basecoat.cdn.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+  @theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-warn: var(--warn);
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #141816; --card: #1d2320; --text: #e7ece9; --muted: #98a29c; --line: #2e3632;
-      --accent: #5cc58f; --accent-soft: #1d3a2b; --warn: #f0a04b; --warn-soft: #3a2a17;
-      --hi: #5c5320; --shadow: none;
-    }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--text);
-    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
-  header { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
-  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
-  .top { display: flex; align-items: center; gap: 12px; padding: 14px 0 8px; }
-  h1 { font-size: 18px; margin: 0; white-space: nowrap; }
-  .status { margin-left: auto; font-size: 12px; color: var(--muted); text-align: right; }
-  .status button { font: inherit; color: var(--accent); background: none; border: 1px solid var(--line);
-    border-radius: 6px; padding: 2px 8px; cursor: pointer; margin-left: 6px; }
-  .search { position: relative; padding-bottom: 10px; }
-  .search input { width: 100%; font-size: 17px; padding: 12px 40px 12px 14px; border-radius: 10px;
-    border: 1.5px solid var(--line); background: var(--card); color: var(--text); outline: none; }
-  .search input:focus { border-color: var(--accent); }
-  .search .clear { position: absolute; right: 10px; top: 9px; border: 0; background: none; color: var(--muted);
-    font-size: 20px; cursor: pointer; display: none; }
-  .opts { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--muted); padding-bottom: 10px; }
-  .opts label { cursor: pointer; user-select: none; }
-  .nav { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 10px; scrollbar-width: none; }
-  .nav a { flex: none; font-size: 13px; text-decoration: none; color: var(--text); background: var(--card);
-    border: 1px solid var(--line); border-radius: 999px; padding: 3px 11px; }
-  .nav a.off { opacity: .45; }
-  main { padding: 16px 0 60px; }
-  .msg { color: var(--muted); padding: 30px 0; text-align: center; }
-  .err { color: var(--warn); background: var(--warn-soft); border-radius: 8px; padding: 8px 12px; margin-bottom: 12px; font-size: 13px; }
-
-  /* 搜尋結果 */
-  .best { background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; margin-bottom: 14px; }
-  .best b { color: var(--accent); }
-  .count { font-size: 13px; color: var(--muted); margin: 0 0 8px; }
-  .row { display: flex; gap: 14px; align-items: flex-start; background: var(--card); border: 1px solid var(--line);
-    border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; box-shadow: var(--shadow); cursor: pointer; }
-  .row .rate { flex: none; width: 92px; text-align: center; font-weight: 700; font-size: 20px; color: var(--accent);
-    line-height: 1.2; padding-top: 2px; }
-  .row .rate.small { font-size: 14px; }
-  .row .rate.na { color: var(--muted); font-size: 13px; font-weight: 600; }
-  .row .body { flex: 1; min-width: 0; }
-  .row .name { font-weight: 600; font-size: 16px; }
-  .row .path { font-size: 13px; color: var(--muted); }
-  .row .path .plan { color: var(--text); font-weight: 600; }
-  .row .detail { display: none; margin-top: 8px; font-size: 13px; color: var(--muted); white-space: pre-line;
-    border-top: 1px dashed var(--line); padding-top: 8px; }
-  .row.open .detail { display: block; }
-  mark { background: var(--hi); color: inherit; border-radius: 2px; }
-  .tag { display: inline-block; font-size: 11px; border-radius: 4px; padding: 0 6px; margin-left: 6px; vertical-align: 2px;
-    background: var(--warn-soft); color: var(--warn); font-weight: 600; }
-  .tag.ok { background: var(--accent-soft); color: var(--accent); }
-
-  /* 方案總覽 */
-  .plan { background: var(--card); border: 1px solid var(--line); border-radius: 14px; margin-bottom: 16px;
-    box-shadow: var(--shadow); scroll-margin-top: 190px; }
-  .plan.ended { opacity: .55; }
-  .plan > summary { list-style: none; cursor: pointer; padding: 14px 18px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-  .plan > summary::-webkit-details-marker { display: none; }
-  .plan h2 { margin: 0; font-size: 19px; }
-  .plan .prate { font-weight: 700; color: var(--accent); }
-  .plan .period { font-size: 13px; color: var(--muted); margin-left: auto; }
-  .plan .inner { padding: 0 18px 14px; }
-  .plan .note { font-size: 13px; color: var(--warn); margin: -4px 0 10px; }
-  .cat { margin: 12px 0; }
-  .cat h3 { font-size: 14px; margin: 0 0 6px; display: flex; gap: 8px; align-items: baseline; }
-  .cat h3 .r { color: var(--accent); }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip { font-size: 13px; border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; background: var(--bg); cursor: help; }
-  .chip .r { color: var(--accent); font-weight: 600; margin-left: 4px; font-size: 12px; }
-  .grp { font-size: 12px; color: var(--muted); width: 100%; margin-top: 4px; }
-  .info { font-size: 13px; color: var(--muted); background: var(--bg); border-radius: 8px; padding: 8px 12px; margin: 10px 0; }
-  .info b { color: var(--text); }
-  .src { font-size: 12px; }
-  .src a { color: var(--muted); }
-  footer { font-size: 12px; color: var(--muted); text-align: center; padding: 20px 20px calc(20px + env(safe-area-inset-bottom)); }
-  [hidden] { display: none !important; }
-  input[type=search]::-webkit-search-cancel-button { -webkit-appearance: none; display: none; }
-  .chip { cursor: pointer; font-family: inherit; text-align: left; color: var(--text); line-height: 1.4; }
-  .filter-btn { display: none; }
-  .stat-short { display: none; }
-
-  /* 點商家跳出的說明面板（手機沒有 hover，所以用點的） */
-  .sheet-bg { position: fixed; inset: 0; background: rgba(0,0,0,.35); z-index: 20; display: none; }
-  .sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 21; background: var(--card);
-    border-radius: 16px 16px 0 0; max-height: 75vh; overflow-y: auto; padding: 8px 18px calc(18px + env(safe-area-inset-bottom));
-    transform: translateY(100%); transition: transform .2s ease, visibility .2s; box-shadow: 0 -4px 20px rgba(0,0,0,.15);
-    visibility: hidden; }
-  .sheet.show { transform: none; visibility: visible; }
-  .sheet-bg.show { display: block; }
-  .sheet .grab { width: 40px; height: 4px; border-radius: 2px; background: var(--line); margin: 4px auto 12px; }
-  .sheet h4 { margin: 0 0 2px; font-size: 18px; }
-  .sheet .sr { font-size: 26px; font-weight: 700; color: var(--accent); margin: 4px 0; }
-  .sheet .sp { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
-  .sheet .sd { font-size: 14px; white-space: pre-line; border-top: 1px solid var(--line); padding-top: 10px; }
-  .sheet .close { position: sticky; top: 0; float: right; border: 0; background: var(--bg); color: var(--muted);
-    width: 30px; height: 30px; border-radius: 50%; font-size: 18px; cursor: pointer; }
-  @media (min-width: 701px) {
-    .sheet { left: 50%; right: auto; width: 560px; margin-left: -280px; bottom: 50%; border-radius: 16px;
-      transform: translateY(50%) scale(.96); opacity: 0; pointer-events: none; transition: .15s; }
-    .sheet.show { transform: translateY(50%); opacity: 1; pointer-events: auto; }
-  }
-
-  /* ---------- 手機 ---------- */
-  @media (max-width: 700px) {
-    body { font-size: 15px; -webkit-text-size-adjust: 100%; }
-    .wrap { padding: 0 12px; padding-left: max(12px, env(safe-area-inset-left)); padding-right: max(12px, env(safe-area-inset-right)); }
-    header { padding-top: env(safe-area-inset-top); }
-    .top { padding: 10px 0 6px; gap: 8px; }
-    h1 { font-size: 16px; }
-    .stat-full { display: none; }
-    .stat-short { display: inline; }
-    .status button { padding: 4px 8px; }
-    .search { display: flex; gap: 8px; padding-bottom: 8px; }
-    .search input { font-size: 16px; padding: 10px 36px 10px 12px; flex: 1; min-width: 0; } /* 16px 以上 iOS 才不會自動放大 */
-    .search .clear { right: 62px; top: 6px; font-size: 22px; padding: 4px; }
-    .filter-btn { display: block; flex: none; width: 50px; border: 1.5px solid var(--line); border-radius: 10px;
-      background: var(--card); color: var(--text); font: inherit; font-size: 13px; cursor: pointer; }
-    .filter-btn.on { border-color: var(--accent); color: var(--accent); }
-    .opts { display: none; flex-direction: column; gap: 10px; font-size: 14px; padding: 4px 2px 12px; }
-    .opts.show { display: flex; }
-    .opts input { width: 18px; height: 18px; vertical-align: -3px; margin-right: 6px; }
-    .nav { padding-bottom: 8px; margin: 0 -12px; padding-left: 12px; padding-right: 12px; }
-    .nav a { padding: 5px 12px; font-size: 14px; }
-    main { padding-top: 12px; }
-
-    .best { padding: 10px 12px; font-size: 14px; }
-    .row { gap: 10px; padding: 10px 12px; border-radius: 12px; }
-    .row .rate { width: 62px; font-size: 18px; }
-    .row .rate.small { font-size: 13px; }
-    .row .rate.na { font-size: 12px; }
-    .row .name { font-size: 15px; }
-    .row .path { font-size: 12px; }
-
-    .plan { border-radius: 12px; margin-bottom: 12px; scroll-margin-top: 150px; }
-    .plan > summary { padding: 12px 14px; gap: 6px 8px; }
-    .plan h2 { font-size: 17px; }
-    .plan .period { margin-left: 0; width: 100%; font-size: 12px; }
-    .plan .inner { padding: 0 14px 12px; }
-    .cat h3 { font-size: 14px; flex-wrap: wrap; }
-    .chips { gap: 6px; }
-    .chip { font-size: 13px; padding: 5px 9px; border-radius: 8px; } /* 加大觸控面積 */
+  @layer base {
+    *, ::before, ::after { border-color: var(--border); }
   }
 </style>
+<style>
+  /* 主色改成綠色（Basecoat 預設是黑白） */
+  :root {
+    --primary: oklch(0.53 0.13 158); --primary-foreground: oklch(0.985 0 0); --ring: oklch(0.53 0.13 158);
+    --warn: oklch(0.6 0.15 55);
+    --font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  }
+  .dark {
+    --primary: oklch(0.74 0.15 158); --primary-foreground: oklch(0.2 0.04 158); --ring: oklch(0.74 0.15 158);
+    --warn: oklch(0.78 0.14 65);
+  }
+  body { font-family: var(--font-sans); -webkit-text-size-adjust: 100%; }
+  mark { background: color-mix(in oklab, var(--primary) 22%, transparent); color: inherit; border-radius: 3px; padding: 0 1px; }
+  [hidden] { display: none !important; }
+  input[type=search]::-webkit-search-cancel-button { -webkit-appearance: none; display: none; }
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  details > summary { list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
+</style>
 </head>
-<body>
-<header>
-  <div class="wrap">
-    <div class="top">
-      <h1>CUBE 權益查詢</h1>
-      <div class="status" id="status">載入中…</div>
+<body class="min-h-dvh bg-background text-foreground antialiased">
+<header class="sticky top-0 z-10 border-b bg-background/85 backdrop-blur-md pt-[env(safe-area-inset-top)]">
+  <div class="mx-auto max-w-4xl px-3 sm:px-4">
+    <div class="flex items-center gap-3 py-3">
+      <div class="grid size-9 shrink-0 place-items-center rounded-lg bg-primary text-primary-foreground shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+      </div>
+      <div class="min-w-0">
+        <h1 class="text-base font-semibold leading-tight tracking-tight">CUBE 權益查詢</h1>
+        <p class="truncate text-xs text-muted-foreground" id="status">載入中…</p>
+      </div>
+      <button type="button" id="refresh" class="btn ml-auto" data-variant="ghost" data-size="icon-sm" aria-label="重新載入" title="重新載入">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+      </button>
     </div>
-    <div class="search">
-      <input id="q" type="search" placeholder="搜尋商家，例如：星巴克、uber、百貨" autocomplete="off"
-        enterkeyhint="search" autocapitalize="off" spellcheck="false">
-      <button class="clear" id="clear" aria-label="清除">×</button>
-      <button class="filter-btn" id="filterBtn" aria-expanded="false">篩選</button>
+
+    <div class="flex gap-2 pb-3">
+      <div class="relative flex-1 min-w-0">
+        <svg class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="q" type="search" class="input h-11 w-full ps-10 pe-12 text-base shadow-xs" placeholder="搜尋商家，例如：星巴克、uber、百貨"
+          autocomplete="off" enterkeyhint="search" autocapitalize="off" spellcheck="false">
+        <kbd id="kbd" class="kbd pointer-events-none absolute right-3 top-1/2 hidden -translate-y-1/2 [@media(pointer:fine)]:inline-flex">/</kbd>
+        <button type="button" id="clear" class="btn absolute right-1.5 top-1/2 -translate-y-1/2" data-variant="ghost" data-size="icon-sm" aria-label="清除" hidden>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <button type="button" id="filterBtn" class="btn h-11 w-11 shrink-0 md:hidden aria-expanded:border-primary aria-expanded:text-primary" data-variant="outline" data-size="icon" aria-label="篩選" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></svg>
+      </button>
     </div>
-    <div class="opts">
-      <label><input type="checkbox" id="optActive" checked> 只顯示進行中的方案</label>
-      <label><input type="checkbox" id="optRestricted" checked> 包含限定方案（Googler、童樂匯…）</label>
-      <label><input type="checkbox" id="optDetail"> 也搜尋注意事項條文</label>
+
+    <div id="opts" class="hidden flex-col gap-3 pb-3 data-open:flex md:flex md:flex-row md:flex-wrap md:gap-x-6 md:[&>.field]:w-auto">
+      <div role="group" class="field" data-orientation="horizontal">
+        <input type="checkbox" id="optActive" role="switch" class="input" data-size="sm" checked>
+        <label for="optActive" class="text-sm font-normal text-muted-foreground">只顯示進行中的方案</label>
+      </div>
+      <div role="group" class="field" data-orientation="horizontal">
+        <input type="checkbox" id="optRestricted" role="switch" class="input" data-size="sm" checked>
+        <label for="optRestricted" class="text-sm font-normal text-muted-foreground">包含限定方案（Googler、童樂匯…）</label>
+      </div>
+      <div role="group" class="field" data-orientation="horizontal">
+        <input type="checkbox" id="optDetail" role="switch" class="input" data-size="sm">
+        <label for="optDetail" class="text-sm font-normal text-muted-foreground">也搜尋注意事項條文</label>
+      </div>
     </div>
-    <nav class="nav" id="nav"></nav>
+
+    <nav id="nav" class="no-scrollbar -mx-3 flex gap-1.5 overflow-x-auto px-3 pb-3 sm:-mx-4 sm:px-4"></nav>
   </div>
 </header>
-<main class="wrap" id="main"><div class="msg">正在從國泰世華網站取得最新權益…</div></main>
-<div class="sheet-bg" id="sheetBg"></div>
-<div class="sheet" id="sheet" role="dialog" aria-modal="true"></div>
-<footer>資料每小時自動取自 cathay-cube.com.tw，實際回饋以國泰世華官網公告與系統認列為準。</footer>
+
+<main id="main" class="mx-auto max-w-4xl px-3 pt-4 pb-16 sm:px-4 sm:pt-6">
+  <div class="py-16 text-center text-sm text-muted-foreground">正在從國泰世華網站取得最新權益…</div>
+</main>
+
+<dialog id="sheet" class="dialog" aria-labelledby="sheetTitle">
+  <div id="sheetBody" class="overflow-y-auto sm:max-w-lg"></div>
+</dialog>
+
+<footer class="px-5 pt-4 pb-[calc(2rem+env(safe-area-inset-bottom))] text-center text-xs text-muted-foreground">
+  資料每小時自動取自 cathay-cube.com.tw，實際回饋以國泰世華官網公告與系統認列為準。
+</footer>
 
 <script>
 "use strict";
@@ -408,6 +346,20 @@ function search(query, withDetail) {
 }
 
 // ---------- 畫面 ----------
+const svg = (d, size = 16, cls = "") => `<svg class="${cls}" xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+const ICON = {
+  chevron: '<path d="m6 9 6 6 6-6"/>',
+  external: '<path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',
+  lock: '<rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
+  sparkles: '<path d="M9.94 14.06 4 20"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/><circle cx="12" cy="12" r="4"/>',
+  alert: '<circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/>',
+  x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+  info: '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>',
+};
+const srcLink = (href, label = "查看官網原文") =>
+  `<a href="${esc(href)}" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-xs text-muted-foreground underline-offset-4 hover:text-foreground hover:underline">${label}${svg(ICON.external, 12)}</a>`;
+const emptyMsg = html => `<div class="py-16 text-center text-sm text-muted-foreground">${html}</div>`;
+
 function hl(text, query) {
   let html = esc(text);
   const terms = query.trim().split(/\s+/).filter(Boolean).sort((a, b) => b.length - a.length);
@@ -417,9 +369,10 @@ function hl(text, query) {
   }
   return html;
 }
-const statusTag = p => p.status === "upcoming" ? `<span class="tag">未開始</span>`
-  : p.status === "ended" ? `<span class="tag">已結束</span>` : "";
-const restrictTag = p => p.restricted ? `<span class="tag" title="${esc(p.restricted)}">限定</span>` : "";
+const statusTag = p => p.status === "upcoming" ? `<span class="badge" data-variant="secondary">未開始</span>`
+  : p.status === "ended" ? `<span class="badge" data-variant="secondary">已結束</span>` : "";
+const restrictTag = p => p.restricted
+  ? `<span class="badge border-warn/40 text-warn" data-variant="outline" title="${esc(p.restricted)}">${svg(ICON.lock, 11)}限定</span>` : "";
 
 function visiblePlans() {
   return PLANS.filter(p => (!$("#optActive").checked || p.status !== "ended")
@@ -427,77 +380,110 @@ function visiblePlans() {
 }
 
 function rateBox(rate) {
-  if (!rate || maxRate(rate) < 0) return `<div class="rate na">${esc(rate || "依等級")}</div>`;
-  return `<div class="rate${rate.length > 6 ? " small" : ""}">${esc(rate)}</div>`;
+  const base = "flex w-16 shrink-0 items-center justify-center self-start min-h-14 rounded-lg px-1 py-2 text-center leading-tight sm:w-24";
+  if (!rate || maxRate(rate) < 0)
+    return `<div class="${base} bg-muted text-xs font-medium text-muted-foreground">${esc(rate || "依等級")}</div>`;
+  const size = rate.length > 6 ? "text-sm" : "text-lg sm:text-xl";
+  return `<div class="${base} bg-primary/10 ${size} font-bold tabular-nums text-primary">${esc(rate)}</div>`;
 }
 
 function renderResults(query) {
   const allowed = new Set(visiblePlans());
   const res = search(query, $("#optDetail").checked).filter(r => allowed.has(r.plan));
   res.sort((a, b) => maxRate(b.m.rate) - maxRate(a.m.rate) || b.score - a.score);
-  if (!res.length) return `<div class="msg">找不到「${esc(query)}」。沒有列在任何方案的商家，通常只適用一般消費 0.3%。</div>`;
+  if (!res.length) return emptyMsg(`找不到「<span class="font-medium text-foreground">${esc(query)}</span>」<br>沒有列在任何方案的商家，通常只適用一般消費 0.3%。`);
 
   // 依方案找出最高回饋，當作建議
   const top = res[0];
   const plansHit = [...new Set(res.map(r => r.plan.name))];
-  let html = `<div class="best">要刷「<b>${esc(top.m.name)}</b>」，建議切換到 <b>${esc(top.plan.name)}</b>`
-    + (maxRate(top.m.rate) >= 0 ? `，回饋 <b>${esc(top.m.rate)}</b>` : "")
-    + `${top.plan.restricted ? `（${esc(top.plan.restricted)}）` : ""}。`
-    + (() => {
-        if (!top.plan.restricted) return "";
-        const open = res.find(r => !r.plan.restricted);
-        return open ? `<br>不符合資格的話：<b>${esc(open.plan.name)}</b> ${esc(open.m.rate)}（${esc(open.m.name)}）`
-                    : `<br>不符合資格的話：沒有其他方案列出這家，只有一般消費 0.3%。`;
-      })()
-    + (plansHit.length > 1 ? `<br><span style="font-size:13px">其他也有優惠的方案：${plansHit.filter(n => n !== top.plan.name).map(esc).join("、")}</span>` : "")
-    + `</div><p class="count">共 ${res.length} 筆，依回饋率排序；點一下看適用條件</p>`;
+  const hasRate = maxRate(top.m.rate) >= 0;
+  let fallback = "";
+  if (top.plan.restricted) {
+    const open = res.find(r => !r.plan.restricted);
+    fallback = open
+      ? `不符合資格的話：<b class="text-foreground">${esc(open.plan.name)}</b> ${esc(open.m.rate)}（${esc(open.m.name)}）`
+      : `不符合資格的話：沒有其他方案列出這家，只有一般消費 0.3%。`;
+  }
+  const others = plansHit.filter(n => n !== top.plan.name);
+
+  let html = `
+    <section class="mb-5 overflow-hidden rounded-xl border border-primary/25 bg-primary/5">
+      <div class="flex items-start gap-4 p-4 sm:p-5">
+        <div class="min-w-0 flex-1">
+          <div class="mb-1.5 flex items-center gap-1.5 text-xs font-medium text-primary">${svg(ICON.sparkles, 14)}建議方案</div>
+          <p class="text-[15px] leading-relaxed">要刷「<b>${esc(top.m.name)}</b>」，切換到
+            <b class="text-primary">${esc(top.plan.name)}</b>${top.plan.restricted ? `<span class="text-sm text-muted-foreground">（${esc(top.plan.restricted)}）</span>` : ""}</p>
+          ${fallback ? `<p class="mt-1 text-sm text-muted-foreground">${fallback}</p>` : ""}
+          ${others.length ? `<p class="mt-2 text-xs text-muted-foreground">其他也有優惠的方案：${others.map(esc).join("、")}</p>` : ""}
+        </div>
+        ${hasRate ? `<div class="shrink-0 text-right"><div class="text-2xl font-bold tabular-nums text-primary sm:text-3xl">${esc(top.m.rate)}</div><div class="text-xs text-muted-foreground">回饋</div></div>` : ""}
+      </div>
+    </section>
+    <p class="mb-2 px-1 text-xs text-muted-foreground">共 ${res.length} 筆，依回饋率排序 · 點一下看適用條件</p>
+    <div class="flex flex-col gap-2">`;
   for (const r of res.slice(0, 200)) {
     const p = r.plan;
-    html += `<div class="row">${rateBox(r.m.rate)}<div class="body">
-      <div class="name">${hl(r.m.name, query)}${restrictTag(p)}${statusTag(p)}</div>
-      <div class="path"><span class="plan">${hl(p.name, query)}</span> › ${hl(r.cat.name, query)}${r.m.group ? " · " + hl(r.m.group, query) : ""}
-        ${p.period ? ` · ${esc(p.period.label)}` : ""}</div>
-      <div class="detail">${r.m.detail ? esc(r.m.detail) : "（此商家沒有額外說明）"}
-${p.restricted ? "\n資格：" + esc(p.restricted) : ""}
-<span class="src"><a href="${esc(p.source)}" target="_blank" rel="noopener">查看官網原文 ↗</a></span></div>
-    </div></div>`;
+    html += `<div class="row group flex cursor-pointer gap-3 rounded-xl border bg-card p-2.5 shadow-xs transition-colors hover:border-primary/30 sm:gap-4 sm:p-3">
+      ${rateBox(r.m.rate)}
+      <div class="min-w-0 flex-1 py-0.5">
+        <div class="flex items-start gap-2">
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-1.5 font-medium leading-snug">${hl(r.m.name, query)}${restrictTag(p)}${statusTag(p)}</div>
+            <div class="mt-0.5 text-xs leading-relaxed text-muted-foreground"><span class="font-medium text-foreground/80">${hl(p.name, query)}</span> › ${hl(r.cat.name, query)}${r.m.group ? " · " + hl(r.m.group, query) : ""}${p.period ? ` · ${esc(p.period.label)}` : ""}</div>
+          </div>
+          ${svg(ICON.chevron, 16, "mt-0.5 shrink-0 text-muted-foreground transition-transform group-[.open]:rotate-180")}
+        </div>
+        <div class="mt-2.5 hidden border-t border-dashed pt-2.5 text-[13px] leading-relaxed text-muted-foreground group-[.open]:block">
+          <div class="whitespace-pre-line">${r.m.detail ? esc(r.m.detail) : "（此商家沒有額外說明）"}</div>
+          ${p.restricted ? `<div class="mt-2 text-warn">資格：${esc(p.restricted)}</div>` : ""}
+          <div class="mt-2">${srcLink(p.source)}</div>
+        </div>
+      </div>
+    </div>`;
   }
-  return html;
+  return html + `</div>`;
 }
 
 function renderPlans() {
   const plans = visiblePlans();
   CHIPS = [];
-  if (!plans.length) return `<div class="msg">沒有符合篩選條件的方案。</div>`;
-  return plans.map(p => `
-    <details class="plan${p.status === "ended" ? " ended" : ""}" id="plan-${esc(p.id)}" open>
-      <summary><h2>${esc(p.name)}</h2><span class="prate">${esc(p.rate)}</span>${restrictTag(p)}${statusTag(p)}
-        <span class="period">${p.period ? esc(p.period.label) : ""}</span></summary>
-      <div class="inner">
-        ${p.restricted ? `<div class="note">資格：${esc(p.restricted)}</div>` : ""}
-        ${p.infos.map(i => `<div class="info"><b>${esc(i.title)}</b><br>${i.lines.map(esc).join("<br>")}</div>`).join("")}
+  if (!plans.length) return emptyMsg("沒有符合篩選條件的方案。");
+  return `<div class="flex flex-col gap-4">` + plans.map(p => `
+    <details class="group/plan scroll-mt-52 overflow-hidden rounded-xl border bg-card text-card-foreground shadow-xs ${p.status === "ended" ? "opacity-60" : ""}" id="plan-${esc(p.id)}" open>
+      <summary class="flex cursor-pointer select-none flex-wrap items-center gap-x-2.5 gap-y-1.5 px-4 py-3.5 transition-colors hover:bg-muted/40 sm:px-5">
+        <h2 class="text-lg font-semibold tracking-tight">${esc(p.name)}</h2>
+        ${p.rate ? `<span class="badge">${esc(p.rate)}</span>` : ""}${restrictTag(p)}${statusTag(p)}
+        <span class="ml-auto flex items-center gap-2 text-xs text-muted-foreground">
+          ${p.period ? esc(p.period.label) : ""}
+          ${svg(ICON.chevron, 16, "transition-transform group-open/plan:rotate-180")}
+        </span>
+      </summary>
+      <div class="flex flex-col gap-5 border-t px-4 py-4 sm:px-5">
+        ${p.restricted ? `<div class="flex items-start gap-2 text-sm text-warn">${svg(ICON.lock, 15, "mt-0.5 shrink-0")}<span>資格：${esc(p.restricted)}</span></div>` : ""}
+        ${p.infos.map(i => `<div class="flex gap-2.5 rounded-lg bg-muted/60 p-3 text-[13px] leading-relaxed text-muted-foreground">${svg(ICON.info, 15, "mt-0.5 shrink-0")}<div><div class="mb-0.5 font-medium text-foreground">${esc(i.title)}</div>${i.lines.map(esc).join("<br>")}</div></div>`).join("")}
         ${p.categories.map(c => {
           let lastGroup = "";
           const chips = c.merchants.map(m => {
-            const g = m.group && m.group !== lastGroup ? `<div class="grp">${esc(m.group)}</div>` : "";
+            const g = m.group && m.group !== lastGroup ? `<div class="mt-1.5 w-full text-xs font-medium text-muted-foreground first:mt-0">${esc(m.group)}</div>` : "";
             lastGroup = m.group;
-            const r = m.rate && m.rate !== c.rate ? `<span class="r">${esc(m.rate)}</span>` : "";
+            const r = m.rate && m.rate !== c.rate ? `<span class="text-xs font-semibold text-primary">${esc(m.rate)}</span>` : "";
             CHIPS.push({ plan: p, cat: c, m });
-            return g + `<button type="button" class="chip" data-k="${CHIPS.length - 1}">${esc(m.name)}${r}</button>`;
+            return g + `<button type="button" class="chip inline-flex items-center gap-1.5 rounded-md border bg-background px-2.5 py-1.5 text-left text-[13px] leading-snug transition-colors hover:border-primary/40 hover:bg-primary/5 sm:py-1" data-k="${CHIPS.length - 1}">${esc(m.name)}${r}</button>`;
           }).join("");
-          return `<div class="cat"><h3>${esc(c.name)}<span class="r">${esc(c.rate)}</span></h3><div class="chips">${chips}</div></div>`;
+          return `<div><h3 class="mb-2 flex flex-wrap items-baseline gap-2 text-sm font-medium">${esc(c.name)}<span class="font-semibold text-primary">${esc(c.rate)}</span><span class="text-xs font-normal text-muted-foreground">${c.merchants.length} 家</span></h3><div class="flex flex-wrap gap-1.5">${chips}</div></div>`;
         }).join("")}
-        <div class="src"><a href="${esc(p.source)}" target="_blank" rel="noopener">官網原文 ↗</a></div>
+        <div>${srcLink(p.source, "官網原文")}</div>
       </div>
-    </details>`).join("");
+    </details>`).join("") + `</div>`;
 }
 
 function render() {
   const q = $("#q").value;
-  $("#clear").style.display = q ? "block" : "none";
+  $("#clear").hidden = !q;
+  $("#kbd").hidden = !!q;
   const shown = new Set(visiblePlans());
   $("#nav").innerHTML = PLANS.map(p =>
-    `<a href="#plan-${esc(p.id)}" class="${shown.has(p) ? "" : "off"}" data-plan="${esc(p.name)}">${esc(p.name)}</a>`).join("");
+    `<a href="#plan-${esc(p.id)}" class="btn shrink-0 rounded-full ${shown.has(p) ? "" : "opacity-40"}" data-variant="outline" data-size="sm" data-plan="${esc(p.name)}">${esc(p.name)}</a>`).join("");
   $("#nav").hidden = !!q.trim();
   $("#main").innerHTML = (window.ERRORS || "") + (q.trim() ? renderResults(q) : renderPlans());
   const url = new URL(location); q.trim() ? url.searchParams.set("q", q) : url.searchParams.delete("q");
@@ -506,9 +492,11 @@ function render() {
 
 // ---------- 載入 ----------
 const STALE_HOURS = 6; // 資料超過這麼久沒更新就提醒（排程可能壞了）
+const errBox = (title, desc) => `<div class="alert mb-3" data-variant="destructive">${svg(ICON.alert)}<h2>${esc(title)}</h2><section>${esc(desc)}</section></div>`;
 
 async function load(force) {
   $("#status").textContent = "載入中…";
+  $("#refresh svg").classList.add("animate-spin");
   const bust = force ? `?t=${Date.now()}` : "";
   const getJSON = async url => {
     const r = await fetch(url + bust, { cache: force ? "no-store" : "default" });
@@ -523,25 +511,23 @@ async function load(force) {
   results.forEach((r, i) => {
     const [key, label] = sources[i];
     if (r.status === "fulfilled") PLANS.push(...r.value);
-    else errors += `<div class="err">${label} 載入失敗：${esc(r.reason.message || r.reason)}</div>`;
+    else errors += errBox(`${label} 載入失敗`, r.reason.message || r.reason);
     const m = meta?.sources?.[key];
-    if (m && !m.ok) errors += `<div class="err">${label} 最近一次從官網更新失敗，顯示的是上一次成功的資料（${esc(m.error)}）</div>`;
+    if (m && !m.ok) errors += errBox(`${label} 最近一次從官網更新失敗`, `顯示的是上一次成功的資料（${m.error}）`);
   });
   const d = meta?.fetched_at ? new Date(meta.fetched_at) : null;
   if (d && Date.now() - d > STALE_HOURS * 3600e3)
-    errors += `<div class="err">資料已經 ${Math.round((Date.now() - d) / 3600e3)} 小時沒更新，自動更新可能停了。</div>`;
+    errors += errBox("資料可能過期", `資料已經 ${Math.round((Date.now() - d) / 3600e3)} 小時沒更新，自動更新可能停了。`);
   window.ERRORS = errors;
   buildIndex();
   const n = INDEX.length;
   const fmt = d ? d.toLocaleString("zh-TW", { hour12: false, month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "—";
-  $("#status").innerHTML =
-    `<span class="stat-full">${PLANS.length} 個方案・${n} 筆商家<br>官網資料更新於 ${fmt}</span>`
-    + `<span class="stat-short">${n} 筆・${fmt}</span>`
-    + `<button id="refresh" aria-label="重新載入">↻<span class="stat-full"> 重新載入</span></button>`;
-  $("#refresh").onclick = () => load(true);
+  $("#status").innerHTML = `<span class="hidden sm:inline">${PLANS.length} 個方案 · </span>${n} 筆商家 · 更新於 ${fmt}`;
+  $("#refresh svg").classList.remove("animate-spin");
   render();
 }
 
+$("#refresh").onclick = () => load(true);
 let timer;
 $("#q").addEventListener("input", () => {
   clearTimeout(timer);
@@ -552,6 +538,8 @@ $("#clear").onclick = () => { $("#q").value = ""; render(); $("#q").focus(); };
 $("#main").addEventListener("click", e => {
   const row = e.target.closest(".row");
   if (row && !e.target.closest("a")) row.classList.toggle("open");
+  const chip = e.target.closest(".chip");
+  if (chip) openSheet(CHIPS[+chip.dataset.k]);
 });
 $("#nav").addEventListener("click", e => {
   const a = e.target.closest("a"); if (!a || !$("#q").value) return;
@@ -559,41 +547,41 @@ $("#nav").addEventListener("click", e => {
   document.querySelector(a.getAttribute("href"))?.scrollIntoView();
 });
 document.addEventListener("keydown", e => {
+  if ($("#sheet").open) return;
   if (e.key === "/" && document.activeElement !== $("#q")) { e.preventDefault(); $("#q").focus(); }
   if (e.key === "Escape" && document.activeElement === $("#q")) { $("#q").value = ""; render(); }
 });
-// 商家說明面板
+
+// 商家說明面板（Basecoat dialog）
 function openSheet({ plan: p, cat: c, m }) {
-  $("#sheet").innerHTML = `<div class="grab"></div><button class="close" aria-label="關閉">×</button>
-    <h4>${esc(m.name)}</h4>
-    <div class="sr">${esc(m.rate || "依等級")}</div>
-    <div class="sp"><b>${esc(p.name)}</b> › ${esc(c.name)}${m.group ? " · " + esc(m.group) : ""}${p.period ? "<br>" + esc(p.period.label) : ""}
-      ${p.restricted ? `<br><span style="color:var(--warn)">資格：${esc(p.restricted)}</span>` : ""}</div>
-    <div class="sd">${m.detail ? esc(m.detail) : "（此商家沒有額外說明）"}</div>
-    <p class="src"><a href="${esc(p.source)}" target="_blank" rel="noopener">查看官網原文 ↗</a></p>`;
-  $("#sheet").scrollTop = 0;
-  $("#sheet").classList.add("show"); $("#sheetBg").classList.add("show");
+  $("#sheetBody").innerHTML = `
+    <header>
+      <h2 id="sheetTitle" class="pr-8">${esc(m.name)}</h2>
+      <p><span class="font-medium text-foreground">${esc(p.name)}</span> › ${esc(c.name)}${m.group ? " · " + esc(m.group) : ""}${p.period ? `<br>${esc(p.period.label)}` : ""}</p>
+    </header>
+    <section class="flex flex-col gap-3">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-3xl font-bold tabular-nums text-primary">${esc(m.rate || "依等級")}</span>${restrictTag(p)}${statusTag(p)}
+      </div>
+      ${p.restricted ? `<div class="flex items-start gap-2 text-sm text-warn">${svg(ICON.lock, 15, "mt-0.5 shrink-0")}<span>資格：${esc(p.restricted)}</span></div>` : ""}
+      <div class="whitespace-pre-line rounded-lg bg-muted/60 p-3 text-[13px] leading-relaxed text-muted-foreground">${m.detail ? esc(m.detail) : "（此商家沒有額外說明）"}</div>
+    </section>
+    <footer>
+      <a href="${esc(p.source)}" target="_blank" rel="noopener" class="btn" data-variant="outline">查看官網原文${svg(ICON.external, 14)}</a>
+      <button type="button" class="btn" data-close>關閉</button>
+    </footer>
+    <button type="button" class="btn absolute top-3 right-3" data-variant="ghost" data-size="icon-sm" aria-label="關閉" data-close>${svg(ICON.x)}</button>`;
+  $("#sheetBody").scrollTop = 0;
+  $("#sheet").showModal();
 }
-function closeSheet() { $("#sheet").classList.remove("show"); $("#sheetBg").classList.remove("show"); }
-$("#sheetBg").onclick = closeSheet;
-$("#sheet").addEventListener("click", e => { if (e.target.closest(".close")) closeSheet(); });
-document.addEventListener("keydown", e => { if (e.key === "Escape") closeSheet(); });
-$("#main").addEventListener("click", e => {
-  const chip = e.target.closest(".chip");
-  if (chip) openSheet(CHIPS[+chip.dataset.k]);
-});
-// 往下滑可以關閉面板
-let touchY = null;
-$("#sheet").addEventListener("touchstart", e => { touchY = $("#sheet").scrollTop <= 0 ? e.touches[0].clientY : null; }, { passive: true });
-$("#sheet").addEventListener("touchend", e => {
-  if (touchY !== null && e.changedTouches[0].clientY - touchY > 80) closeSheet();
-  touchY = null;
+$("#sheet").addEventListener("click", e => {
+  if (e.target === $("#sheet") || e.target.closest("[data-close]")) $("#sheet").close();  // 點背景或關閉鈕
 });
 
 // 手機：篩選收合、按「搜尋」收鍵盤
 $("#filterBtn").onclick = () => {
-  const on = $(".opts").classList.toggle("show");
-  $("#filterBtn").classList.toggle("on", on);
+  const on = !$("#opts").hasAttribute("data-open");
+  $("#opts").toggleAttribute("data-open", on);
   $("#filterBtn").setAttribute("aria-expanded", on);
 };
 $("#q").addEventListener("keydown", e => { if (e.key === "Enter") $("#q").blur(); });
