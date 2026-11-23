@@ -1,0 +1,57 @@
+# 每小時從國泰官網抓一次 CUBE 權益資料，有變動就 commit，然後部署到 GitHub Pages。
+# 第一次使用：repo 的 Settings → Pages → Source 選「GitHub Actions」。
+name: Update data & deploy
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # 每小時第 17 分（避開整點 GitHub 排程尖峰）
+  workflow_dispatch:        # Actions 頁面可手動執行
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # commit 更新後的 data/
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch data from cathay-cube.com.tw
+        run: python3 scripts/fetch.py
+
+      # 只 commit 資料本身；meta.json 每次時間都不同，不進版控，只跟著部署
+      - name: Commit if data changed
+        run: |
+          if git diff --quiet -- data/cube.json data/googler.json; then
+            echo "資料沒有變動"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/cube.json data/googler.json
+            git commit -m "Update CUBE data $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      - name: Build site
+        run: |
+          mkdir _site
+          cp index.html _site/
+          cp -r data _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
