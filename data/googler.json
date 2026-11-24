@@ -1,7 +1,10 @@
 {
  "title": "Googler專屬薪轉優惠",
- "cssClassNames": "cub-campaignpage cub-page page basicpage",
  "lastModifiedDate": 1786524228598,
+ "templateName": "cub-campaign-content-page",
+ "designPath": "/libs/settings/wcm/designs/default",
+ "cssClassNames": "cub-campaignpage cub-page page basicpage",
+ "htmlPageItems": [],
  "brandSlug": "",
  "componentsResourceTypes": [
   "cub-aem-cs/components/structures/cub-campaignpage/v1/cub-campaignpage",
@@ -18,13 +21,10 @@
   "wcm/foundation/components/responsivegrid",
   "cub-aem-cs/components/cub-content/cub-anchormenu/v1/cub-anchormenu"
  ],
- "htmlPageItems": [],
- "templateName": "cub-campaign-content-page",
- "designPath": "/libs/settings/wcm/designs/default",
  "language": "zh-TW",
- ":type": "cub-aem-cs/components/structures/cub-campaignpage/v1/cub-campaignpage",
  ":items": {
   "root": {
+   "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
    "columnCount": 12,
    "columnClassNames": {
     "cub_experiencefragme_2081900506": "aem-GridColumn aem-GridColumn--default--12",
@@ -35,7 +35,6 @@
     "responsivegrid": "aem-GridColumn aem-GridColumn--default--12",
     "cub_experiencefragme": "aem-GridColumn aem-GridColumn--default--12"
    },
-   "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
    ":items": {
     "cub_experiencefragme_2081900506": {
      "experienceFragment": {
@@ -48,15 +47,13 @@
         "repo:modifyDate": "2024-06-24T07:24:23Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
+        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         "columnCount": 12,
         "columnClassNames": {
          "cub_gascript": "aem-GridColumn aem-GridColumn--default--12"
         },
-        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "cub_gascript": {
           ":type": "cub-aem-cs/components/cub-content/cub-gascript/v1/cub-gascript",
@@ -71,7 +68,9 @@
       },
       ":itemsOrder": [
        "root"
-      ]
+      ],
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -86,15 +85,13 @@
         "repo:modifyDate": "2024-04-11T08:41:33Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
+        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         "columnCount": 12,
         "columnClassNames": {
          "cub_header": "aem-GridColumn aem-GridColumn--default--12"
         },
-        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "cub_header": {
           "contentTrees": [
@@ -3255,18 +3252,21 @@
       },
       ":itemsOrder": [
        "root"
-      ]
+      ],
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
     "responsivegrid": {
+     "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
      "columnCount": 12,
      "columnClassNames": {
       "cub_main": "aem-GridColumn aem-GridColumn--default--12"
      },
-     "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
      ":items": {
       "cub_main": {
+       "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
        "columnCount": 12,
        "columnClassNames": {
         "cub_textb_759010858_": "aem-GridColumn aem-GridColumn--default--12",
@@ -3288,7 +3288,6 @@
         "cub_textb_202333918__1543508262": "aem-GridColumn aem-GridColumn--default--12",
         "cub_notice_copy": "aem-GridColumn aem-GridColumn--default--12"
        },
-       "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
        ":items": {
         "cub_campaignkvbanner": {
          "title": "Googler薪轉帳戶 就選國泰世華",
@@ -3453,6 +3452,9 @@
          }
         },
         "cub_linkgroup": {
+         "pageInfo": {
+          "pageTheme": "cathybk"
+         },
          "componentData": {
           "topSpace": 0,
           "anchorKey": "blockname01",
@@ -3461,9 +3463,6 @@
           "imageAlt": null,
           "stages": null,
           "image": null
-         },
-         "pageInfo": {
-          "pageTheme": "cathybk"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-linkgroup/v1/cub-linkgroup"
         },
@@ -3497,6 +3496,9 @@
          ":type": "cub-aem-cs/components/cub-content/cub-textb/v1/cub-textb"
         },
         "cub_linkgroup_copy_1216935210": {
+         "pageInfo": {
+          "pageTheme": "cathybk"
+         },
          "componentData": {
           "topSpace": 0,
           "anchorKey": "blockname05",
@@ -3505,9 +3507,6 @@
           "imageAlt": null,
           "stages": null,
           "image": null
-         },
-         "pageInfo": {
-          "pageTheme": "cathybk"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-linkgroup/v1/cub-linkgroup"
         },
@@ -3522,6 +3521,9 @@
          ":type": "cub-aem-cs/components/cub-content/cub-textb/v1/cub-textb"
         },
         "cub_linkgroup_copy": {
+         "pageInfo": {
+          "pageTheme": "cathybk"
+         },
          "componentData": {
           "topSpace": 0,
           "anchorKey": "blockname02",
@@ -3530,9 +3532,6 @@
           "imageAlt": null,
           "stages": null,
           "image": null
-         },
-         "pageInfo": {
-          "pageTheme": "cathybk"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-linkgroup/v1/cub-linkgroup"
         },
@@ -3603,11 +3602,14 @@
           "hideInSiteMap": "false",
           "navTitle": "Googler專屬薪轉優惠"
          },
-         "mainbButtonText": "查看活動詳情",
          "btnNumber": 1,
+         "mainbButtonText": "查看活動詳情",
          ":type": "cub-aem-cs/components/cub-content/cub-button/v1/cub-button"
         },
         "cub_linkgroup_copy_c_319883186": {
+         "pageInfo": {
+          "pageTheme": "cathybk"
+         },
          "componentData": {
           "topSpace": 0,
           "anchorKey": "blockname04",
@@ -3616,9 +3618,6 @@
           "imageAlt": null,
           "stages": null,
           "image": null
-         },
-         "pageInfo": {
-          "pageTheme": "cathybk"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-linkgroup/v1/cub-linkgroup"
         },
@@ -3674,15 +3673,13 @@
         "repo:modifyDate": "2024-04-11T08:43:35Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
+        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         "columnCount": 12,
         "columnClassNames": {
          "cub_htmlscript": "aem-GridColumn aem-GridColumn--default--12"
         },
-        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "cub_htmlscript": {
           ":type": "cub-aem-cs/components/cub-content/cub-htmlscript/v1/cub-htmlscript",
@@ -3697,7 +3694,9 @@
       },
       ":itemsOrder": [
        "root"
-      ]
+      ],
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -3712,15 +3711,13 @@
         "repo:modifyDate": "2024-04-11T08:41:54Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
+        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         "columnCount": 12,
         "columnClassNames": {
          "cub_warning": "aem-GridColumn aem-GridColumn--default--12"
         },
-        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "cub_warning": {
           "text": "<div class=\"max-w-[960px]  desktop:w-[960px] m-auto px-5 desktop:px-0 \"><p class=\"mb-2.5 text-lg text-center tracking-[7px] tablet:mb-[18px] desktop:mb-2.5 text-gray-900\">謹慎理財 信用無價</p>\r\n<p class=\"text-base text-cathay-graytextLight\">信用卡暨預借現金之各級別循環信用年利率為6.75％~15％（依本行信用評分制度定期評估，循環利率之基準日為104年9月1日）。<br>\r\n預借現金手續費：預借現金金額乘以3％加上新臺幣150元或美元5元，其他相關費用係依本行網站公告。<br>\r\n由特約商店提供之分期付款優惠，不另收取分期利息及其他相關費用，總費用年百分率為0%。<br>\r\n<br>\r\n為提供您最佳個人化且即時的服務，本網站透過使用Cookies記錄、存取及蒐集您的網路行為活動資料。當您使用本網站，即表示您同意Cookies技術支援。更多資訊請參閱<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://www.cathaybk.com.tw/cathaybk/about/about/customer-benefits/client-privacy\">隱私權保護政策</a></p>\r\n</div>\r\n",
@@ -3739,7 +3736,9 @@
       ":itemsOrder": [
        "root",
        "cq:metadata"
-      ]
+      ],
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -3754,16 +3753,14 @@
         "repo:modifyDate": "2024-04-11T08:42:29Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
+        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         "columnCount": 12,
         "columnClassNames": {
          "cub_footer": "aem-GridColumn aem-GridColumn--default--12",
          "separator": "aem-GridColumn aem-GridColumn--default--12"
         },
-        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "separator": {
           ":type": "cub-aem-cs/components/separator"
@@ -3863,6 +3860,7 @@
             "alt": null
            }
           },
+          "alphaDomain": "www.cathaybk.com.tw",
           "socialMedias": [
            {
             "jcr:primaryType": "nt:unstructured",
@@ -3893,7 +3891,6 @@
             "text": "Linkedin"
            }
           ],
-          "alphaDomain": "www.cathaybk.com.tw",
           ":type": "cub-aem-cs/components/cub-content/cub-footer/v1/cub-footer"
          }
         },
@@ -3906,7 +3903,9 @@
       },
       ":itemsOrder": [
        "root"
-      ]
+      ],
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -3978,6 +3977,7 @@
  ":itemsOrder": [
   "root"
  ],
+ ":type": "cub-aem-cs/components/structures/cub-campaignpage/v1/cub-campaignpage",
  ":hierarchyType": "page",
  ":path": "/cathaybk/personal/event/overview/segment/2026/googler_package"
 }

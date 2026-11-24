@@ -1,6 +1,10 @@
 {
  "title": "CUBE卡權益方案",
- "lastModifiedDate": 1792136285505,
+ "lastModifiedDate": 1795168522100,
+ "templateName": "cub-anchor-page",
+ "designPath": "/libs/settings/wcm/designs/default",
+ "cssClassNames": "cub-page page basicpage",
+ "htmlPageItems": [],
  "brandSlug": "",
  "componentsResourceTypes": [
   "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment",
@@ -17,16 +21,11 @@
   "nt:resource",
   "cub-aem-cs/components/cub-content/cub-anchormenu/v1/cub-anchormenu"
  ],
- "htmlPageItems": [],
- "templateName": "cub-anchor-page",
- "cssClassNames": "cub-page page basicpage",
- "designPath": "/libs/settings/wcm/designs/default",
  "language": "zh-TW",
- ":type": "cub-aem-cs/components/structures/cub-page/v1/cub-page",
  ":items": {
   "root": {
-   "columnCount": 12,
    "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+   "columnCount": 12,
    "columnClassNames": {
     "cub_experiencefragme_1305994824": "aem-GridColumn aem-GridColumn--default--12",
     "cub_redirect": "aem-GridColumn aem-GridColumn--default--12",
@@ -48,11 +47,10 @@
         "repo:modifyDate": "2025-02-21T06:01:53Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       ":items": {
        "root": {
-        "columnCount": 12,
         "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+        "columnCount": 12,
         "columnClassNames": {
          "cub_gascript": "aem-GridColumn aem-GridColumn--default--12"
         },
@@ -71,6 +69,7 @@
       ":itemsOrder": [
        "root"
       ],
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
@@ -86,11 +85,10 @@
         "repo:modifyDate": "2025-02-21T06:02:36Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       ":items": {
        "root": {
-        "columnCount": 12,
         "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+        "columnCount": 12,
         "columnClassNames": {
          "cub_header": "aem-GridColumn aem-GridColumn--default--12"
         },
@@ -189,12 +187,13 @@
            ],
            "jcr:created": 1749793429194,
            "pwaDisplay": "standalone",
-           "cq:lastModified": 1792136285505,
+           "cq:lastModified": 1795168522100,
            "theme": "cube",
            "pwaCachestrategy": "staleWhileRevalidate",
            "jcr:baseVersion": "6a62a7dc-39e1-4241-b674-0d104b7bf33e",
            "jcr:isCheckedOut": true,
            "jcr:uuid": "b4188665-e2a6-49b4-b071-0966e8d1d3f1",
+           "scheduledate": 1795503600000,
            "sling:resourceType": "cub-aem-cs/components/structures/cub-page/v1/cub-page",
            "initiatorId": "88002",
            "hideInSiteMap": "false"
@@ -3238,6 +3237,7 @@
       ":itemsOrder": [
        "root"
       ],
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
@@ -3253,11 +3253,10 @@
         "repo:modifyDate": "2025-02-21T06:03:50Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       ":items": {
        "root": {
-        "columnCount": 12,
         "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+        "columnCount": 12,
         "columnClassNames": {
          "cub_htmlscript": "aem-GridColumn aem-GridColumn--default--12"
         },
@@ -3276,13 +3275,14 @@
       ":itemsOrder": [
        "root"
       ],
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
     "responsivegrid": {
-     "columnCount": 12,
      "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+     "columnCount": 12,
      "columnClassNames": {
       "cub_anchormenu": "aem-GridColumn aem-GridColumn--default--12",
       "cub_cubesearchkvbann": "aem-GridColumn aem-GridColumn--default--12",
@@ -3345,6 +3345,11 @@
          "jcr:primaryType": "nt:unstructured",
          "anchorTarget": "B001",
          "title": "固定回饋"
+        },
+        {
+         "jcr:primaryType": "nt:unstructured",
+         "anchorTarget": "jcbjprewards",
+         "title": "JCB冬日遊"
         },
         {
          "jcr:primaryType": "nt:unstructured",
@@ -3479,9 +3484,10 @@
        }
       },
       "cub_main": {
-       "columnCount": 12,
        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+       "columnCount": 12,
        "columnClassNames": {
+        "cub_experiencefragme_1735352367": "aem-GridColumn aem-GridColumn--default--12",
         "cub_experiencefragme_353283357": "aem-GridColumn aem-GridColumn--default--12",
         "cub_experiencefragme_952464071": "aem-GridColumn aem-GridColumn--default--12",
         "cub_experiencefragme_1916958314": "aem-GridColumn aem-GridColumn--default--12",
@@ -3506,11 +3512,10 @@
             "repo:modifyDate": "2026-09-23T07:35:41Z"
            }
           },
-          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           ":items": {
            "root": {
-            "columnCount": 12,
             "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+            "columnCount": 12,
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
@@ -3522,7 +3527,6 @@
               "paragraphNoticeTitle": "注意事項",
               "paragraphNoticeContent": "<p><b>CUBE信用卡「秋日遊」權益方案說明：</b></p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>「秋日遊」權益方案適用期間：2026/10/1-2026/11/30，CUBE信用卡權益方案每正卡人每日限變更一次 (固定回饋另依該權益方案注意事項說明)，附卡適用方案依正卡持卡人設定為準。本活動僅限使用CUBE信用卡消費，皆不含CUBE簽帳金融卡。</li>\r\n<li>「秋日遊」權益方案屆期時，若權益方案仍為「秋日遊」，本行系統將於2026/12/1 00:00～02:00自動切換為「集精選」權益方案，若當日有切換權益需求，請於02:00後進行切換。</li>\r\n<li>CUBE信用卡「秋日遊」之一般消費、指定消費回饋通路及CUBE信用卡權益相關注意事項，請詳閱<a href=\"https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list\">國泰世華CUBE信用卡權益</a>說明。</li>\r\n<li>小樹點(信用卡)點數價值為1點等值NT$1，CUBE信用卡於每筆消費請款入帳後，依該筆消費之授權日判斷適用權益方案、符合之優惠券，以各別回饋率計算小樹點(信用卡)並依小數點第一位四捨五入至整數位，並於次二日(遇假日順延)回饋至正卡人信用卡帳戶，實際回饋時間依本行作業時間為準。</li>\r\n<li>參加「秋日遊」指定商戶之 CUBE App 領優惠券活動，卡友須於活動期間登入本行 CUBE App「CUBE 優惠券專區」完成優惠券領取，且僅限於優惠券領取日（含）後之新增消費始得列入回饋計算；回饋適用通路、回饋條件及注意事項悉依各優惠券頁面說明為準；優惠券採個別領取、分開計算且各券回饋上限不同，詳細內容請參閱各優惠券說明；財富管理貴賓秋日遊專屬任務活動，任務獎勵之滿額回饋屬後返活動，詳細內容請參閱活動網頁說明。</li>\r\n<li>CUBE信用卡權益方案之「指定消費」（包含「秋日遊」之指定品牌／通路消費）或「優惠券」消費，限直接使用CUBE信用卡刷卡或使用該卡加入Apple Pay /Samsung Pay/Google Pay/Garmin Pay等行動支付工具之消費，皆不含透過綠界支付平台、藍新支付平台、91APP或其它第三方支付平台之交易，亦不含透過綁定其他型態支付工具之消費(如：LINE Pay、街口支付、全盈+PAY、全支付、Pi錢包、橘子支付、歐付寶、icash pay、OPEN錢包、My FamiPay、悠遊付、ezPay、GOMAJI Pay、friday wallet、PayPal、支付寶等)。Klook 指定日本商品消費5%回饋限直接使用CUBE信用卡刷卡之消費，不含將該卡加入Apple Pay付款、亦不含LINE Pay、街口支付或其它第三方支付平台之交易。</li>\r\n</ol>\r\n<p><b>日本必逛＋遊日必備＋四大機場指定免稅店＋IP專賣店/人氣愛店</b></p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>本優惠限使用實體信用卡過卡或感應式刷卡(含使用該卡加入Apple Pay、Samsung Pay、Google Pay、Garmin Pay消費，且須為面對面交易，儲值不列入計算)，且商店請款時，商店之國別需為「日本」或適用消費幣別需為「日圓」。</li>\r\n<li>消費金額以各信用卡國際組織於匯率換算後入帳至持卡人帳單上之新臺幣為準，消費金額之計算以實際授權金額計算，凡特約商店所在地登記為國外者或交易(含辦理退款)之貨幣非為新臺幣者，交易須收取國外交易手續費，相關費用依信用卡約定條款第十六條國外交易授權結匯辦理，請參閱本行信用卡約定條款約定。</li>\r\n<li>回饋排除項目：醫療事業(包括但不限於就醫、醫學美容)、販賣機、飯店、電信、租車、交通、賭博、飛機/郵輪上之消費、未經主管機關核准之境外投資交易平台(包括但不限於eToro)、其他經本行公告排除之項目。</li>\r\n<li>消費依據特約商店與收單機構登錄之特約商店名稱判斷，不包含店中櫃。優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以發票上列示之商家名稱為依據。</li>\r\n<li>日本實體消費之各通路免稅資格、適用門檻、適用品項、辦理方式及其他相關規定，悉依日本政府最新免稅制度及各商店實際辦理規定為準；如日本免稅制度有所調整，依調整後之規定辦理。</li>\r\n</ol>\r\n<p><b>規劃海外旅遊(機票/訂房/行程)</b></p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>當您訂購旅遊商品(如國內外訂房、旅行社預訂飯店及行程)時，若採先訂後付或到店付款等支付方式，飯店可能會進行信用卡預授權，此時飯店還不會進行實際信用卡扣款交易，請務必留意需於飯店實際扣款當日切換為「秋日遊」權益方案，若實際扣款當日未切換為「秋日遊」權益，將導致該筆消費不適用「秋日遊」回饋方案，恕無法再以任何形式要求追溯或提供該筆刷卡金額之小樹點(信用卡)回饋。</li>\r\n<li>Hotels.com 專屬網頁訂房、Expedia 專屬網頁訂房、Trip.com、Agoda、Klook、KKday、Club Med等海外訂房平台進行訂房時，可能會有海外交易授權時間差問題，導致實際信用卡延遲授權或延遲扣款交易，且依各平台而有所不同，非本行系統原因所致，建議延長切換「秋日遊」權益方案時間。</li>\r\n<li>訂房平台若選擇到店付款，可能會以「飯店住宿」認列進行信用卡扣款交易，消費會不適用「秋日遊」權益。</li>\r\n<li>消費依據特約商店與收單機構登錄之特約商店名稱判斷。優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以發票上列示之商家名稱為依據。</li>\r\n</ol>\r\n<p><b>國內日系質感飯店</b></p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>限交易地點為臺灣之上述指定飯店消費，不包含同品牌於其他國家或地區之飯店、餐廳或其他通路消費。</li>\r\n<li>回饋適用之消費項目及範圍依各指定飯店活動頁面說明為準；各飯店之住宿、餐飲及其他館內消費如有不適用項目、指定付款方式或其他限制，依各飯店活動說明為準。</li>\r\n<li>透過第三方訂房平台、旅行社或其他第三方通路完成付款之交易，若非由活動指定飯店直接請款，恕不適用本活動回饋。</li>\r\n<li>住宿請依飯店實際訂房情況為準，恕不保證訂房。</li>\r\n<li>如採先訂後付、到店付款或其他非訂房當下完成扣款之付款方式，回饋資格以實際信用卡交易授權日判斷，持卡人須於實際授權當日切換為「秋日遊」權益方案。</li>\r\n<li>消費依據特約商店與收單機構登錄之特約商店名稱判斷。優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以飯店訂房名稱、發票或收據上列示之商家名稱為依據。</li>\r\n</ol>\r\n<p><span style=\"font-weight: bolder;\">國內日系購物名店</span></p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>限交易地點為臺灣，不包含其餘海外地區之品牌／通路消費。</li>\r\n<li>UNIQLO網路商店、GU台灣網路商店、UNITED ARROWS LTD.官方購物網站：回饋加碼僅適用品牌臺灣官方網路商店並且使用CUBE信用卡輸入卡號刷卡交易。</li>\r\n<li>消費依據特約商店與收單機構登錄之特約商店名稱判斷，不含店中櫃，如：無印良品｜UNIQLO｜GU｜Gap｜H&amp;M｜ZARA｜lululemon...等百貨公司櫃位。優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以發票上列示之商家名稱為依據。</li>\r\n</ol>\r\n<p><b>國內日系美食饗宴</b></p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>限交易地點為臺灣之指定餐飲消費，不包含其餘海外地區之品牌／通路消費。</li>\r\n<li>若餐廳有基本最低消費限制，請依餐廳規定為準，若有未盡事項以餐廳說明為準。</li>\r\n<li>消費依據特約商店與收單機構登錄之特約商店名稱判斷，其他指定餐飲消費回饋範圍不包含百貨商場內(如百貨公司、家樂福、車站商場、機場美食街)設立之餐廳、inline訂位之刷卡消費、錢都日式涮涮鍋App外帶點餐。</li>\r\n<li>優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以發票上列示之商家名稱為依據。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
               "topSpace": 0,
-              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle",
               ":items": {
                "cub_cubelist_6160234": {
                 "categoryName": "日本必逛＋遊日必備之指定消費 3.5%",
@@ -4234,7 +4238,8 @@
                "cub_cubelist_1728141_928494793",
                "cub_cubelist_1728141_953230018",
                "cub_cubelist_1728141_610126650"
-              ]
+              ],
+              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle"
              }
             },
             ":itemsOrder": [
@@ -4252,6 +4257,7 @@
            "root",
            "cq:metadata"
           ],
+          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
@@ -4267,11 +4273,10 @@
             "repo:modifyDate": "2026-05-11T07:31:59Z"
            }
           },
-          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           ":items": {
            "root": {
-            "columnCount": 12,
             "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+            "columnCount": 12,
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
@@ -4283,7 +4288,6 @@
               "paragraphNoticeTitle": "注意事項",
               "paragraphNoticeContent": "<ol class=\"ps-[29px] list-disc my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">「台塑家」權益方案適用期間：2026/6/1-2026/12/31，CUBE信用卡權益方案每正卡人每日限變更一次，附卡適用方案依正卡持卡人（下稱「正卡人」）設定為準。本活動僅限使用CUBE信用卡消費，皆不含CUBE簽帳金融卡。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">「台塑家」權益方案屆期時，若權益方案仍為「台塑家」，本行系統將於2027/01/01 00:00～02:00自動切換為「集精選」權益方案，若當日有切換權益需求，請於02:00後進行切換。</li>\r\n</ol>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px; color: rgb(38,168,98);\">台塑通路品牌/生活消費</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「台塑指定加油站」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">本活動回饋限以台塑石油、台亞、福懋、統一速邁樂(限本島)等指定台塑加油站，且須以實體CUBE信用卡或將CUBE信用卡綁定於Apple Pay/Samsung Pay/Google Pay/台塑石油Pay/Garmin Pay支付，排除網路交易、儲值卡、錢包儲值交易、電子支付及第三方支付綁卡掃碼付款交易(例如：icash Pay、街口支付、LINE Pay、台灣Pay、悠遊付、Pi拍錢包、OPEN錢包、橘子支付、支付寶等)。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本活動回饋不適用加氣站及任何不屬於加油站內之加油消費；若付款失敗、取消交易、退貨，該筆加油金額將不予回饋。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「健康生活」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">回饋係以刷卡簽單上之特約商店名稱認定，請依刷卡簽單或CUBE App消費資訊中查看為準，非以發票上列示之商家名稱為依據。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">台塑生醫、台塑蔬菜限實體門市，不適用網路商城。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">長庚生技限實體門市，不適用網路商城及設立於百貨、商場內之實體門市。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">藥品不適用此活動。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">限直接使用CUBE信用卡刷卡或使用該卡加入Apple Pay/Samsung Pay/Google Pay/Garmin Pay/台塑石油Pay支付，皆不含透過綠界支付平台、藍新支付平台、91App或其它第三方支付平台之交易，亦不含透過綁定其他型態支付工具之消費(如：LINE Pay、街口支付、全盈+PAY、全支付、Pi錢包、橘子支付、歐付寶、icash pay、OPEN錢包、My FamiPay、悠遊付、ezPay、GOMAJI Pay、friday wallet、PayPal、支付寶等)。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「指定超商」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">「7-ELEVEN實體門市」須以CUBE信用卡實體卡或綁定於OPEN錢包/Apple Pay/Samsung Pay/Google Pay/Garmin Pay支付店內消費、行動隨時取，排除菸酒、隨取卡、代收代售消費及會員訂閱制年費等消費項目。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">「全家便利商店實體門市」須以CUBE信用卡實體卡或綁定於My FamiPay/Apple Pay/Samsung Pay/Google Pay/Garmin Pay支付店內消費，排除菸酒、代收代售、儲值消費、好享券支付、 Fami錢包APP儲值等消費項目。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">「萊爾富實體門市」須以CUBE信用卡實體卡或綁定於Hi Pay/Apple Pay/Samsung Pay/Google Pay/Garmin Pay支付店內消費，排除菸酒、代收代售、HiPay儲值消費等消費項目。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">以上皆不含高速公路服務區、醫院美食街及企業辦公大樓等場域之門市。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">以上通路使用第三方支付/電子支付(如：icash Pay/全盈支付/全支付)綁卡付款恕無法享有回饋。</li>\r\n</ol>\r\n",
               "topSpace": 0,
-              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle",
               ":items": {
                "cub_cubelist_6312897_538970282": {
                 "categoryName": "加油站",
@@ -4411,7 +4415,8 @@
                "cub_cubelist_6312897_538970282",
                "cub_cubelist_1315495804",
                "cub_cubelist_1728141423"
-              ]
+              ],
+              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle"
              }
             },
             ":itemsOrder": [
@@ -4429,6 +4434,7 @@
            "root",
            "cq:metadata"
           ],
+          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
@@ -4444,11 +4450,10 @@
             "repo:modifyDate": "2026-04-20T07:08:31Z"
            }
           },
-          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           ":items": {
            "root": {
-            "columnCount": 12,
             "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+            "columnCount": 12,
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
@@ -4460,7 +4465,6 @@
               "paragraphNoticeTitle": "注意事項",
               "paragraphNoticeContent": "<ol class=\"ps-[29px] list-disc my-4\">\r\n<li>「全支付」權益方案適用期間： 2026/4/22-2026/12/31。<span style=\"font-size: 12.0pt; font-family: Calibri , sans-serif;\">CUBE</span>信用卡權益方案每正卡人每日限變更一次，附卡適用方案依正卡持卡人設定為準。<ol style=\"margin-top: 0.0cm;\" start=\"1\" type=\"1\">\r\n</ol>\r\n</li>\r\n<li>本活動僅限以全支付綁定CUBE信用卡付款消費。</li>\r\n<li>正卡人以綁定於全支付之CUBE信用卡所支付消費款項，得同時適用本活動與【小樹點（信用卡）立即折抵】，當次消費之回饋點數計算係以折抵後實際刷卡金額為基礎，非以原始消費金額。</li>\r\n<li>「全支付」權益方案屆期時，本行系統將於2027/1/1 00:00～02:00為正卡人自動切換為「集精選」權益方案，若當日有切換權益需求，請於02:00後進行切換。</li>\r\n<li>「全支付」權益方案不分權益分級等級統一享全支付國內指定合作通路消費2%小樹點(信用卡)回饋。</li>\r\n<li>除本行已公告一般消費排除項目外，以下消費品項亦不列入本活動回饋計算：全支付刷卡繳稅、繳費、跨境支付及全支付儲值（含信用卡儲值、現金儲值、銀行帳戶儲值等）、公益捐款及乘車碼服務、菸酒、代收代售、一歲以下嬰兒奶粉、購買紙本/電子禮券、福利卡兌換或加贈商品、官網/賣場/DM標示或公告之指定排除商品等消費，以及排除全支付所公告不適用之消費項目。</li>\r\n<li><b class=\"text-cathay-green\">自2024/02/01起於特約商店分期付款消費不適用各權益方案之「指定消費」回饋（含提前結清），僅適用原一般消費0.3%回饋。</b></li>\r\n<li><b class=\"text-cathay-green\">自2026/01/01起，CUBE信用卡每月指定消費之累計消費金額以「消費日當日信用額度」加計新臺幣50萬元為限。持卡人因信用額度異動，致當月份有不同之消費日當日信用額度時，其調整後金額上限，不溯及適用至當月已核發小樹點(信用卡)之消費，超出此限額之消費僅適用一般消費0.3%回饋。</b></li>\r\n<li>持卡人於網路商店購物時，應注意是否為跨境交易。凡特約商店所在地登記為國外者或交易（含辦理退款）之貨幣非為新臺幣者，交易須收取國外交易手續費，相關費用依信用卡約定條款第十六條國外交易授權結匯辦理，且非屬本活動所適用之指定消費範圍，請參閱本行信用卡約定條款約定。註：網頁以「tw」為網域名稱者，或於我國有設立分公司者，並非當然屬於我國境內特約商店，持卡人仍須注意是否為跨境交易。</li>\r\n<li>若有任何因為電腦、網路、電話、技術或不可歸責於本行之事由，而使持卡人之交易紀錄有遺失、錯誤、無法辨識或毀損情況，本行不負任何法律責任，持卡人亦不得因此異議。</li>\r\n<li>本權益方案之相關活動辦法、未盡事項或變更，悉依本行/全支付/各合作店家規定及解釋為準。</li>\r\n<li>本行與全支付保留活動修改、變更及終止之權利，並於本行網站公告。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n",
               "topSpace": 100,
-              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle",
               ":items": {
                "cub_cubelist_1315495804": {
                 "categoryName": "量販超市",
@@ -4521,7 +4525,8 @@
               ":itemsOrder": [
                "cub_cubelist_1315495804",
                "cub_cubelist_616023404"
-              ]
+              ],
+              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle"
              }
             },
             ":itemsOrder": [
@@ -4539,6 +4544,7 @@
            "root",
            "cq:metadata"
           ],
+          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
@@ -4554,11 +4560,10 @@
             "repo:modifyDate": "2025-12-02T10:18:45Z"
            }
           },
-          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           ":items": {
            "root": {
-            "columnCount": 12,
             "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+            "columnCount": 12,
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
@@ -4570,7 +4575,6 @@
               "paragraphNoticeTitle": "注意事項",
               "paragraphNoticeContent": "<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px; color: rgb(38,168,98);\">指定線上消費</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「網購平台」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">蝦皮購物包含台灣蝦皮全站消費，惟不包含LINE PAY交易、街口支付及shopeeads(蝦皮加值服務中心)等任何形式廣告購買消費。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">蝦皮購物消費回饋不含以下類型之商品或服務：黃金、白銀等貴金屬、珠寶、遊戲點數、各類實體或電子票券（如百貨禮券、餐飲券、電影票券、住宿券、提貨券）。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">蝦皮購物特定商店之排除： 部分商店可能同時販售上述不適用回饋之商品，然消費回饋之認定依本行系統為主，本行將依商店提供之交易說明比對。<ul>\r\n<li class=\"mb-2.5 ps-[5px]\">※ 不適用回饋之商店名單舉例：遊戲點數旗艦店、蝦皮票券服務館內所有品項及賣場…等，包含但不限於以上商店。&nbsp;</li>\r\n<li class=\"mb-2.5 ps-[5px]\">※持卡人於上列之賣場結帳刷CUBE卡，系統將自動判定該筆訂單總金額不符合CUBE卡「玩數位」權益方案回饋資格，該賣場之所有消費(含一般商品)僅將回饋0.3%小樹點(信用卡)。</li>\r\n</ul>\r\n</li>\r\n<li class=\"mb-2.5 ps-[5px]\">momo購物網僅限網路購物並以momo-EC請款之款項，不包含momo購物台、momo-TV等。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">PChome 24h購物各通路含線上購物、24h購物、手機APP、PChome 24h書店，不含商店街、支付連PChomePay、海外代購及PChome旅遊，亦不包含使用任何平台代扣繳費、購買廣告等。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">PChome 24h購物消費回饋排除PChome儲值及電子票券商品之整筆訂單消費。即持卡人於PChome 24h購物之購物車結帳刷CUBE卡且該筆購物車內商品含有PChome儲值或電子票券等排除商品，系統將自動判定該筆訂單總金額不符合CUBE卡「玩數位」權益方案回饋資格，訂單之所有商品消費(含一般商品)僅將回饋0.3%小樹點(信用卡)回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">PChome 24h購物一般商品建議與排除商品(PChome儲值及電子票券)分開購物車結帳，以確保消費能獲得「玩數位」權益方案指定消費回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">酷澎包含台灣酷澎全站消費，惟不包含LINE PAY交易、街口支付等。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「 Apple 媒體服務」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">持卡人持CUBE卡於 Apple 媒體服務刷卡消費且該筆消費適用「玩數位」權益方案，即享刷卡金額之指定回饋率小樹點(信用卡) 回饋；若該筆消費適用其他權益方案，將依一般消費計算回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">Apple 媒體服務消費認列通路含 App Store , Apple Music , iCloud , Apple TV+ , Apple Arcade , Apple One , iTunes 等 Apple 媒體服務訂閱及購買之交易(包括於 App Store , iTunes 商店內購買App/Game，及於App內透過 Apple ID 綁定國泰世華CUBE卡付款之消費，如購買LINE代幣等)，不含 Apple Store 之交易。實際回饋以本行系統判定為 Apple 媒體服務為準。</li>\r\n</ol>\r\n",
               "topSpace": 100,
-              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle",
               ":items": {
                "cub_cubelist_616023404": {
                 "categoryName": "AI工具",
@@ -4757,7 +4761,8 @@
                "cub_cubelist_1315495804",
                "cub_cubelist_631289756",
                "cub_cubelist_1728141423"
-              ]
+              ],
+              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle"
              }
             },
             ":itemsOrder": [
@@ -4775,6 +4780,7 @@
            "root",
            "cq:metadata"
           ],
+          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
@@ -4790,11 +4796,10 @@
             "repo:modifyDate": "2025-12-02T09:42:44Z"
            }
           },
-          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           ":items": {
            "root": {
-            "columnCount": 12,
             "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+            "columnCount": 12,
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
@@ -4806,7 +4811,6 @@
               "paragraphNoticeTitle": "注意事項",
               "paragraphNoticeContent": "<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px; color: rgb(38,168,98);\">指定美食/購物消費</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「遠東SOGO百貨」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">限切換【樂饗購】權益方案，享指定消費小樹點(信用卡)回饋；若切換其他權益方案，將依一般消費0.3%回饋計算。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">遠東SOGO百貨部分櫃位/購買禮券/商品券及菸類商品/LINE Pay/藍新支付平台之刷卡消費恕無法參加本活動，請依各櫃位資訊及現場活動公告為準。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「國內百貨」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">各權益方案之「指定消費」或「優惠券」消費，限直接使用CUBE卡刷卡或使用該卡加入Apple Pay、Samsung Pay、Google Pay、Garmin Pay消費，皆不含透過綁定其他型態支付工具之消費(如：LINE Pay、街口支付、全盈+PAY、全支付、Pi錢包、橘子支付、歐付寶、icash pay、OPEN錢包、悠遊付、My FamiPay、ezPay、GOMAJI Pay、friday wallet、PayPal等)；及皆不含透過綠界支付平台、藍新支付平台之交易。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">百貨附設之電影院不適用。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">國內百貨回饋資格係以刷卡簽單上之特店名稱認定，<b>不包含店中櫃，如：無印良品｜UNIQLO｜GU｜Gap｜H&amp;M｜ZARA｜lululemon…等</b>。請依刷卡簽單或CUBE App消費資訊中查看，非以發票上列示之商家名稱為依據。</li>\r\n</ol>\r\n<p style=\"margin-left: 28.0px;\">※例如：台北101之APPLE STORE為百貨公司店中櫃，簽單上之特店名稱為：APPLE STORE，故不符合【樂饗購】指定消費回饋。</p>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「外送平台」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">Uber Eats 認列之消費，不包含 Uber One 之優饗方案。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「國內餐飲」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">「國內餐飲」認列之餐廳：限交易地點為臺灣之餐飲消費且依收單機構所設定登錄之餐廳分類代碼<br>\r\n(MCC code為5811、5812、5814、5462)為判斷依據。餐廳回饋係以刷卡簽單上之特約商店名稱認定，請依刷卡簽單或CUBE App消費資訊中查看為準，非以發票上列示之商家名稱為依據。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本活動回饋適用範圍涵蓋，透過聯合信用卡中心小額支付平台收費之餐廳，如飲料店、早餐店、連鎖速食店...等行業，並限選定「樂饗購」權益方案，方可獲指定消費回饋，選定其他方案則不予回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本活動回饋不包含購買餐券，如單筆消費NT$10萬(含)以上之饗賓集團禮券，本行有權檢視各交易行為，持卡人若不符合或違反本活動規定事項者，經本行查證後將逕行扣回已回饋之小樹點(信用卡)。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本活動回饋不適用：飯店/酒店/旅館/KTV/酒吧/俱樂部/商場(如量販商場、車站商場、機場美食街、國道服務區美食街)所設立之餐廳、夜總會、菸酒販賣商。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">倘因該特約商店登錄於收單機構之代碼與其營業項目不相符，導致未能正確判斷，消費則不列入本回饋計算。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「誠品生活」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">認列之消費不包含誠品線上購物、勤美誠品綠園道(商場)之消費。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「康是美」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">持卡人持CUBE卡於康是美刷卡消費且該筆消費適用樂饗購權益方案，即享指定消費之小樹點(信用卡)回饋；若該筆消費適用其他權益方案，將依一般消費計算回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">適用於「康是美實體門市及康是美網購eShop<b>(不含黃金等貴金屬、儲值、票券；若訂單內含黃金等貴金屬、儲值、票券等將整筆訂單不適用樂饗購最高3.3%小樹點(信用卡)回饋，僅適用原一般消費0.3%小樹點(信用卡)回饋</b>」消費，惟實體門市不含百貨、商場門市，實際排外門市請依康是美規定為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本行並未介入商品之交付或商品瑕疵等買賣之實體關係，相關商品退貨或服務取消之退款事宜，持卡人應先洽康是美尋求解決，如無法解決，得要求本行就該筆交易以「帳款疑義之處理程序」辦理。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「屈臣氏」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">持卡人持CUBE卡於屈臣氏刷卡消費且該筆消費適用樂饗購權益方案，即享指定消費之小樹點(信用卡)回饋；若該筆消費適用其他權益方案，將依一般消費計算回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">適用於「屈臣氏實體門市、官方網路商店及屈臣氏APP」消費，惟實體門市不含百貨、商場門市，實際排外門市請依屈臣氏規定為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本行並未介入商品之交付或商品瑕疵等買賣之實體關係，相關商品退貨或服務取消之退款事宜，持卡人應先洽屈臣氏尋求解決，如無法解決，得要求本行就該筆交易以「帳款疑義之處理程序」辦理。</li>\r\n</ol>\r\n",
               "topSpace": 100,
-              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle",
               ":items": {
                "cub_cubelist_1315495_2050890986": {
                 "categoryName": "CUBE餐飲活動",
@@ -5142,7 +5146,8 @@
                "cub_cubelist_631289756",
                "cub_cubelist_1728141423",
                "cub_cubelist_616023404"
-              ]
+              ],
+              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle"
              }
             },
             ":itemsOrder": [
@@ -5160,6 +5165,7 @@
            "root",
            "cq:metadata"
           ],
+          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
@@ -5175,11 +5181,10 @@
             "repo:modifyDate": "2025-12-02T10:18:58Z"
            }
           },
-          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           ":items": {
            "root": {
-            "columnCount": 12,
             "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+            "columnCount": 12,
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
@@ -5191,7 +5196,6 @@
               "paragraphNoticeTitle": "注意事項",
               "paragraphNoticeContent": "<p style=\"font-size: 20.0px; color: rgb(38,168,98);\" class=\"text-xl mb-2.5 break-all font-cathay-medium\">指定旅遊/交通消費</p>\r\n<p style=\"font-size: 20.0px;\" class=\"text-xl mb-2.5 break-all font-cathay-medium\">「海外實體消費」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">指交易地點非台灣或交易幣別非台幣，使用實體信用卡過卡或感應式刷卡(含使用該卡加入Apple Pay、Samsung Pay、Google Pay、Garmin Pay消費，且須為面對面交易，儲值不列入計算)。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">「國外餐飲」認列之餐廳：限交易地點非臺灣或交易幣別非台幣之餐飲消費且依收單機構所設定登錄之餐廳分類代碼(MCC code為5811、5812、5814)為判斷依據。倘因該特約商店登錄於收單機構之代碼與其營業項目不相符，導致未能正確判斷，消費則不列入本回饋計算。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">排除項目：醫療事業(包括但不限於就醫)、博奕類交易(如: 賭博、賭場消費、賭博籌碼等)、飛機/郵輪上之消費、未經主管機關核准之境外投資交易平台(包括但不限於eToro)、其他經本行公告排除之項目(包括但不限於保費)。</li>\r\n</ol>\r\n<p style=\"font-size: 20.0px;\" class=\"text-xl mb-2.5 break-all font-cathay-medium\">「日本指定遊樂園」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">含遊樂園內商店實體消費及門票預訂(限官網或官方App購票，不含旅行社、線上旅遊平台購票)，不含遊樂園外之市區街邊店。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">消費幣別需為日圓或消費國別為日本，並依據特約商店與收單機構登錄之特店名稱判斷。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">不含遊樂園附設飯店。</li>\r\n</ol>\r\n<p style=\"font-size: 20.0px;\" class=\"text-xl mb-2.5 break-all font-cathay-medium\">「指定航空公司」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>係指以信用卡刷卡購買之指定國內外航空公司機票(限航空公司臨櫃、官網購票或航空公司APP，不含旅行社、線上旅遊平台、旗下子公司購票)，且不包含「機上免稅商品」、「機場商店」、「貴賓室」、「哩程數」、「套裝行程」、「以哩程數全數或部份兌換機票之附加費用(包含但不限於升等/行李/稅/費用或其他)」等非購買機票之消費。</li>\r\n<li>中華航空不含「華信航空」。</li>\r\n<li>長榮航空不含「立榮航空」。</li>\r\n<li>亞洲航空AirAsia Move限機票消費，不含「旅館」、「SNAP!」、「叫車服務」、「保險」、「MOVETIX」、「Asean Pass」等消費。</li>\r\n<li>大韓航空不含「韓亞航空」。</li>\r\n</ol>\r\n<p style=\"font-size: 20.0px;\" class=\"text-xl mb-2.5 break-all font-cathay-medium\">「指定飯店住宿」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">國內飯店住宿：包含台、澎、金、馬地區民宿、青年旅館、連鎖飯店等訂房，不包含樂園套票、俱樂部、租期30天以上之長租公寓、飯店/酒店/旅館所附設之餐廳、美食街、代訂服務或相關精品商店等(不包含於旅行社預訂飯店，如欲於旅行社訂購飯店住宿相關商品，請參考國內旅行社之指定旅行社進行消費)。若符合上述條件後仍有疑義，再依收單機構所設定登錄之住宿相關分類代碼 (MCC code為3500~3999、7011、7012、7032、7033) 為判斷依據。倘因該特約商店登錄於收單機構之代碼與其營業項目不相符，導致未能正確判斷消費，則不列入本回饋計算。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">指定飯店集團：係指於指定飯店集團臨櫃、官網以信用卡刷卡付款之訂房(不包含套票、機加酒、於旅行社預訂飯店，如欲於旅行社訂購飯店住宿相關商品，請參考國內旅行社之指定旅行社進行消費)，且符合依收單機構所設定登錄之住宿相關分類代碼 (MCC code為3500~3999、7011、7012、7032、7033)。倘因該特約商店登錄於收單機構之代碼與其營業項目不相符，導致未能正確判斷消費，則不列入本回饋計算。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">星野集團、全球迪士尼飯店限訂房，不含套票、機加酒、郵輪等消費。</li>\r\n</ol>\r\n<p style=\"font-size: 20.0px;\" class=\"text-xl mb-2.5 break-all font-cathay-medium\">「國內外交通」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">SUICA、PASMO、ICOCA限以「Apple 錢包」加入交通卡進行綁定儲值。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">高鐵消費回饋通路包含：高鐵網站、高鐵APP、高鐵臨櫃、高鐵自動售票機，不含補票、車上推車消費; 實際回饋以本行系統判定為高鐵消費為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">指定叫車平台限綁定CUBE卡於平台支付消費 (包括台灣大車隊App)。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">國內交通僅限短程叫車服務，不含「長租車」、「機場接送」、「代駕服務」、「企業長租」、「訂閱租賃」、「中古車租賃」等消費。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">Uber含國內外搭乘使用。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">Grab限搭乘使用，不含Grab訂閱費。</li>\r\n</ol>\r\n<p style=\"font-size: 20.0px;\" class=\"text-xl mb-2.5 break-all font-cathay-medium\">「國內旅行社」</p>\r\n<p>係指於指定國內旅行社(限直營)以信用卡刷卡購買之旅遊商品，不包含加盟店、旗下子公司之消費。</p>\r\n<p style=\"font-size: 20.0px;\" class=\"text-xl mb-2.5 break-all font-cathay-medium\">「旅遊/訂房平台」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">【趣旅行權益】使用小叮嚀：當您訂購旅遊商品 (如國內外訂房、旅行社預訂飯店及行程)時，飯店可能會進行信用卡預授權(依商戶的請求先佔用信用卡中一部分額度，以確認您的卡片是有效的且有足夠的額度來支付預訂費)，或使用先預訂後付/延後付款/到店付款等支付方式，此時飯店還不會進行實際信用卡扣款交易，請務必留意需於飯店實際扣款當日切換為【趣旅行權益】，若實際付款當日未切換為【趣旅行】權益，將導致該筆消費不適用趣旅行回饋方案，恕無法再以任何形式要求追溯或提供該筆刷卡金額之小樹點(信用卡)回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">不含跳轉至外部網站結帳或到店付款之消費，如Klook Protect保險、部分展演活動、Klook租車取車時付款。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">Booking.com不包含「租車」、「景點」、「活動」、「計程車」。&nbsp;</li>\r\n</ol>\r\n",
               "topSpace": 100,
-              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle",
               ":items": {
                "cub_cubelist_1315495804": {
                 "categoryName": "指定海外消費",
@@ -5625,7 +5629,8 @@
                "cub_cubelist_2016399573",
                "cub_cubelist",
                "cub_cubelist_874726023"
-              ]
+              ],
+              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle"
              }
             },
             ":itemsOrder": [
@@ -5643,6 +5648,7 @@
            "root",
            "cq:metadata"
           ],
+          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
@@ -5658,11 +5664,10 @@
             "repo:modifyDate": "2025-12-02T10:19:15Z"
            }
           },
-          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           ":items": {
            "root": {
-            "columnCount": 12,
             "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+            "columnCount": 12,
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
@@ -5674,7 +5679,6 @@
               "paragraphNoticeTitle": "注意事項",
               "paragraphNoticeContent": "<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px; color: rgb(38,168,98);\">指定品牌/生活消費</p>\r\n<ol class=\"ps-[29px] list-disc my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">限直接使用CUBE卡刷卡或使用該卡加入Apple Pay /Samsung Pay/Google Pay/Garmin Pay消費或以CUBE卡綁定指定支付工具，並選定「集精選」方案方可獲指定消費回饋。</li>\r\n</ol>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「車麻吉(不含加油、充電)」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">限透過車麻吉App綁定卡號付款。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「uTagGo(不含月租停車)」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">uTagGo(不含月租停車) 限uTagGo停車費線上繳及uTagGo自動繳的全台路邊停車、合作停車場停車費，不包含月租停車費。</li>\r\n</ol>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「萬家福(樂家康)」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">本活動不適用於：萬家福線上購物、會員換購、菸類、酒類商品、代收代售消費、藥局藥品、嬰幼兒奶粉與配方食品、團購商品、萬家福(樂家康)商品提貨券、儲值禮物卡、儲值萬家福(樂家康)錢包或使用儲值金消費、萬家福(樂家康)錢包綁卡消費、虛擬儲值(如電話預付卡、線上遊戲點數卡、KKBOX等)、安裝運費、台北市/新北市專用垃圾袋與環保兩用袋、預購、大宗採購<a href=\"https://www.carrefour.com.tw/b2b-en/\" class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\">(依萬家福(樂家康)定義)</a>、美食街、商店街之消費金額之消費金額。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">持卡人若不符合或違反本活動規定事項者，本行保留取消活動資格的權利，已取得之回饋小樹點(信用卡)本行將於次月逕行扣回。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">國泰世華銀行及萬家福(樂家康)有權檢視各交易行為，若持卡人涉及蓄意人為操作等不正當行為，國泰世華銀行及萬家福(樂家康)除有排除該不正當行為人參與本活動之資格外，亦將依法對該不正當行為人進行主張。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「LOPIA台灣」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">本活動僅限於台灣地區之LOPIA超市消費，不含設立於新光三越之門市、台北遠東 Garden City 大巨蛋店與附屬餐廳之消費、，如「肉割烹-黑泉」等。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本活動不適用於：會員換購、菸類商品、代收代售消費、藥局藥品、嬰幼兒奶粉與配方食品、團購商品之消費金額。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">持卡人若不符合或違反本活動規定事項者，本行保留取消活動資格的權利，已取得之回饋小樹點(信用卡)本行將於次月逕行扣回。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">國泰世華銀行及日商樂比亞有權檢視各交易行為，若持卡人涉及蓄意人為操作等不正當行為，國泰世華銀行及日商樂比亞除有排除該不正當行為人參與本活動之資格外，亦將依法對該不正當行為人進行主張。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「全聯福利中心」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">「全聯福利中心實體門市」店內消費(含PX Pay綁卡交易，不含全支付綁卡交易)，排除PX pay線上購物/儲值、全聯隔日達、全聯小時達、全聯全電商、菸酒、代收代售、一歲以下嬰兒奶粉、印花活動商品、積分活動商品、點數換購商品、禮券購買消費(含PX Pay App線上購買樂透卡/禮卡)，限選定「集精選」方案方可獲指定消費回饋，選定其他方案則不予回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">不含高速公路服務區、醫院美食街及企業辦公大樓等場域之門市。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「台灣中油-直營站」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">本活動回饋之中油「直營站」加油站限於<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://www.cpc.com.tw/cp.aspx?n=34\">中油網站公告</a>之中油直營站為準，排除網路交易、電子票證、錢包儲值交易及第三方支付绑卡掃碼付款交易(例如: 中油Pay、街口支付、LINE Pay、台灣Pay、悠遊付、Pi拍錢包、橘子支付、支付寶等)。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本活動回饋不適用加氣站及任何不屬於加油站內之加油消費；若付款失敗、取消交易、退貨，該筆加油金額將不予回饋。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「指定超商」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">「7-ELEVEN實體門市」(含OPEN錢包於店內支付、行動隨時取)，排除菸酒、隨取卡、代收代售消費及會員訂閱制年費，限選定「集精選」方案方可獲指定消費回饋，選定其他方案則不予回饋。非7-ELEVEN實體門市及icash pay不適用。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">「全家便利商店實體門市」(含My FamiPay)於店內消費，排除菸酒、代收代售、儲值消費、全+1商城以My FamiPay支付、全家行動購、好享券支付，限選定「集精選」方案方可獲指定消費回饋，選定其他方案則不予回饋。Fami錢包APP儲值不回饋（全家認列儲值為代收故不回饋）。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">以上皆不含高速公路服務區、醫院美食街及企業辦公大樓等場域之門市。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">以上通路使用第三方支付/電子支付(ex. icash Pay/全盈支付/全支付)綁卡付款恕無法享有回饋。</li>\r\n</ol>\r\n",
               "topSpace": 100,
-              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle",
               ":items": {
                "cub_cubelist_6312897_538970282": {
                 "categoryName": "充電站",
@@ -5857,7 +5861,8 @@
                "cub_cubelist_631289756",
                "cub_cubelist_1728141423",
                "cub_cubelist_616023404"
-              ]
+              ],
+              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle"
              }
             },
             ":itemsOrder": [
@@ -5875,26 +5880,26 @@
            "root",
            "cq:metadata"
           ],
+          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
         },
-        "cub_experiencefragme_372861707": {
+        "cub_experiencefragme_1735352367": {
          "experienceFragment": {
-          "id": "experiencefragment-c4a9525910",
+          "id": "experiencefragment-e32967c3f9",
           "localizedFragmentVariationPath": "/content/experience-fragments/cub-aem-cs/zh-tw/cube-list1/master321/jcr:content",
           "configured": true,
           "dataLayer": {
-           "experiencefragment-c4a9525910": {
+           "experiencefragment-e32967c3f9": {
             "@type": "core/wcm/components/experiencefragment/v2/experiencefragment",
             "repo:modifyDate": "2026-07-14T07:18:15Z"
            }
           },
-          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           ":items": {
            "root": {
-            "columnCount": 12,
             "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+            "columnCount": 12,
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
@@ -5906,7 +5911,6 @@
               "paragraphNoticeTitle": "注意事項",
               "paragraphNoticeContent": "<p style=\"font-size: 20.0px; color: rgb(38,168,98);\" class=\"text-xl mb-2.5 break-all font-cathay-medium\">「固定回饋」權益方案切換規則</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">「固定回饋」權益方案適用期間：2026/8/3-2026/12/31。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">固定回饋權益方案之「指定消費」皆已包含一般消費回饋0.3%。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">自2026/8/3起，持卡人可選擇切換至「固定回饋」權益方案，切換後自變更日當日零時起至2026/12/31為止，所有消費皆依「固定回饋」權益方案計算回饋。<ul class=\"ps-[29px] list-disc\">\r\n<li class=\"mb-2.5 ps-[5px]\">舉例：小皮2026/8/5變更為「固定回饋」後，到12/31前僅適用固定回饋權益方案，不得再切換至其他權益方案，2026/8/5-12/31期間消費回饋點數計算詳見下方表格。</li>\r\n</ul>\r\n<div class=\"w-full overflow-auto\"><table class=\"bg-white w-full\">\r\n<thead><tr><th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"20%\">消費項目</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"20%\">消費金額</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"25%\">消費類別</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"15%\">回饋率</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"20%\">回饋點數</th>\r\n</tr></thead><tbody><tr><td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\"><p style=\"text-align: center;\">LINE PAY-屈臣氏</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">NT$200</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">一般消費(不含保費)</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">1.2%</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">2</p>\r\n<p style=\"text-align: center;\">(200*1.2%=2.4)</p>\r\n</td>\r\n</tr><tr><td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">LINE PAY-7-11</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">NT$100</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">非一般消費</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">0%</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">0</p>\r\n<p style=\"text-align: center;\">(100*0%=0)</p>\r\n</td>\r\n</tr><tr><td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">國壽傳統型保費</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">NT$20,000</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">一般消費</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">0.3%</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">60</p>\r\n<p style=\"text-align: center;\">(20,000*0.3%=60)</p>\r\n</td>\r\n</tr><tr><td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">日本實體消費</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">NT$5,000</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">指定消費-海外實體</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">2.5%</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">125</p>\r\n<p style=\"text-align: center;\">(5,000*2.5%=125)</p>\r\n</td>\r\n</tr><tr><td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">新光三越(分期)</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">NT$10,000</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">特約商店分期</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">0.3%</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">30</p>\r\n<p style=\"text-align: center;\">(10,000*0.3%=30)</p>\r\n</td>\r\n</tr></tbody></table>\r\n</div>\r\n</li>\r\n<li class=\"mb-2.5 ps-[5px]\">固定回饋權益自變更日起至適用期間屆滿（2026/12/31），不得再切換至其他權益，至2027/1/1始可再重新切換至其他權益。如「固定回饋」權益於2027/1/1後不再適用，本行系統將於2027/1/1 00:00-02:00自動切換為「樂饗購」權益方案，若當日有切換權益需求，請於02:00後進行切換。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">持卡人於「固定回饋」權益適用期間內，享有一次「自固定回饋權益切換為其他權益」或「自其他權益方案切換為固定回饋權益」之權利。持卡人於申辦時預設為固定回饋權益時，於核卡後仍可變更一次。<ul class=\"ps-[29px] list-disc\">\r\n<li class=\"mb-2.5 ps-[5px]\">舉例一：阿華於2026/8/3申辦CUBE信用卡並選擇預設權益方案為「固定回饋」，2026/8/4通知阿華核卡後，阿華仍保有一次切換至其他權益方案的權利。惟當阿華於2026/9/1選擇切換至「集精選」權益後，阿華在2026/12/31前皆不得再次切換至「固定回饋」權益。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">舉例二：阿國2026/8/3、2026/8/4皆選擇「集精選」權益，2026/8/5變更為「固定回饋」後，到12/31前僅適用固定回饋權益方案，不得再切換至其他權益方案。阿國此段期間消費回饋點數計算詳見下方表格：</li>\r\n</ul>\r\n<div class=\"w-full overflow-auto\"><table class=\"bg-white w-full\">\r\n<thead><tr><th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"15%\"><p>消費日</p>\r\n</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"15%\">權益方案</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"20%\">消費通路</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"10%\">消費金額</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"15%\">消費類別</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"10%\">回饋率</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"15%\">回饋點數</th>\r\n</tr></thead><tbody><tr><td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\"><p style=\"text-align: center;\">2026/8/3</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">集精選</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">LINE PAY-屈臣氏</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">NT$200</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">非指定消費</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">0.3%</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">1</p>\r\n<p style=\"text-align: center;\">(200*0.3%=0.6)</p>\r\n</td>\r\n</tr></tbody><tbody><tr><td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\"><p style=\"text-align: center;\">2026/8/3</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">集精選</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">全聯福利中心</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">NT$200</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">指定消費</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">2%</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">4</p>\r\n<p style=\"text-align: center;\">(200*2%=4)</p>\r\n</td>\r\n</tr></tbody><tbody><tr><td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\"><p style=\"text-align: center;\">2026/8/4</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">集精選</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">日本實體消費</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">NT$200</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">非指定消費</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">0.3%</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">1</p>\r\n<p style=\"text-align: center;\">(200*0.3%=0.6)</p>\r\n</td>\r\n</tr></tbody><tbody><tr><td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\"><p style=\"text-align: center;\">2026/8/5</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">固定回饋</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">LINE PAY-屈臣氏</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">NT$200</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">一般消費(不含保費)</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">1.2%</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">2</p>\r\n<p style=\"text-align: center;\">(200*1.2%=2.4)</p>\r\n</td>\r\n</tr></tbody><tbody><tr><td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\"><p style=\"text-align: center;\">2026/8/5</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">固定回饋</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">全聯福利中心</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">NT$200</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">非一般消費</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">0%</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">0</p>\r\n<p style=\"text-align: center;\">(200*0%=0)</p>\r\n</td>\r\n</tr></tbody><tbody><tr><td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\"><p style=\"text-align: center;\">2026/8/10</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">固定回饋</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">日本實體消費</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">NT$200</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">指定消費-海外實體</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">2.5%</p>\r\n</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\"><p style=\"text-align: center;\">5</p>\r\n<p style=\"text-align: center;\">(200*2.5%=5)</p>\r\n</td>\r\n</tr></tbody></table>\r\n</div>\r\n</li>\r\n</ol>\r\n<p style=\"font-size: 20.0px;\" class=\"text-xl mb-2.5 break-all font-cathay-medium\">「一般消費(不含保費)」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>固定回饋權益中「一般消費（不含保費）」回饋，排除以下消費或費用：保費、信用卡相關利息及費用(包含但不限於利息、年費、掛失費、預借現金手續費、違約金、國外交易手續費、調閱簽帳單手續費、補發帳單手續費等非消費款項)、預借現金、帳單分期、單筆消費分期(刷卡樂分期)、通信貸款、餘額代償金額及經本行公告除外之專案、稅款、學費、公用事業費用(包含但不限於網路通訊／影音服務等相關費用及附加費)、路邊停車費、公務機關各項費用、透過繳費平台（如<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://www.nccc.com.tw/wps/wcm/connect/zh/home/BusinessOperations/CardBusiness\">公務機關暨醫療院所信用卡繳費平台</a>，含公務機關／國營事業／公私立醫療院所等、電子化繳費稅處理平台、醫指付、本行CUBE網銀或CUBE App線上繳費服務)繳納之費用、代繳國泰人壽「躉繳」、「投資型」及「利率變動型年金」保單、代扣基金、悠遊卡加值、一卡通加值、icash加值、便利超商消費、透過聯合信用卡處理中心小額支付平台之特約商店之消費（如便利超商、連鎖速食店、停車費等）、<b>全聯福利中心消費、大全聯消費（含實體門市與線上通路）</b>、eTag儲值/eTag智慧停車費代扣繳、遠東SOGO百貨貴賓廳之消費金額、國壽不動產租金代收、未經主管機關核准之境外投資交易平台（包含但不限於eToro）、匯兌平台（包含但不限於Wise）、數位（虛擬）貨幣及旅行支票（包含但不限於MCC code為4829、6012、6211、6051）之交易、博奕類（包含但不限於MCC code為7995）之交易、其他經本行公告排除之項目。</li>\r\n<li>持卡人於網路商店購物時，應注意是否為跨境交易。凡特約商店所在地登記為國外者或交易(含辦理退款)之貨幣非為新臺幣者，交易須收取國外交易手續費，相關費用依信用卡約定條款第十六條國外交易授權結匯辦理，請參閱本行信用卡定型化契約。<span style=\"color: rgb(255,0,0);\">註：網頁以「tw」為網域名稱者，或於我國有設立分公司者，並非當然屬於我國境內特約商店，持卡人仍須注意是否為跨境交易。</span></li>\r\n<li>除國泰人壽之躉繳保費、投資型及利率變動型年金保費依小樹點（信用卡）累積辦法屬不予點數回饋（0%）之消費項目，其他保費仍適用一般消費回饋0.3%小樹點（信用卡）。</li>\r\n</ol>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「海外實體消費」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>指交易地點非台灣或交易幣別非台幣，使用實體信用卡過卡或感應式刷卡(含使用該卡加入Apple Pay、Samsung Pay、Google Pay、Garmin Pay消費，且須為面對面交易，儲值不列入計算)。</li>\r\n<li>「國外餐飲」認列之餐廳：限交易地點非臺灣或交易幣別非台幣之餐飲消費且依收單機構所設定登錄之餐廳分類代碼(MCC code為5811、5812、5814)為判斷依據。倘因該特約商店登錄於收單機構之代碼與其營業項目不相符，導致未能正確判斷，消費則不列入本回饋計算。</li>\r\n<li>排除以下消費或費用：醫療事業(包括但不限於就醫)、博奕類交易(如: 賭博、賭場消費、賭博籌碼等)、飛機/郵輪上之消費、未經主管機關核准之境外投資交易平台(包括但不限於eToro)、其他依小樹點（信用卡）累積辦法與相關公告排除之消費項目。</li>\r\n</ol>\r\n",
               "topSpace": 100,
-              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle",
               ":items": {
                "cub_cubelist_6312897_538970282": {
                 "categoryName": "一般消費(不含保費) 1.2%",
@@ -5954,7 +5958,8 @@
               ":itemsOrder": [
                "cub_cubelist_6312897_538970282",
                "cub_cubelist_1315495"
-              ]
+              ],
+              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle"
              }
             },
             ":itemsOrder": [
@@ -5972,6 +5977,776 @@
            "root",
            "cq:metadata"
           ],
+          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
+          "classNames": "aem-xf"
+         },
+         ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
+        },
+        "cub_experiencefragme_372861707": {
+         "experienceFragment": {
+          "id": "experiencefragment-c4a9525910",
+          "localizedFragmentVariationPath": "/content/experience-fragments/cub-aem-cs/zh-tw/cube-list1/master7131/jcr:content",
+          "configured": true,
+          "dataLayer": {
+           "experiencefragment-c4a9525910": {
+            "@type": "core/wcm/components/experiencefragment/v2/experiencefragment",
+            "repo:modifyDate": "2026-11-20T09:16:02Z"
+           }
+          },
+          ":items": {
+           "root": {
+            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+            "columnCount": 12,
+            "columnClassNames": {
+             "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
+            },
+            ":items": {
+             "cub_cubelisttitle_co": {
+              "anchorKey": "jcbjprewards",
+              "mainTitle": "<h3 class=\"text-2xl font-cathay-medium mb-4\" style=\"font-size: 28.0px;\">JCB冬日遊&nbsp;<img src=\"/content/dam/cub-aem-cs/Image/Personal/product/credit-card/cube-list/treepoint.svg\" width=\"36\" style=\"display: inline;\"></h3>\r\n<p><b>適用期間：2026/12/1~2026/12/31</b></p>\r\n<p>自2024年2月1日起於特約商店分期付款消費（含提前結清），僅適用原一般消費0.3%回饋。</p>\r\n<p style=\"color: rgb(74,112,86); font-size: 28.0px; font-weight: bold;\">3%~8%</p>\r\n<p>&nbsp;</p>\r\n<p style=\"color: rgb(232,124,6); font-size: 24.0px; font-weight: bold;\"><b>CUBE JCB信用卡友限定禮遇《JCB冬日遊》</b></p>\r\n<p>&nbsp;</p>\r\n<p style=\"font-size: 20.0px; font-weight: bold;\">《JCB冬日遊》活動敬請期待！</p>\r\n",
+              "paragraphNoticeType": "large",
+              "paragraphNoticeTitle": "注意事項",
+              "paragraphNoticeContent": "<p><b>「JCB冬日遊」權益方案說明：</b></p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>「JCB冬日遊」權益方案適用期間：2026/12/1-2026/12/31，CUBE信用卡權益方案每正卡人每日限變更一次 (固定回饋另依該權益方案注意事項說明)，附卡適用方案依正卡持卡人設定為準。<b>本活動僅限使用CUBE JCB信用卡消費，皆不含CUBE簽帳金融卡、CUBE Visa信用卡及CUBE Mastercard信用卡</b>。</li>\r\n<li><b class=\"text-cathay-green\">「JCB冬日遊」權益請於2026/12/01 中午12:00後於CUBE App進行切換；新申辦之CUBE JCB信用卡於核卡後三個工作日內方可切換。</b></li>\r\n<li>「JCB冬日遊」權益方案屆期時，若權益方案仍為「JCB冬日遊」，本行系統將於2027/1/1 00:00～02:00自動切換為「集精選」權益方案，若當日有切換權益需求，請於02:00後進行切換。</li>\r\n<li><b class=\"text-cathay-green\">本活動僅適用持CUBE JCB信用卡並切換「JCB冬日遊」權益消費指定通路享回饋；持CUBE Visa信用卡及CUBE Mastercard信用卡消費僅適用原一般消費0.3%回饋</b>。</li>\r\n<li>CUBE信用卡「JCB冬日遊」之一般消費、指定消費回饋通路及CUBE信用卡權益相關注意事項，請詳閱<a href=\"https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube-list\">國泰世華CUBE信用卡權益</a>說明。</li>\r\n<li>小樹點(信用卡)點數價值為1點等值NT$1，CUBE信用卡於每筆消費請款入帳後，依該筆消費之授權日判斷適用權益方案、符合之優惠券，以各別回饋率計算小樹點(信用卡)並依小數點第一位四捨五入至整數位，並於次二日(遇假日順延)回饋至正卡人信用卡帳戶，實際回饋時間依本行作業時間為準。</li>\r\n<li><b class=\"text-cathay-green\">參加「JCB冬日遊」指定商戶之 CUBE App 領優惠券活動，卡友須於活動期間登入本行 CUBE App「CUBE 優惠券專區」完成優惠券領取，且僅限於優惠券領取日（含）後之新增消費，並於活動結束次月之指定入帳日（含）前入帳方始得列入回饋計算；回饋適用通路、回饋條件及注意事項悉依各優惠券頁面說明為準；優惠券採個別領取、分開計算且各券回饋上限不同，詳細內容請參閱各優惠券說明，詳細內容請參閱活動網頁說明。</b></li>\r\n<li>CUBE JCB信用卡權益方案之「指定消費」（包含「JCB冬日遊」之指定品牌／通路消費）或「優惠券」消費，限直接使用CUBE JCB信用卡刷卡或使用該卡加入Apple Pay行動支付工具之消費，皆不含透過綠界支付平台、藍新支付平台、91APP或其它第三方支付平台之交易，亦不含透過綁定其他型態支付工具之消費(如：LINE Pay、街口支付、全盈+PAY、全支付、Pi錢包、橘子支付、歐付寶、icash pay、OPEN錢包、My FamiPay、悠遊付、ezPay、GOMAJI Pay、friday wallet、PayPal、支付寶等)。Klook 指定日本商品消費5%回饋限直接使用CUBE JCB信用卡刷卡之消費，不含將該卡加入Apple Pay付款、亦不含LINE Pay、街口支付或其它第三方支付平台之交易。</li>\r\n</ol>\r\n<p><b>日本必逛＋遊日必備＋四大機場指定免稅店＋IP專賣店/人氣愛店</b></p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>本優惠限使用CUBE JCB 實體信用卡過卡或感應式刷卡(含使用該卡加入Apple Pay、Samsung Pay、Google Pay、Garmin Pay消費，且須為面對面交易，儲值不列入計算)，且商店請款時，商店之國別需為「日本」或適用消費幣別需為「日圓」。</li>\r\n<li>消費金額以各信用卡國際組織於匯率換算後入帳至持卡人帳單上之新臺幣為準，消費金額之計算以實際授權金額計算，凡特約商店所在地登記為國外者或交易(含辦理退款)之貨幣非為新臺幣者，交易須收取國外交易手續費，相關費用依信用卡約定條款第十六條國外交易授權結匯辦理，請參閱本行信用卡約定條款約定。</li>\r\n<li>回饋排除項目：醫療事業(包括但不限於就醫、醫學美容)、販賣機、飯店、電信、租車、交通、賭博、飛機/郵輪上之消費、未經主管機關核准之境外投資交易平台(包括但不限於eToro)、其他經本行公告排除之項目。</li>\r\n<li>消費依據特約商店與收單機構登錄之特約商店名稱判斷，不包含店中櫃。優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以發票上列示之商家名稱為依據。</li>\r\n<li>日本實體消費之各通路免稅資格、適用門檻、適用品項、辦理方式及其他相關規定，悉依日本政府最新免稅制度及各商店實際辦理規定為準；如日本免稅制度有所調整，依調整後之規定辦理。</li>\r\n</ol>\r\n<p><b>規劃海外旅遊(機票/訂房/行程)</b></p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>當您訂購旅遊商品(如國內外訂房、旅行社預訂飯店及行程)時，若採先訂後付或到店付款等支付方式，飯店可能會進行信用卡預授權，此時飯店還不會進行實際信用卡扣款交易，請務必留意需於飯店實際扣款當日切換為「JCB冬日遊」權益方案，若實際扣款當日未切換為「JCB冬日遊」權益，將導致該筆消費不適用「JCB冬日遊」回饋方案，恕無法再以任何形式要求追溯或提供該筆刷卡金額之小樹點(信用卡)回饋。</li>\r\n<li>Hotels.com 專屬網頁訂房、Expedia 專屬網頁訂房、Trip.com、Agoda、Klook、KKday等海外訂房平台進行訂房時，可能會有海外交易授權時間差問題，導致實際信用卡延遲授權或延遲扣款交易，且依各平台而有所不同，非本行系統原因所致，建議延長切換「JCB冬日遊」權益方案時間。</li>\r\n<li>訂房平台若選擇到店付款，可能會以「飯店住宿」認列進行信用卡扣款交易，消費會不適用「JCB冬日遊」權益。</li>\r\n<li>消費依據特約商店與收單機構登錄之特約商店名稱判斷。優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以發票上列示之商家名稱為依據。</li>\r\n</ol>\r\n<p><b>國內日系質感飯店</b></p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>限交易地點為臺灣之上述指定飯店消費，不包含同品牌於其他國家或地區之飯店、餐廳或其他通路消費。</li>\r\n<li>回饋適用之消費項目及範圍依各指定飯店活動頁面說明為準；各飯店之住宿、餐飲及其他館內消費如有不適用項目、指定付款方式或其他限制，依各飯店活動說明為準。</li>\r\n<li>透過第三方訂房平台、旅行社或其他第三方通路完成付款之交易，若非由活動指定飯店直接請款，恕不適用本活動回饋。</li>\r\n<li>住宿請依飯店實際訂房情況為準，恕不保證訂房。</li>\r\n<li>如採先訂後付、到店付款或其他非訂房當下完成扣款之付款方式，回饋資格以實際信用卡交易授權日判斷，持卡人須於實際授權當日切換為「JCB冬日遊」權益方案。</li>\r\n<li>消費依據特約商店與收單機構登錄之特約商店名稱判斷。優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以飯店訂房名稱、發票或收據上列示之商家名稱為依據。</li>\r\n</ol>\r\n<p><span style=\"font-weight: bolder;\">國內日系購物名店</span></p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>限交易地點為臺灣，不包含其餘海外地區之品牌／通路消費。</li>\r\n<li>UNIQLO網路商店、GU台灣網路商店、UNITED ARROWS LTD.官方購物網站：回饋加碼僅適用品牌臺灣官方網路商店並且使用CUBE JCB 信用卡輸入卡號刷卡交易。</li>\r\n<li>消費依據特約商店與收單機構登錄之特約商店名稱判斷，不含店中櫃，如：無印良品｜UNIQLO｜GU｜Gap｜H&amp;M｜ZARA｜lululemon...等百貨公司櫃位。優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以發票上列示之商家名稱為依據。</li>\r\n</ol>\r\n<p><b>國內日系美食饗宴</b></p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>限交易地點為臺灣之指定餐飲消費，不包含其餘海外地區之品牌／通路消費。</li>\r\n<li>若餐廳有基本最低消費限制，請依餐廳規定為準，若有未盡事項以餐廳說明為準。</li>\r\n<li>消費依據特約商店與收單機構登錄之特約商店名稱判斷，其他指定餐飲消費回饋範圍不包含百貨商場內(如百貨公司、家樂福、車站商場、機場美食街)設立之餐廳、inline訂位之刷卡消費、錢都日式涮涮鍋App外帶點餐。</li>\r\n<li>優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以發票上列示之商家名稱為依據。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+              "topSpace": 0,
+              ":items": {
+               "cub_cubelist_6160234": {
+                "categoryName": "日本必逛＋遊日必備之指定消費 3.5%",
+                "iconFileReference": "/content/dam/cub-aem-cs/Image/Personal/product/credit-card/cube-list/map.svg",
+                "iconAltValueFromDAM": "false",
+                "noticeType": "default",
+                "contentTrees": [
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.本活動限使用實體CUBE JCB信用卡過卡或感應式刷卡(含使用該卡加入Apple Pay消費，且須為面對面交易，儲值不列入計算) ，且商店請款時，商店之國碼需為日本。</p>\r\n<p>2.日本實體消費之消費金額以各信用卡國際組織於匯率換算後入帳至持卡人帳單上之新臺幣為準，消費金額之計算以實際授權金額計算，凡特約商店所在地登記為國外者或交易(含辦理退款)之貨幣非為新臺幣者，交易須收取國外交易手續費，相關費用依信用卡約定條款第十六條國外交易授權結匯辦理，請參閱本行信用卡約定條款約定。</p>\r\n<p>3.回饋排除項目：醫療事業(包括但不限於就醫、醫學美容)、賭博、飛機/郵輪上之消費、未經主管機關核准之境外投資交易平台(包括但不限於eToro)、其他經本行公告排除之項目。</p>\r\n<p>4.日本實體消費之各通路免稅資格、適用門檻、適用品項、辦理方式及其他相關規定，悉依日本政府最新免稅制度及各商店實際辦理規定為準；如日本免稅制度有所調整，依調整後之規定辦理。</p>\r\n",
+                    "itemText": "日本實體消費",
+                    "itemType": "small"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用日本愛電王實體門市且特約商店與收單機構登錄之特約商店名為「EDION」之實體消費，實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不適用通路包含但不限於官方線上交易、機場免稅店、EDION 蔦屋家電、日本國內通訊服務EDION NET，恕不適用本活動回饋。</p>\r\n",
+                    "itemText": "愛電王實體門市",
+                    "itemType": "small"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用日本大丸百貨福岡天神店實體門市且特約商店與收單機構登錄之特約商店名為「DAIMARU FUKUOKA TENJIN」或「HAKATA DAIMARU」之實體消費，實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不適用通路包含但不限於官方線上交易、店中櫃，恕不適用本活動回饋。 如大丸百貨之MUJIRUSHIRYOHIN(無印良品)為百貨公司店中櫃，簽單上之特店名稱為MUJIRUSHIRYOHI，故不符合本活動回饋資格。</p>\r\n",
+                    "itemText": "大丸百貨福岡天神店",
+                    "itemType": "small"
+                   },
+                   "item3": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用日本MITSUI OUTLET PARK實體商場且特約商店與收單機構登錄之特約商店名為「MITSUI OUTLET」或「MITSUI OUTLET PARK」之實體消費，實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不適用通路包含但不限於官方線上交易、店中櫃，恕不適用本活動回饋。 如MITSUI OUTLET PARK實體商場 之 Seijo Ishii (成城石井超市) 為百貨公司店中櫃，簽單上之特店名稱為SEIJYOISHII，故不符合本活動回饋資格。</p>\r\n",
+                    "itemText": "MITSUI OUTLET PARK實體商場",
+                    "itemType": "small"
+                   },
+                   "item4": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用日本台場DiverCity Tokyo Plaza且特約商店與收單機構登錄之特約商店名為「 Diver City」之實體消費，實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不適用通路包含但不限於官方線上交易、店中櫃，恕不適用本活動回饋。</p>\r\n",
+                    "itemText": "台場DiverCity Tokyo Plaza",
+                    "itemType": "small"
+                   },
+                   "item5": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用日本BicCamera 集團（包含 BicCamera、Kojima、BicCamera Select、Air BicCamera、BIC酒販）之實體消費，實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不適用通路包含但不限於官方線上交易、期間限定快閃店及其他非實體門市交易，恕不適用本活動回饋。</p>\r\n",
+                    "itemText": "BicCamera集團實體門市",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>限以「Apple 錢包」加入Suica、PASMO、ICOCA交通卡進行綁定CUBE JCB信用卡儲值。</p>\r\n",
+                    "itemText": "Apple錢包指定交通卡(Suica 、PASMO、ICOCA)",
+                    "itemType": "small"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋適用於GO Taxi App(日本叫車App)應用程式且需綁定CUBE JCB信用卡消費，特約商店與收單機構登錄之特約商店名為含「GO TAXI」、「GO App」之線上交易；實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n",
+                    "itemText": "GO Taxi App(預約叫車平台)",
+                    "itemType": "small"
+                   }
+                  }
+                 }
+                ],
+                ":type": "cub-aem-cs/components/cub-content/cub-cubelist/v1/cub-cubelist"
+               },
+               "cub_cubelist_1315495_1263175720": {
+                "categoryName": "日本四大機場指定免稅店 4%",
+                "iconFileReference": "/content/dam/cub-aem-cs/Image/Personal/product/credit-card/cube-list/shop.svg",
+                "iconAltValueFromDAM": "true",
+                "noticeType": "default",
+                "contentTrees": [
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用日本成田機場指定免稅店且特約商店與收單機構登錄之特約商店名稱為「NARITA AIRPORT」、「AIRPORT NARITA」、「SHINTOUKIYOU KOKU」或「NARITA KUUKOU」，包含出境管制區內之JAPAN DUTY FREE、Fa-So-La DUTY FREE、JAL DUTY FREE之實體消費，實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不含免稅店線上預購（含實體取貨）、機場App消費、機場餐飲、便利商店、販賣機、飯店、電信、租車、交通、貴賓室、醫療救護、停車場、WIFI及其他非指定免稅店消費。</p>\r\n",
+                    "itemText": "成田機場指定免稅店 (Fa-So-La DUTY FREE、JAPAN DUTY FREE、JAL DUTYFREE)",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用日本關西機場指定免稅店且特約商店與收單機構登錄之特約商店名為「KANSAI AIRPORT」、「KANSAI KUUKO TENANTO」、「KIX DFS」、「KIX TENANTS」、「KIX SHOPS」、「KIX CENTER」、「KIX DUTY FREE」或「KANSAI INTL AIRPORT BLDG」，包含出境管制區內之KIX DUTY FREE、TRK ARRIVAL Duty Free Shop 及 關西旅日記之實體消費，實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不含免稅店線上預購（含實體取貨）、機場App消費、機場餐飲、便利商店、販賣機、飯店、電信、租車、交通、貴賓室、醫療救護、停車場、WIFI及其他非指定免稅店消費。</p>\r\n",
+                    "itemText": "關西機場指定免稅店 (KIX DUTY FREE、TRK ARRIVAL Duty Free Shop、關西旅日記)",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用日本新千歲機場指定免稅店且特約商店與收單機構登錄之特約商店名為「NEW CHITOSE AIRPORT」、「NEW CHITOSE KUUKOU」、「CHITOSE AIRPORT 」或「SHIN CHITOS KUUKUO」；包含出境管制區內之New Chitose Airport Duty Free Shop 之實體消費，實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不含免稅店線上預購（含實體取貨）、機場App消費、機場餐飲、便利商店、販賣機、飯店、電信、租車、交通、貴賓室、醫療救護、停車場、WIFI及其他非指定免稅店消費。</p>\r\n",
+                    "itemText": "新千歲機場指定免稅店(New Chitose Airport Duty Free Shop)",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用日本福岡機場免稅店且特約商店與收單機構登錄之特約商店名為「FUKUOKA AIRPORT」、「FUKUOKAKUUKOU MENZEITEN」或「FUKUOKA DUTYFREE」；包含出境管制區內之Fukuoka Airport Duty Free Shop之實體消費，實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不含免稅店線上預購（含實體取貨）、機場App消費、機場餐飲、便利商店、販賣機、飯店、電信、租車、交通、貴賓室、醫療救護、停車場、WIFI及其他非指定免稅店消費。</p>\r\n<p>3.不適用4%回饋之商家如AirBicCamera、UNIQLO、7-Eleven、Itoya、KoKuMiN、Starbucks及HAKATA FOOD HALL之餐廳等實體通路，切換JCB冬日遊刷CUBE JCB信用卡仍適用日本實體消費3.5%回饋。</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+                    "itemText": "福岡機場免稅店 (FUKUOKA AIRPORT DUTYFREE SHOP)",
+                    "itemType": "small"
+                   }
+                  }
+                 }
+                ],
+                ":type": "cub-aem-cs/components/cub-content/cub-cubelist/v1/cub-cubelist"
+               },
+               "cub_cubelist_1315495": {
+                "categoryName": " 日本IP專賣店 / 人氣愛店 / 餐廳預約平台  5%",
+                "iconFileReference": "/content/dam/cub-aem-cs/Image/Personal/product/credit-card/cube-list/icon-employee-loan-01.svg",
+                "iconAltValueFromDAM": "false",
+                "noticeType": "default",
+                "contentTrees": [
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "IP專賣店：",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.5家指定門市包含：寶可夢中心大阪店（LUCUA SOUTH）、寶可夢中心京都店（SUINA室町）、寶可夢中心札幌店（大丸札幌店）、寶可夢中心澀谷店（澀谷 PARCO）、寶可夢中心東京 DX 店（日本橋高島屋 S.C.）。</p>\r\n<p>2. 並依據特約商店與收單機構登錄之特店名稱為「Pokemon Center」、「Pokemon Senta」判斷。</p>\r\n",
+                    "itemText": "寶可夢中心 5家指定門市",
+                    "itemType": "small"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.指定門市(14家)包含：三麗鷗淺草店、上野店、紀伊國屋書店新宿本店、原宿店（竹下通商圈）、池袋店、Vivitix Sunshine City Alpa 店、大崎店（OHSAKI NEW CITY）、橫濱店（Sky Building）、京都店、心齋橋店、難波戎橋店、神戶三宮店、廣島本通店、那霸 Main Place 店（San-A Naha Main Place）。</p>\r\n<p>2.並依據特約商店與收單機構登錄之特店名稱為「SANRIO」判斷。</p>\r\n",
+                    "itemText": "SANRIO 三麗鷗 14家指定門市",
+                    "itemType": "small"
+                   },
+                   "item3": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.指定門市(6家)包含：KIDDY LAND 原宿店、新宿店、京都四條河原町店、三宮店、KIDDY LAND OMO KADO店橫濱店。</p>\r\n<p>2.並依據特約商店與收單機構登錄之特店名稱為「KIDDY LAND」判斷。</p>\r\n",
+                    "itemText": "KIDDY LAND 6家指定門市",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "人氣愛店：",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用日本UNIQLO實體門市及特約商店與收單機構登錄之特約商店名為「UNIQLO」之實體消費；實際適用店家及回饋資格依本系統行認列之指定特店名稱與請資料。</p>\r\n<p>2.不含百貨及商場門市、UNIQLO Online Store、儲值禮品卡、期間限定快閃店及其他非實體門市交易。</p>\r\n",
+                    "itemText": "UNIQLO實體門市",
+                    "itemType": "small"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1. 回饋適用日本 Alpen GROUP實體門市（Alpen、SPORTS DEPO、GOLF5）且特約商店與收單機構登錄之特約商店名為「ALPEN GROUP」、 「SPORT DEPO 」 或「 GOLF 5 」之實體消費；實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不含百貨及商場門市、店中櫃、官方線上購物、期間限定快閃店及其他非實體門市交易。</p>\r\n",
+                    "itemText": "Alpen GROUP實體門市",
+                    "itemType": "small"
+                   },
+                   "item3": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1. 回饋適用日本 ABC-MART實體門市（ ABC-MART、ABC-MART GRAND STAGE、ABC-MART SPORTS）且特約商店與收單機構登錄之特約商店名為「 ABC-MART 」之實體消費；實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不含百貨及商場門市、店中櫃、官方線上購物、期間限定快閃店及其他非實體門市交易。</p>\r\n",
+                    "itemText": "ABC-MART實體門市",
+                    "itemType": "small"
+                   },
+                   "item4": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<div>1.回饋適用日本 Loft實體門市（ 含COSME LOFT ）且特約商店與收單機構登錄之特約商店名為「Loft」之實體消費；實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。<p>2.回饋不含百貨及商場門市、店中櫃、官方線上購物（LOFT NETSTORE）、期間限定快閃店及其他非實體門市交易。</p>\r\n</div>\r\n",
+                    "itemText": "Loft實體門市",
+                    "itemType": "small"
+                   },
+                   "item5": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<div>1.指定門市(依地區排列)包含：</div>\r\n<div>［北海道］</div>\r\n<div>3COINS 札幌 Pole Town 店、3COINS OOOPS! 札幌 Aurora Town 店、3COINS+plus 新札幌 Sunpiazza 店&nbsp;</div>\r\n<div>［宮城］3COINS+plus 仙台 Clis Road 店</div>\r\n<div>［東京］ 3COINS 原宿本店、3COINS+plus 西武新宿 PePe 店、3COINS OOOPS! 上野 Echika fit 店、3COINS 八重洲地下街店、3COINS 下北澤店、3COINS 飯田橋 Metropia 店、3COINS 東急 Plaza 蒲田店</div>\r\n<div>［千葉］ 3COINS+plus IKSPIARI 店</div>\r\n<div>［京都］ 3COINS 京都寺町店</div>\r\n<div>［大阪］ 3COINS LINKS UMEDA 店、3COINS 千里中央 PAL 店</div>\r\n<div>［兵庫］3COINS 神戶店、3COINS 神戶 Sanchika 店</div>\r\n<div>［廣島］ 3COINS+plus 廣島本通店</div>\r\n<div>［熊本］ 3COINS+plus 鶴屋 New-S 店</div>\r\n<div>［長崎］ 3COINS+plus 長崎濱町店</div>\r\n<div>［沖繩］ 3COINS+plus 那霸 Main Place 店&nbsp;</div>\r\n<p>2.依據特約商店與收單機構登錄之特約商店名稱包含「3COINS」、「THREE COINS」或「SURIKOINZU」之實體消費。</p>\r\n<p>&nbsp;</p>\r\n",
+                    "itemText": "3COINS指定門市",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "餐廳預約平台：",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用於透過日本Tabelog平台預訂餐廳，並於預訂時完成平台線上付款之交易（如平台系統使用費等），且特約商店與收單機構登錄之特約商店名為「Tabelog」或「 Kakaku.com」之線上交易；實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不適用通路包含但不限於僅完成訂位未付款、現場支付餐費、取消訂位退刷、餐廳自行收款且未經Tabelog平台完成之交易，恕不適用本活動回饋。餐費是否需預付及實際付款方式依各餐廳及平台規定為準。</p>\r\n",
+                    "itemText": "Tabelog",
+                    "itemType": "small"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用於透過日本TableCheck平台預訂餐廳並由平台實際扣款之交易（如訂位相關費用、線上預付等），且特約商店與收單機構登錄之特約商店名為「 TableCheck 」之線上交易；實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不適用通路包含但不限於僅完成訂位未付款、現場支付餐費、取消訂位退刷、餐廳自行收款且未經TableCheck平台完成之交易，恕不適用本活動回饋。餐費是否需預付及實際付款方式依各餐廳及平台規定為準。</p>\r\n",
+                    "itemText": "TableCheck",
+                    "itemType": "small"
+                   },
+                   "item3": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.回饋適用於透過日本OMAKASE平台預訂餐廳並由平台實際扣款之交易（如訂位手續費、事前支付款項等），且特約商店與收單機構登錄之特約商店名為「 OMAKASE 」之線上交易；實際適用店家及回饋資格依本行系統認列之指定特店名稱與請款資料為準。</p>\r\n<p>2.不適用通路包含但不限於僅完成訂位未付款、現場支付餐費、取消訂位退刷、餐廳自行收款且未經OMAKASE平台完成之交易，恕不適用本活動回饋。餐費是否需預付及實際付款方式依各餐廳及平台規定為準。</p>\r\n",
+                    "itemText": "OMAKASE",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "description": "<p>1.本優惠限使用實體CUBE JCB信用卡過卡或感應式刷卡(含使用該卡加入Apple Pay消費，且須為面對面交易，儲值不列入計算)，且商店請款時，商店之國別需為「日本」或適用消費幣別需為「日圓」。</p>\r\n<p>2.消費金額以各信用卡國際組織於匯率換算後入帳至持卡人帳單上之新臺幣為準，消費金額之計算以實際授權金額計算，凡特約商店所在地登記為國外者或交易(含辦理退款)之貨幣非為新臺幣者，交易須收取國外交易手續費，相關費用依信用卡約定條款第十六條國外交易授權結匯辦理，請參閱本行信用卡約定條款約定。</p>\r\n<p>3.回饋排除項目：包含百貨專櫃、非常態之期間限定快閃店、禮品卡Gift Card 購買或儲值、第三方支付平台及及線上購物消費等其他經本行公告排除之項目。</p>\r\n<p>4.消費依據特約商店與收單機構登錄之特約商店名稱判斷，不包含店中櫃。優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以發票上列示之商家名稱或餐廳名稱為依據。</p>\r\n<p>5.日本實體消費之各通路免稅資格、適用門檻、適用品項、辦理方式及其他相關規定，悉依日本政府最新免稅制度及各商店實際辦理規定為準；如日本免稅制度有所調整，依調整後之規定辦理。</p>\r\n<p>6.三大餐廳預約平台（ Tabelog、 TableCheck、 OMAKASE ）之回饋僅適用預訂餐廳，並於平台實際扣款之交易（如平台系統使用費、訂位相關費用、線上預付等）；餐費是否需預付及實際付款方式依各餐廳及平台規定為準。不包含僅完成訂位未付款、現場支付餐費、取消訂位退刷、餐廳自行收款且未經餐廳預約平台完成之交易及其他非指定通路。</p>\r\n"
+                 }
+                ],
+                ":type": "cub-aem-cs/components/cub-content/cub-cubelist/v1/cub-cubelist"
+               },
+               "cub_cubelist_1728141_510155689": {
+                "categoryName": "海外旅遊規劃 ( 機票、訂房、行程) 3~5%",
+                "iconFileReference": "/content/dam/cub-aem-cs/Image/Personal/product/credit-card/cube-list/oversea-airplane.svg",
+                "iconAltValueFromDAM": "true",
+                "noticeType": "default",
+                "noticeTitle": "使用提醒",
+                "noticeContent": "<p>使用提醒</p>\r\n<p>1. 當您訂購旅遊商品 (如國內外訂房、旅行社預訂飯店及行程)時，飯店可能會進行信用卡預授權(依商戶的請求先佔用信用卡中一部分額度，以確認您的卡片是有效的且有足夠的額度來支付預訂費)，或使用先預訂後付/延後付款/到店付款等支付方式，此時飯店還不會進行實際信用卡扣款交易，請務必留意需於飯店實際扣款當日切換為【日本賞權益】，若實際付款當日未切換為【日本賞】權益，將導致該筆消費不適用趣旅行回饋方案，恕無法再以任何形式要求追溯或提供該筆刷卡金額之小樹點(信用卡)回饋。</p>\r\n<p>2.訂房平台若選擇到店付款，可能會以「飯店、住宿」認列進行信用卡扣款交易，非「訂房平台」，則消費會不適用「日本賞」權益。消費回饋依據特約商店與收單機構登錄之特約商店名稱判斷，商店名稱依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以發票上列示之商家名稱為依據。</p>\r\n",
+                "contentTrees": [
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "5%",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.【指定日本商品5%回饋】適用於Klook平台之日本境內之指定人氣玩樂、住宿、交通，以及旅行必備商品。實際適用範圍依CUBE x Klook 專屬網頁公告為準。<br>\r\n2.限於Klook結帳時直接輸入CUBE JCB信用卡號，且幣別以新台幣結帳之消費，不含透過Apple Pay綁定CUBE JCB信用卡付款、亦不含LINE Pay、街口支付或其它第三方支付平台之交易，及不含幣別以非新台幣付款之交易。<br>\r\n3.【指定日本商品5%回饋】不適用百貨禮券、量販店禮券、餐券等消費，若單筆訂單同時包含指定日系商品及指定排除商品(例如單筆訂單包含「東京迪士尼門票」及「大全聯500元即享券」)，則整筆訂單無法獲得5%權益加碼回饋，排除商品請參考 :<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://docs.google.com/spreadsheets/d/1LxDbAZhI4oa50GRtZGjscHuTuakmkYNSBKrvBw-jTIE/edit?usp=sharing\">不適用JCB冬日遊5%回饋清單</a>，實際以CUBE x Klook專屬網頁注意事項公告為準。如有疑問請透過 Klook 官方社群或線上客服詢問。<br>\r\n4.不含跳轉至外部網站之消費，如Klook Protect保險。</p>\r\n",
+                    "itemText": "Klook 指定日本商品",
+                    "itemType": "small"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.需透過<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://tw.hotels.com/cubecard\">專屬網頁</a>預訂，且不得與其他信用卡現折優惠併用。</p>\r\n<p>2.回饋不包含租車、票券、行程類，並刷全額房費方能適用，且不適用於直接進入 Hotels.com 官網或 Hotels.com App 之訂房交易。</p>\r\n",
+                    "itemText": "Hotels.com 專屬網頁訂房",
+                    "itemType": "small"
+                   },
+                   "item3": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.需透過<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://www.expedia.com.tw/cubecard\">專屬網頁</a>預訂，且不得與其他信用卡現折優惠併用。</p>\r\n<p>2.回饋不包含機票、套裝行程機加酒、租車、票券、行程類，並刷全額房費方能適用，且不適用於直接進入 Expedia 官網或 Expedia App 之訂房交易。</p>\r\n",
+                    "itemText": "Expedia 專屬網頁訂房",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "3.5%",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "國泰航空",
+                    "itemType": "text"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "台灣虎航",
+                    "itemType": "text"
+                   },
+                   "item3": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "Agoda",
+                    "itemType": "text"
+                   },
+                   "item4": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "KKday",
+                    "itemType": "text"
+                   },
+                   "item5": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": " ezTravel易遊網",
+                    "itemType": "text"
+                   },
+                   "item6": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "可樂旅遊",
+                    "itemType": "text"
+                   },
+                   "item7": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "東南旅遊",
+                    "itemType": "text"
+                   },
+                   "item8": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>適用於 Club Med 台灣官網使用 CUBE JCB 信用卡預訂之度假村行程，且幣別以新台幣結帳之消費，不含透過 Apple Pay 綁定 CUBE JCB 信用卡付款、亦不含 LINE Pay、街口支付或其它第三方支付平台之交易，及不含幣別以非新台幣付款之交易。</p>\r\n",
+                    "itemText": "Club Med 台灣官網",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "3%",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "Trip.com",
+                    "itemType": "text"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>限於Klook結帳時直接輸入CUBE JCB信用卡號，且幣別以新台幣結帳之消費，不含透過Apple Pay綁定CUBE JCB信用卡付款、亦不含LINE Pay、街口支付或其它第三方支付平台之交易，及不含幣別以非新台幣付款之交易。</p>\r\n",
+                    "itemText": "Klook",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "description": "<p>1.當您訂購旅遊商品(如國內外訂房、旅行社預訂飯店及行程)時，若採先訂後付或到店付款等支付方式，飯店可能會進行信用卡預授權，此時飯店還不會進行實際信用卡扣款交易，請務必留意需於飯店實際扣款當日切換為「JCB冬日遊」權益方案，若實際扣款當日未切換為「JCB冬日遊」權益，將導致該筆消費不適用「JCB冬日遊」回饋方案，恕無法再以任何形式要求追溯或提供該筆刷卡金額之小樹點(信用卡)回饋。</p>\r\n<p>2.Hotels.com 專屬網頁訂房、Expedia 專屬網頁訂房、Trip.com、Agoda、Klook、KKday等海外訂房平台進行訂房時，可能會有海外交易授權時間差問題，導致實際信用卡延遲授權或延遲扣款交易，且依各平台而有所不同，非本行系統原因所致，建議延長切換「JCB冬日遊」權益方案時間。</p>\r\n<p>3.訂房平台若選擇到店付款，可能會以「飯店住宿」認列進行信用卡扣款交易，消費會不適用「JCB冬日遊」權益。</p>\r\n<p>4.國泰航空、台灣虎航回饋僅包含「臨櫃、官網、App購票」，不包含「機上免稅商品」、「機場商店」、「貴賓室」、「哩程數」、「套裝行程」、「以哩程數全數或部份兌換機票之附加費用(包含但不限於升等/行李/稅/費用或其他)」等非購買機票之消費。</p>\r\n<p>5.商戶優惠數量有限，依各平台實際使用情形為準。</p>\r\n<p>6.消費依據特約商店與收單機構登錄之特約商店名稱判斷。優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以發票上列示之商家名稱為依據。</p>\r\n"
+                 }
+                ],
+                "noticeLinkTitle": "使用提醒",
+                ":type": "cub-aem-cs/components/cub-content/cub-cubelist/v1/cub-cubelist"
+               },
+               "cub_cubelist_1728141_928494793": {
+                "categoryName": "國內日系質感飯店 5%",
+                "iconFileReference": "/content/dam/cub-aem-cs/Image/Personal/product/credit-card/cube-list/luggage.svg",
+                "iconAltValueFromDAM": "true",
+                "noticeType": "default",
+                "contentTrees": [
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋適用包含「JR東日本大飯店 台北」之實體飯店住宿及館內消費。透過訂房平台、旅行社或其他第三方通路完成付款之交易，若非以活動指定飯店名稱請款，恕不適用本活動回饋。</p>\r\n",
+                    "itemText": "JR東日本大飯店 台北",
+                    "itemType": "small"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋僅適用「礁溪寒沐酒店 MU JIAOXI HOTEL」之實體飯店住宿及館內消費(回饋不含餐飲消費)。透過訂房平台、旅行社或其他第三方通路完成付款之交易，若非以活動指定飯店名稱請款，恕不適用本活動回饋。</p>\r\n",
+                    "itemText": "礁溪寒沐酒店(住宿)",
+                    "itemType": "small"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋適用包含「索拉利亞西鐵飯店台北西門」之實體飯店住宿及館內消費。透過訂房平台、旅行社或其他第三方通路完成付款之交易，若非以活動指定飯店名稱請款，恕不適用本活動回饋。</p>\r\n",
+                    "itemText": "索拉利亞西鐵飯店台北西門",
+                    "itemType": "small"
+                   },
+                   "item3": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋適用於「台北大倉久和大飯店」之實體住宿及館內消費(含訂房訂金)；不包含宴會廳消費、禮品採購、官網線上購物商城、餐廳線上訂位（inline 活動客座訂金），以及透過第三方訂房平台、旅行社或其他第三方通路完成付款之交易。若交易非以本活動指定飯店名稱請款，恕不適用本活動回饋。</p>\r\n",
+                    "itemText": "台北大倉久和大飯店",
+                    "itemType": "small"
+                   },
+                   "item4": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋適用包含「北投日勝生加賀屋國際溫泉飯店」之實體飯店住宿及館內消費。透過訂房平台、旅行社或其他第三方通路完成付款之交易，若非以活動指定飯店名稱請款，恕不適用本活動回饋。</p>\r\n",
+                    "itemText": "日勝生加賀屋國際溫泉飯店",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "description": "<p>1.限交易地點為臺灣之上述指定飯店消費，不包含同品牌於其他國家或地區之飯店、餐廳或其他通路消費。</p>\r\n<p>2.回饋適用之消費項目及範圍依各指定飯店活動頁面說明為準；各飯店之住宿、餐飲及其他館內消費如有不適用項目、指定付款方式或其他限制，依各飯店活動說明為準。</p>\r\n<p>3.透過第三方訂房平台、旅行社或其他第三方通路完成付款之交易，若非由活動指定飯店直接請款，恕不適用本活動回饋。</p>\r\n<p>4.住宿請依飯店實際訂房情況為準，恕不保證訂房。</p>\r\n<p>5.如採先訂後付、到店付款或其他非訂房當下完成扣款之付款方式，回饋資格以實際信用卡交易授權日判斷，持卡人須於實際授權當日切換為「JCB冬日遊」權益方案。</p>\r\n<p>6.消費依據特約商店與收單機構登錄之特約商店名稱判斷。優惠通路依刷卡簽單或CUBE App消費資訊中所示商家資訊為準，非以飯店訂房名稱、發票或收據上列示之商家名稱為依據。</p>\r\n"
+                 }
+                ],
+                ":type": "cub-aem-cs/components/cub-content/cub-cubelist/v1/cub-cubelist"
+               },
+               "cub_cubelist_1728141_953230018": {
+                "categoryName": "國內日系購物名店 3~8%",
+                "iconFileReference": "/content/dam/cub-aem-cs/Image/Personal/product/credit-card/cube-list/supermarket.svg",
+                "iconAltValueFromDAM": "false",
+                "noticeType": "default",
+                "noticeTitle": "使用提醒",
+                "noticeContent": "<p>限交易地點為臺灣，不包含其餘海外地區之品牌 / 通路消費。</p>\r\n<p>不適用設立於百貨、飯店及商場內等店中櫃。</p>\r\n",
+                "contentTrees": [
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "8%",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>權益僅適用於HANDS台隆手創館 LaLaport南港店，不含HANDS台隆手創館其餘百貨商場門市。</p>\r\n",
+                    "itemText": "HANDS 台隆手創館 LaLaport南港店",
+                    "itemType": "large"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "5%",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "明曜百貨",
+                    "itemType": "text"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>含DON DON DONKI台北西門店、忠孝新生店、CITYLINK南港店、桃園統領店、台中TIGER CITY店與高雄大立店等6家實體門市。</p>\r\n",
+                    "itemText": "台灣DON DON DONKI 唐吉訶德",
+                    "itemType": "small"
+                   },
+                   "item3": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋適用於Xpark館內人工結帳櫃台刷卡，不包含其他線上交易。</p>\r\n",
+                    "itemText": "Xpark水生公園",
+                    "itemType": "small"
+                   },
+                   "item4": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋加碼僅適用品牌臺灣官方網路商店並且使用CUBE JCB信用卡輸入卡號刷卡交易。</p>\r\n",
+                    "itemText": "UNITED ARROWS LTD.官方購物網站",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "3.5%",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>百貨部分櫃位/購買禮券/商品券及菸類商品/LINE Pay/藍新支付平台之刷卡消費恕無法參加本活動，請依各櫃位資訊及現場活動公告為準。</p>\r\n",
+                    "itemText": "遠東SOGO (含Garden City大巨蛋)",
+                    "itemType": "small"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋適用於「日藥本舖」指定門市之消費，惟部分設於百貨商場之門市，恕不適用本活動回饋。線上購物、外送平台、第三方支付平台及其他非日藥本舖指定門市直接請款之交易亦不適用。</p>\r\n",
+                    "itemText": "日藥本舖指定門市",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "3%",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.權益適用於【台灣指定直營門市】與【<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://www.uniqlo.com/tw/zh_TW/\">官方網路商店</a>】，不適用百貨商場門市。</p>\r\n<p>2.直營門市列表詳見<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://www.uniqlo.com/tw/public/uqtw/feature-collection/credit-cards/index.html\">UNIQLO官網【信用卡優惠適用店鋪-直營門市】</a>公告僅適用於指定直營店與官方網路商店，百貨商場門市不適用。</p>\r\n<p>3.回饋加碼僅適用品牌臺灣官方網路商店並且使用CUBE JCB信用卡輸入卡號刷卡交易。</p>\r\n<p>&nbsp;</p>\r\n",
+                    "itemText": "UNIQLO網路商店/直營店",
+                    "itemType": "small"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.權益適用於【<a href=\"https://www.gu-global.com/tw/zh_TW/\">官方網路商店</a>】。</p>\r\n<p>2.回饋加碼僅適用品牌臺灣官方網路商店並且使用CUBE JCB信用卡輸入卡號刷卡交易。</p>\r\n",
+                    "itemText": "GU台灣網路商店",
+                    "itemType": "small"
+                   },
+                   "item3": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.限交易地點為臺灣，不包含其餘海外地區之品牌／通路消費。</p>\r\n<p>2.消費依據特約商店與收單機構登錄之特店名稱判斷，不含店中櫃，如：無印良品｜UNIQLO｜GU｜Gap｜H&amp;M｜ZARA｜lululemon...等百貨公司櫃位。請依刷卡簽單或CUBE App消費資訊中查看，非以發票上列示之商家名稱為依據。</p>\r\n",
+                    "itemText": "MITSUI OUTLET PARK(林口、台中港、台南)",
+                    "itemType": "small"
+                   },
+                   "item4": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.限交易地點為臺灣，不包含其餘海外地區之品牌／通路消費。</p>\r\n<p>2.消費依據特約商店與收單機構登錄之特店名稱判斷，不含店中櫃，如：無印良品｜UNIQLO｜GU｜Gap｜H&amp;M｜ZARA｜lululemon...等百貨公司櫃位。請依刷卡簽單或CUBE App消費資訊中查看，非以發票上列示之商家名稱為依據。</p>\r\n",
+                    "itemText": "Mitsui Shopping Park LaLaport(南港、台中)",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "description": "<p>1.上述通路消費之交易地點僅限台灣，不包含其他海外地區的品牌/通路消費，且部份品牌回饋不適用設立於百貨、飯店、車站及商場內等門市。</p>\r\n<p>2.國內百貨回饋資格係以刷卡簽單上之特店名稱認定，不包含店中櫃，如：無印良品｜UNIQLO｜GU｜Gap｜H&amp;M｜ZARA｜lululemon...等。請依刷卡簽單或CUBE App消費資訊中查看，非以發票上列示之商家名稱為依據。<br>\r\n例如：SOGO內之全家便利超商為百貨公司店中櫃，簽單上之特店名稱為：Family Mart，故不符合【JCB冬日遊】指定消費回饋。</p>\r\n<p>3.UNIQLO網路商店、GU台灣網路商店、UNITED ARROWS LTD.官方購物網站：回饋加碼僅適用品牌台灣官方網路商店並使用CUBE JCB信用卡輸入卡號刷卡交易。</p>\r\n<p>&nbsp;</p>\r\n"
+                 }
+                ],
+                "noticeLinkTitle": "使用提醒",
+                ":type": "cub-aem-cs/components/cub-content/cub-cubelist/v1/cub-cubelist"
+               },
+               "cub_cubelist_1728141_610126650": {
+                "categoryName": "國內日系美食饗宴 3.5~8%",
+                "iconFileReference": "/content/dam/cub-aem-cs/Image/Personal/product/credit-card/cube-list/food.svg",
+                "iconAltValueFromDAM": "false",
+                "noticeType": "default",
+                "noticeTitle": "使用提醒",
+                "noticeContent": "<p>1. 限地點為臺灣之指定餐飲消費，不包含其餘海外地區之品牌／通路消費。</p>\r\n<p>2.不適用設立於百貨、飯店及商場內等實體門市。</p>\r\n",
+                "contentTrees": [
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "8%",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋適用指定門市：</p>\r\n<p>-橘色一館：台北市大安路一段135號B1</p>\r\n<p>-橘色二館：台北市仁愛路四段29-2號</p>\r\n<p>-台中館：台中市西屯區市政路581-8號</p>\r\n",
+                    "itemText": "橘色涮涮屋 (一館|二館|台中館)",
+                    "itemType": "small"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋適用指定門市：</p>\r\n<p>-內湖館：臺北市內湖區西湖里瑞光路631號1樓</p>\r\n<p>本活動僅限回饋街邊店，不適用百貨商場門市。</p>\r\n<p>&nbsp;</p>\r\n",
+                    "itemText": "Extension 1 by橘色",
+                    "itemType": "small"
+                   },
+                   "item3": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋僅適用於雞湯桑台北港墘店、雞湯桑台北中山店、雞湯桑台北南京一店、雞湯桑台北行天宮店、雞湯桑台北市政府店。</p>\r\n<p>&nbsp;</p>\r\n",
+                    "itemText": "雞湯桑指定門市",
+                    "itemType": "small"
+                   },
+                   "item4": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>活動回饋僅限豊漁集團指定<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://asasumi.chu-yu.com.tw/\">官網訂位</a>與指定實體門市。</p>\r\n<p>門市地址：臺北市松山區三民里富錦街448號1樓</p>\r\n",
+                    "itemText": "朝炭 (含官網訂位)",
+                    "itemType": "small"
+                   },
+                   "item5": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>活動回饋僅限豊漁集團指定<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://www.chu-yu.com.tw/\">官網訂位</a>與指定實體門市(泰順店)。</p>\r\n<p>泰順店：台北市大安區泰順街 2-2 號</p>\r\n",
+                    "itemText": "初魚鮨 (限官網訂位與指定門市)",
+                    "itemType": "small"
+                   },
+                   "item6": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>活動回饋僅限豊漁集團指定<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://www.chu-yu.com.tw/\">官網訂位</a>與指定實體門市(泰順店、大直店)。</p>\r\n<p>泰順店：台北市大安區泰順街 42 號<br>\r\n大直店：台北市中山區明水路657號1樓</p>\r\n",
+                    "itemText": "初魚 鉄板料亭 (限官網訂位與指定門市)",
+                    "itemType": "small"
+                   },
+                   "item7": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>活動回饋僅限豊漁集團指定<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://saku.chu-yu.com.tw/\">官網訂位</a>。</p>\r\n",
+                    "itemText": "作  天麩羅．割烹 (限官網訂位)",
+                    "itemType": "small"
+                   },
+                   "item8": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>適用門市：臺北市大安區建安里敦化南路一段161巷72號</p>\r\n",
+                    "itemText": "濟安鮨日本料理",
+                    "itemType": "small"
+                   },
+                   "item9": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "侍燒肉",
+                    "itemType": "text"
+                   },
+                   "item10": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>透</p>\r\n",
+                    "itemText": "梵燒肉",
+                    "itemType": "text"
+                   },
+                   "item11": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "元一天婦羅",
+                    "itemType": "text"
+                   },
+                   "item12": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "鳥苑",
+                    "itemType": "text"
+                   },
+                   "item13": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "燒鳥すみか",
+                    "itemType": "text"
+                   },
+                   "item14": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "山崎",
+                    "itemType": "text"
+                   },
+                   "item15": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "成蔵",
+                    "itemType": "text"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "5%",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>不適用2026/12/1起新開幕之門市以及設立於百貨、商場(含車站商場、美食街、國道服務區美食街)等實體門市</p>\r\n",
+                    "itemText": "爭鮮迴轉壽司",
+                    "itemType": "small"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>不適用2026/12/1起新開幕之門市以及設立於百貨、商場(含車站商場、美食街、國道服務區美食街)等實體門市。</p>\r\n",
+                    "itemText": "爭鮮PLUS",
+                    "itemType": "small"
+                   },
+                   "item3": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>不適用澎湖馬公店、 App點餐或設立於百貨、商場(含車站商場、美食街、國道服務區美食街)等實體門市。</p>\r\n",
+                    "itemText": "錢都日式涮涮鍋",
+                    "itemType": "small"
+                   },
+                   "item4": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>1.不適用2026/12/1起新開幕之門市以及設立於百貨、商場(含車站商場、美食街、國道服務區美食街)等實體門市。</p>\r\n<p>2.限交易地點為臺灣，不包含其餘海外地區之品牌／通路消費。</p>\r\n",
+                    "itemText": "客美多咖啡",
+                    "itemType": "small"
+                   },
+                   "item5": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "すき家 SUKIYA",
+                    "itemType": "text"
+                   },
+                   "item6": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemContent": "<p>回饋不含於 PK 雙饗 App 購買「PK隨饗券」及「禮物卡」之消費。</p>\r\n",
+                    "itemText": "必勝客",
+                    "itemType": "small"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "contentTrees": {
+                   "jcr:primaryType": "nt:unstructured",
+                   "item0": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "3.5%",
+                    "itemType": "text"
+                   },
+                   "item1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "摩斯漢堡(APP+實體店)",
+                    "itemType": "text"
+                   },
+                   "item2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "itemText": "台灣壽司郎",
+                    "itemType": "text"
+                   }
+                  }
+                 },
+                 {
+                  "jcr:primaryType": "nt:unstructured",
+                  "description": "<p>1.不適用2026/12/1起新開幕之門市且限交易地點為臺灣之指定餐飲消費，不包含其餘海外地區之品牌／通路消費。</p>\r\n<p>2.回饋不適用設置於百貨、商場（含車站商場、美食街、國道服務區美食街）等實體門市。</p>\r\n<p>3.透過inline訂位或外帶之刷卡消費(含訂金/餐費等)不適用本活動回饋，且於inline上付款的費用不可至現場退換刷。</p>\r\n"
+                 }
+                ],
+                "noticeLinkTitle": "使用提醒",
+                ":type": "cub-aem-cs/components/cub-content/cub-cubelist/v1/cub-cubelist"
+               }
+              },
+              ":itemsOrder": [
+               "cub_cubelist_6160234",
+               "cub_cubelist_1315495_1263175720",
+               "cub_cubelist_1315495",
+               "cub_cubelist_1728141_510155689",
+               "cub_cubelist_1728141_928494793",
+               "cub_cubelist_1728141_953230018",
+               "cub_cubelist_1728141_610126650"
+              ],
+              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle"
+             }
+            },
+            ":itemsOrder": [
+             "cub_cubelisttitle_co"
+            ],
+            ":type": "cub-aem-cs/components/container"
+           },
+           "cq:metadata": {
+            ":type": "nt:unstructured",
+            "min-cols": "1",
+            "max-cols": "1"
+           }
+          },
+          ":itemsOrder": [
+           "root",
+           "cq:metadata"
+          ],
+          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
@@ -5987,11 +6762,10 @@
             "repo:modifyDate": "2025-12-02T10:19:50Z"
            }
           },
-          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           ":items": {
            "root": {
-            "columnCount": 12,
             "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+            "columnCount": 12,
             "columnClassNames": {
              "cub_cubelisttitle_co_1581592217": "aem-GridColumn aem-GridColumn--default--12"
             },
@@ -6003,7 +6777,6 @@
               "paragraphNoticeTitle": "注意事項",
               "paragraphNoticeContent": "<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px; color: rgb(38,168,98);\">當月壽星獨享「慶生月」權益</p>\r\n<ol class=\"ps-[29px] list-disc my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">活動期間: 2026/10/1~2026/12/31。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">慶生月權益內適用商店將每季公告，本季優惠商店適用期間: 2026/10/1~12/31。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">「慶生月」權益方案限正卡人生日當月獨享切換。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">生日月次月1日，若權益仍在「慶生月」，本行系統將自動幫客戶切換為「集精選」權益方案。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">00:00~02:00為系統批次處理時間，生日次月1日若有切換權益需求，請於02:00後進行切換。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">「慶生月」適用商店不含透過訂票、線上訂位平台消費。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">各權益方案之「指定消費」或「優惠券」消費，限直接使用CUBE卡刷卡或使用該卡加入Apple Pay /Samsung Pay/Google Pay/Garmin Pay消費，皆不含透過綁定其他型態支付工具之消費(如：LINE Pay、街口支付、全盈+PAY、全支付、Pi錢包、橘子支付、歐付寶、icash pay、OPEN錢包、My FamiPay、悠遊付、ezPay、GOMAJI Pay、friday wallet、PayPal等)。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">指定消費個別限制請參閱各指定商店之詳細說明。</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「指定百貨」</p>\r\n<p style=\"margin-left: 28.0px;\">指定百貨回饋資格係以刷卡簽單上之特店名稱認定，不包含店中櫃，如：無印良品｜UNIQLO｜GU｜Gap｜H&amp;M｜ZARA｜lululemon...等。請依刷卡簽單或CUBE Rewards App消費資訊中查看，非以發票上列示之商家名稱為依據。例如：新光三越之UNIQLO為百貨公司店中櫃，簽單上之特店名稱為：UNIQLO，故不符合【慶生月】指定消費回饋。</p>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「訂房/訂票平台」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">當您訂購旅遊商品(如國內外訂房、旅行社預訂飯店及行程)時，若採先訂後付或到店付款等支付方式，飯店可能會進行信用卡預授權，此時飯店還不會進行實際信用卡扣款交易，請務必留意需於飯店實際扣款當日切換為【慶生月權益方案】。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">海外訂房平台進行訂房時，可能會有海外交易授權時間差問題，導致實際信用卡延遲授權或延遲扣款交易，且依各平台而有所不同，非本行系統原因所致，建議延長切換【慶生月權益方案】時間。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">訂房平台若選擇到店付款，可能會以「飯店住宿」權益進行信用卡扣款交易，消費會不適用「訂房平台」權益。</li>\r\n</ol>\r\n<p class=\"text-xl mb-2.5 break-all font-cathay-medium\" style=\"font-size: 20.0px;\">「精選指定餐廳」</p>\r\n<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">透過inline支付恕無法獲得回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">若餐廳有基本最低消費限制，請依餐廳規定為準，若有未盡事項以餐廳說明為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本行並未介入商品之交付或商品瑕疵等買賣之實體關係，相關商品退貨或服務取消之退款事宜，持卡人應先聯繫餐廳客服尋求解決，如無法解決，得要求本行就該筆交易以「帳款疑義之處理程序」辦理。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本活動之服務係由餐廳提供，國泰世華銀行僅提供回饋優惠，並非商品或服務之出售人，與活動適用餐廳之間並無代理或提供訂位等其他保證。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">指定餐廳回饋係以刷卡簽單上之特店名稱認定，不包含百貨商場內設立之餐廳。請依刷卡簽單或CUBE App消費資訊中查看，非以發票上列示之商家名稱為依據。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">優惠提供期間倘因不可歸責國泰世華銀行之事宜，國泰世華銀行得變更或終止活動，並於國泰世華銀行網站公告。</li>\r\n</ol>\r\n",
               "topSpace": 100,
-              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle",
               ":items": {
                "cub_cubelist_1315495": {
                 "categoryName": "慶生月活動",
@@ -6508,7 +7281,8 @@
                "cub_cubelist_631289756",
                "cub_cubelist_1315495804",
                "cub_cubelist"
-              ]
+              ],
+              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle"
              }
             },
             ":itemsOrder": [
@@ -6526,6 +7300,7 @@
            "root",
            "cq:metadata"
           ],
+          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
@@ -6541,11 +7316,10 @@
             "repo:modifyDate": "2025-12-02T10:20:01Z"
            }
           },
-          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           ":items": {
            "root": {
-            "columnCount": 12,
             "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+            "columnCount": 12,
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
@@ -6557,7 +7331,6 @@
               "paragraphNoticeTitle": "注意事項",
               "paragraphNoticeContent": "<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li>「童樂匯」權益適用期間: 2026/7/1~2026/12/31。</li>\r\n<li>2026/7/1~11/20，每月20日(含)以前客戶須符合以下2項條件，次月1日起可切換至「童樂匯」權益方案。<ul class=\"list-none list-brace ps-[29px]\">\r\n<li class=\"mb-2.5 ps-[5px]\">條件一：客戶與其未成年子女須持有本行帳戶(臺幣或外幣存款帳戶，含數位存款帳戶，並不得為警示帳戶、受裁處告誡等)。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">條件二：客戶須持有有效CUBE信用卡正卡。</li>\r\n</ul>\r\n<ol class=\"ps-[29px] list-disc my-4\">\r\n<li>2026/6/20前符合資格，7/1起可享切換權益。</li>\r\n<li>2026/6/21~7/20新符合資格，8/1起可享切換權益。</li>\r\n<li>2026/7/21~8/20新符合資格，9/1起可享切換權益。</li>\r\n<li>2026/8/21~9/20新符合資格，10/1起可享切換權益。</li>\r\n<li>2026/9/21~10/20新符合資格，11/1起可享切換權益。</li>\r\n<li>2026/10/21~11/20新符合資格，12/1起可享切換權益。</li>\r\n<li>2026/11/21~12/31新符合資格者不適用本權益方案。</li>\r\n</ol>\r\n</li>\r\n<li>資格審核結算至每月20日(含)，遇假日則提前1個工作天，如僅送出開戶申請資料而未完成審核者，或後續遭本行婉拒者，均不符合本活動資格。</li>\r\n<li>客戶須登記為未成年子女開戶時所須之法定代理人/監護人，且符合指定條件，始可鎖解「童樂匯」權益方案。</li>\r\n<li>本活動適用未成年子女年齡僅限2008/6/1以後出生。</li>\r\n<li>客戶於每月20日(含)經系統判斷不符合資格，若次月1日權益仍在「童樂匯」，本行系統將自動幫客戶切換為「集精選」權益方案，00:00~02:00為系統批次處理時間，若有切換權益需求，請於02:00後進行切換。</li>\r\n<li>【臺幣跨行轉帳免手續費注意事項】&nbsp;<ul>\r\n<li>(1) 每月優惠次數僅限當月6日至次月5日期間使用，該期間未使用之優惠次數，恕無法遞延至次月使用或轉讓。</li>\r\n<li>(2) 使用通路限制：限於國泰世華CUBE網銀或CUBE App執行臺幣跨行轉帳交易使用，其他通路恕無法適用。</li>\r\n<li>(3) 若同一歸戶下已享有本行其他跨行轉帳優惠者（例如：財富管理貴賓、CUBE精選貴賓等），該優惠次數將與本禮遇優惠次數累加計算。</li>\r\n<li>(4) 本禮遇符合資格與否、優惠使用等紀錄均以本行電腦系統紀錄及本行認定為準；本行保留變更或終止本禮遇內容之權利，並於本活動網頁公告之。若有其他未盡事宜，悉依本行綜合約定書與相關規定或解釋辦理。</li>\r\n</ul>\r\n</li>\r\n<li><b class=\"text-cathay-green\">自2026/1/1起，CUBE信用卡每月指定消費之累計消費金額以「消費日當日信用額度」加計新臺幣50萬元為限。持卡人因信用額度異動，致當月份有不同之消費日當日信用額度時，其調整後金額上限，不溯及適用至當月已核發小樹點(信用卡)之消費，超出此限額之消費僅適用一般消費0.3%回饋。</b></li>\r\n<li>小樹點(信用卡)點數價值為1點等值NT$1，CUBE信用卡於每筆消費請款入帳後，四捨五入計算回饋至小樹點(信用卡)整數位；權益方案點數於次二日(遇假日順延)回饋至正卡人信用卡帳戶，實際回饋時間依本行作業時間為準。</li>\r\n<li>「童樂匯」權益方案之「指定消費」皆已包含一般消費回饋 0.3%。</li>\r\n<li>特約商店分期付款消費不適用CUBE信用卡權益方案之「指定消費」回饋（含提前結清），僅適用一般消費0.3%回饋。</li>\r\n<li>「童樂匯」指定通路消費限直接使用 CUBE 信用卡刷卡或使用該卡加入 Apple Pay／Samsung Pay／Google Pay／Garmin Pay 等行動支付工具之消費，不含透過綁定其他型態支付工具之消費（如：LINE Pay、街口支付、全盈＋PAY、全支付、Pi 錢包、橘子支付、歐付寶、icash pay、OPEN 錢包、My FamiPay、悠遊付、ezPay、GOMAJI Pay、friday wallet、PayPal、支付寶等）。</li>\r\n<li>持卡人於計算回饋時須持有效卡，且上一期無逾期未繳款之紀錄；若持卡人終止信用卡或遭停止使用信用卡權利、延滯繳款或其他違反信用卡約定條款等情事時，將喪失活動回饋資格。</li>\r\n<li>消費回饋之認定依本行系統為主，本行將依商店提供之交易說明比對，若因商店請款資料變更以致交易說明資訊和本行可判別之資訊不同，或上述回饋通路旗下商品之清算資料類別與本行認列之清算資料不同，導致未列入回饋計算(不包含各商家之排除項目)，請來電告知，本行將於確認後以個案方式提供回饋，且不另行通知，惟回饋恕不溯及既往。除本項說明項目之外，不符回饋通路者，不予個案回饋。</li>\r\n<li>持卡人於網路商店購物時，應注意是否為跨境交易。凡特約商店所在地登記為國外者或交易(含辦理退款)之貨幣非為新臺幣者，交易須收取國外交易手續費，相關費用依信用卡約定條款第十六條國外交易授權結匯辦理，請參閱本行信用卡定型化契約。註：網頁以「tw」為網域名稱者，或於我國設有分公司者，並非當然屬於我國境內特約商店，持卡人仍須注意是否為跨境交易。</li>\r\n<li>其餘CUBE信用卡權益注意事項與說明依CUBE產品說明頁為準。</li>\r\n<li>若有任何因為電腦、網路、電話、技術或不可歸責於本行之事由，而使持卡人之交易紀錄有遺失、錯誤、無法辨識或毀損情況，本行不負任何法律責任，持卡人亦不得因此異議。</li>\r\n<li>優惠活動期間倘因不可歸責於本行之事由，本行得變更或終止優惠活動內容，並於活動網站公告。若有其他未盡事宜，悉依本行相關規定或解釋辦理。</li>\r\n</ol>\r\n",
               "topSpace": 100,
-              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle",
               ":items": {
                "cub_cubelist_1315495804": {
                 "categoryName": "如何解鎖童樂匯？",
@@ -7136,7 +7909,8 @@
                "cub_cubelist_2002624964",
                "cub_cubelist_616023404",
                "cub_cubelist_1728141423"
-              ]
+              ],
+              ":type": "cub-aem-cs/components/cub-content/cub-cubelisttitle/v1/cub-cubelisttitle"
              }
             },
             ":itemsOrder": [
@@ -7154,13 +7928,14 @@
            "root",
            "cq:metadata"
           ],
+          ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
           "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
         },
         "cub_notice_copy_copy": {
          "title": "注意事項",
-         "text": "<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">CUBE卡權益如未敘明則適用期間為：2026/1/1~2026/12/31，詳依&nbsp;CUBE卡權益方案頁面說明為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">方案每正卡人每日限變更一次 (<b>固定回饋</b>另依該權益方案注意事項說明)，附卡適用方案依正卡持卡人設定為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">方案設定自當日零時起之消費即依當次變更後之方案計算回饋，方案設定依本行系統紀錄之日期為準。(舉例：小華2026/1/10 17:00變更方案為「樂饗購」，且 2026/1/10 10:30 有一筆Uber消費、18:00 有一筆遠東SOGO百貨消費，則 2026/1/10 之所有消費 (包含 Uber 與遠東SOGO百貨) 皆依「樂饗購」方案計算回饋。)</li>\r\n<li class=\"mb-2.5 ps-[5px]\">保費僅回饋0.3%小樹點(信用卡)且壽險保費不含國泰人壽之躉繳保費、投資型及利率變動型年金保費。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">CUBE App領取優惠券活動：參加本活動需於活動期間登入本行CUBE App之「CUBE優惠券專區」完成領取優惠券，且回饋計算將於活動領取日後(含當日)之新增消費方符合回饋計算。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">CUBE卡各項回饋若未敍明，則以小樹點(信用卡)回饋，其餘商家回饋點數，則依各商家或活動說明為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">小樹點(信用卡)點數價值為1點等值NT$1，CUBE卡於每筆消費請款入帳後，依該筆消費之授權日判斷適用權益方案、符合之優惠券，以各別回饋率計算小樹點(信用卡)並依小數點第一位四捨五入至整數位，並於次二日(遇假日順延)回饋至正卡人信用卡帳戶，實際回饋時間依本行作業時間為準。(舉例：小華2026/1/10 適用方案為「樂饗購」並權益分級為Level 2，且當日10:30有一筆雄獅旅行社消費NT$1,800，18:00有一筆新光三越消費NT$3,000。雄獅旅行社不屬「樂饗購」方案指定消費，因此屬一般消費，回饋率0.3%；新光三越於「樂饗購」方案中屬指定美食/購物消費，回饋率3%，小華分別獲得兩筆消費回饋5點、90點，詳細計算見下方表格；小明2026/1/15適用方案為「趣旅行」並權益分級為Level 2，且當日15:30有一筆Agoda授權NT$5,000，後續Agoda提供銀行之消費日為2026/1/20，而小明2026/1/20適用方案為「樂饗購」，則此筆交易本行收到授權日為2026/1/15，故以「趣旅行」計算回饋率，Agoda於「趣旅行」方案中屬指定旅遊/交通消費，回饋率3%，小明可獲得該筆消費回饋150點) <span style=\"color: rgb(255,0,0);\"><br>\r\n*授權日為持卡人實際刷卡之日期，消費日為商家提供銀行之交易日期，惟部分商家授權日可能與實際刷卡消費日不同，如因此無法獲得加碼回饋，請洽本行客服處理。</span><div class=\"w-full overflow-auto\"><table class=\"bg-white w-full\">\r\n<thead><tr><th width=\"20%\" class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\">消費項目</th>\r\n<th width=\"20%\" class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\">消費金額</th>\r\n<th width=\"20%\" class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\">消費類別</th>\r\n<th width=\"20%\" class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\">回饋率</th>\r\n<th width=\"20%\" class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\">回饋點數</th>\r\n</tr></thead><tbody><tr><td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\">雄獅旅行社</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\">NT$1,800</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\">一般消費</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\">0.3%</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\">5<br>\r\n(1800*0.3%=5.4)</td>\r\n</tr><tr><td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\">新光三越</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\">NT$3,000</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\">指定美食/購物消費</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\">3%</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\">90<br>\r\n(3000*3%=90)</td>\r\n</tr></tbody></table>\r\n</div>\r\n</li>\r\n<li class=\"mb-2.5 ps-[5px]\">正附卡消費合併計算，小樹點(信用卡)回饋歸戶至正卡持卡人信用卡帳戶。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">消費折抵金以消費金額乘以回饋比率，四捨五入計算至整數位，於每筆消費請款入帳後計算，並於次三日 (遇假日順延) 回饋至正卡人信用卡帳戶，本行系統自動將該筆回饋金額折抵於原刷卡交易，實際回饋時間依本行作業時間為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">合作商戶點之點數以消費金額乘以回饋比率，四捨五入計算至整數位，將於活動結束後統一回饋至合作商戶會員帳戶，入點資訊請於活動結束後至合作商戶會員帳戶查詢，實際回饋時間依商戶作業時間為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">如有退貨將比對該筆退貨交易原始消費之適用權益方案，依該方案計算回饋後予以扣除，若商家退款交易資料不足以辨認原始消費之適用權益方案，則依一般消費計算扣除回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\"><span style=\"color: rgb(255,0,0);\">自2024/2/1起於特約商店分期付款消費不適用各權益方案之「指定消費」加碼回饋（含提前結清），如分期付款消費項目屬一般消費，則仍適用原一般消費0.3%回饋。</span>2024/1/31(含)前特約商店分期付款消費分期仍適用權益方案「指定消費」回饋，於每期入帳後回饋至正卡人信用卡帳戶，消費日依帳單列示日期為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\"><span style=\"color: rgb(255,0,0);\">自2026/1/1起，CUBE信用卡每月指定消費之累計消費金額以「消費日當日信用額度」加計新臺幣50萬元為限。持卡人因信用額度異動，致當月份有不同之消費日當日信用額度時，其調整後金額上限，不溯及適用至當月已核發小樹點(信用卡)之消費，超出此限額之消費如屬一般消費，仍適用一般消費0.3%回饋。</span>正、附卡信用額度與溢繳金額合併計算。持卡人當月回饋之小樹點（信用卡）總額，以本行最終檢核之結果為準，持卡人同意本行得逕行扣回逾發之小樹點（信用卡）。若點數扣回作業執行時持卡人已將點數使用完畢，將改以1點小樹點(信用卡)等值NT$1之價值入信用卡帳單，持卡人仍應繳納。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">各權益方案之「指定消費」或「優惠券」消費，限直接使用CUBE卡刷卡或使用該卡加入Apple Pay /Samsung Pay/Google Pay/Garmin Pay消費，皆不含透過綠界支付平台、藍新支付平台、91APP或其它第三方支付平台之交易，亦不含透過綁定其他型態支付工具之消費(如：LINE Pay、街口支付、全盈+PAY、全支付、Pi錢包、橘子支付、歐付寶、icash pay、OPEN錢包、My FamiPay、悠遊付、ezPay、GOMAJI Pay、friday wallet、PayPal、支付寶等)。「指定消費」包含玩數位之指定線上消費、樂饗購之指定美食/購物消費、趣旅行之指定旅遊消費、集精選之指定品牌/生活消費包含OPEN錢包於超商消費、My FamiPay超商消費、 PX Pay店內消費，排除菸品、代收代售、禮券購買消費。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">各權益方案之「指定消費」回饋皆已包含一般消費回饋0.3%。CUBE卡之「一般消費」係排除以下消費或費用：信用卡相關利息及費用(包含但不限於利息、年費、掛失費、預借現金手續費、違約金、國外交易手續費、調閱簽帳單手續費、補發帳單手續費等非消費款項)、預借現金、帳單分期、單筆消費分期(刷卡樂分期)、通信貸款、餘額代償金額及經本行公告除外之專案、稅款、學費、公用事業費用(包含但不限於網路通訊／影音服務等相關費用及附加費)、路邊停車費、公務機關各項費用、透過繳費平台（如公務機關信用卡繳費平台，含公務機關／國營事業／公立醫療院所等、電子化繳費稅處理平台、醫指付、本行CUBE網銀或CUBE App線上繳費服務)繳納之費用、代繳國泰人壽「躉繳」、「投資型」及「利率變動型年金」保單、代扣基金、悠遊卡加值、一卡通加值、icash加值、便利超商消費、透過聯合信用卡處理中心<a href=\"https://www.nccc.com.tw/wps/wcm/connect/zh/home/BusinessOperations/CardBusiness/MicroPayment\" class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\">小額支付平台之特約商店</a>之消費（如便利超商、連鎖速食店、停車費等）、全聯福利中心消費、大全聯消費（含實體門市與線上通路）、eTag儲值/eTag智慧停車費代扣繳、遠東SOGO百貨貴賓廳之消費金額、國壽不動產租金代收、未經主管機關核准之境外投資交易平台（包含但不限於eToro）、匯兌平台（包含但不限於Wise）、數位（虛擬）貨幣及旅行支票（包含但不限於MCC code為4829、6012、6211、6051）之交易、博奕類（包含但不限於MCC code為7995）之交易、其他經本行公告排除之項目。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">各權益方案之「指定消費」之消費回饋項目及注意事項依CUBE卡權益方案頁面說明為準；「優惠券」之適用通路及注意事項依優惠券頁面說明為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">持卡人於計算回饋時須持有效卡，且上一期無逾期未繳款之紀錄；若持卡人終止信用卡或遭停止使用信用卡權利、延滯繳款或其他違反信用卡約定條款等情事時，將喪失活動回饋資格。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">消費回饋之認定依本行系統為主，本行將依商店提供之交易說明比對，若因商店請款資料變更以致交易說明資訊和本行可判別之資訊不同，或上述回饋通路旗下商品之清算資料類別與本行認列之清算資料不同，導致未列入回饋計算(不包含各商家之排除項目)，請來電告知，本行將於確認後以個案方式提供回饋，且不另行通知，惟回饋恕不溯及既往。除本項說明項目之外，不符回饋通路者，不予個案回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">持卡人於網路商店購物時，應注意是否為國外交易。凡「交易(含辦理退款)之貨幣非為新臺幣」，或「以新臺幣交易，惟特約商店登記國別碼非臺灣」，或「以新臺幣交易，惟特約商店所屬收單機構所在地非臺灣」皆為國外交易，將依信用卡國際組織之交易結匯日匯率換算為新臺幣，並須收取國外交易手續費，請參閱本行信用卡約定條款第十六條之約定。<span style=\"color: rgb(255,0,0);\">註：網頁以「tw」為網域名稱者，或於我國有設立分公司者，並非當然屬於我國境內特約商店，持卡人仍須注意是否為跨境交易；如無法辨識，建議於交易前先向商家確認後，再進行交易。</span></li>\r\n<li class=\"mb-2.5 ps-[5px]\">若有任何因為電腦、網路、電話、技術或不可歸責於本行之事由，而使持卡人之交易紀錄有遺失、錯誤、無法辨識或毀損情況，本行不負任何法律責任，持卡人亦不得因此異議。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">若刷卡消費為虛偽不實套利之交易，經本行查證後將逕行扣回已回饋之小樹點(信用卡)，若點數扣除作業時持卡人已將點數使用完畢，將改以1點小樹點(信用卡)等值新台幣壹元之價值入信用卡帳單。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本活動之相關活動辦法、未盡事項或變更，悉依本行/各合作店家規定及解釋為準。本行保留活動修改、變更及終止之權利，並於本行網站公告。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本頁所稱CUBE卡為CUBE信用卡，不含CUBE簽帳金融卡。</li>\r\n</ol>\r\n",
+         "text": "<ol class=\"ps-[29px] list-decimal my-4\">\r\n<li class=\"mb-2.5 ps-[5px]\">CUBE卡權益如未敘明則適用期間為：2026/1/1~2026/12/31，詳依&nbsp;CUBE卡權益方案頁面說明為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">方案每正卡人每日限變更一次 (<b>固定回饋</b>另依該權益方案注意事項說明)，附卡適用方案依正卡持卡人設定為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">方案設定自當日零時起之消費即依當次變更後之方案計算回饋，方案設定依本行系統紀錄之日期為準。(舉例：小華2026/1/10 17:00變更方案為「樂饗購」，且 2026/1/10 10:30 有一筆Uber消費、18:00 有一筆遠東SOGO百貨消費，則 2026/1/10 之所有消費 (包含 Uber 與遠東SOGO百貨) 皆依「樂饗購」方案計算回饋。)</li>\r\n<li class=\"mb-2.5 ps-[5px]\">保費僅回饋0.3%小樹點(信用卡)且壽險保費不含國泰人壽之躉繳保費、投資型及利率變動型年金保費。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">CUBE App領取優惠券活動：參加本活動需於活動期間登入本行CUBE App之「CUBE優惠券專區」完成領取優惠券，且回饋計算將於活動領取日後(含當日)之新增消費方符合回饋計算。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">CUBE卡各項回饋若未敍明，則以小樹點(信用卡)回饋，其餘商家回饋點數，則依各商家或活動說明為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">小樹點(信用卡)點數價值為1點等值NT$1，CUBE卡於每筆消費請款入帳後，依該筆消費之授權日判斷適用權益方案、符合之優惠券，以各別回饋率計算小樹點(信用卡)並依小數點第一位四捨五入至整數位，並於次二日(遇假日順延)回饋至正卡人信用卡帳戶，實際回饋時間依本行作業時間為準。(舉例：小華2026/1/10 適用方案為「樂饗購」並權益分級為Level 2，且當日10:30有一筆雄獅旅行社消費NT$1,800，18:00有一筆新光三越消費NT$3,000。雄獅旅行社不屬「樂饗購」方案指定消費，因此屬一般消費，回饋率0.3%；新光三越於「樂饗購」方案中屬指定美食/購物消費，回饋率3%，小華分別獲得兩筆消費回饋5點、90點，詳細計算見下方表格；小明2026/1/15適用方案為「趣旅行」並權益分級為Level 2，且當日15:30有一筆Agoda授權NT$5,000，後續Agoda提供銀行之消費日為2026/1/20，而小明2026/1/20適用方案為「樂饗購」，則此筆交易本行收到授權日為2026/1/15，故以「趣旅行」計算回饋率，Agoda於「趣旅行」方案中屬指定旅遊/交通消費，回饋率3%，小明可獲得該筆消費回饋150點) <span style=\"color: rgb(255,0,0);\"><br>\r\n*授權日為持卡人實際刷卡之日期，消費日為商家提供銀行之交易日期，惟部分商家授權日可能與實際刷卡消費日不同，如因此無法獲得加碼回饋，請洽本行客服處理。</span><div class=\"w-full overflow-auto\"><table class=\"bg-white w-full\">\r\n<thead><tr><th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"20%\">消費項目</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"20%\">消費金額</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"20%\">消費類別</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"20%\">回饋率</th>\r\n<th class=\"py-[15px] px-2.5 border border-cathay-grayLine bg-cathay-greenTable  font-cathay-medium text-sm leading-normal text-center font-normal tablet:px-5\" width=\"20%\">回饋點數</th>\r\n</tr></thead><tbody><tr><td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\">雄獅旅行社</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\">NT$1,800</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\">一般消費</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\">0.3%</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm leading-normal text-center tablet:px2.5\">5<br>\r\n(1800*0.3%=5.4)</td>\r\n</tr><tr><td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\">新光三越</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\">NT$3,000</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\">指定美食/購物消費</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\">3%</td>\r\n<td class=\"p-5 border border-cathay-grayLine text-sm text-center leading-normal tablet:px2.5\">90<br>\r\n(3000*3%=90)</td>\r\n</tr></tbody></table>\r\n</div>\r\n</li>\r\n<li class=\"mb-2.5 ps-[5px]\">正附卡消費合併計算，小樹點(信用卡)回饋歸戶至正卡持卡人信用卡帳戶。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">消費折抵金以消費金額乘以回饋比率，四捨五入計算至整數位，於每筆消費請款入帳後計算，並於次三日 (遇假日順延) 回饋至正卡人信用卡帳戶，本行系統自動將該筆回饋金額折抵於原刷卡交易，實際回饋時間依本行作業時間為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">合作商戶點之點數以消費金額乘以回饋比率，四捨五入計算至整數位，將於活動結束後統一回饋至合作商戶會員帳戶，入點資訊請於活動結束後至合作商戶會員帳戶查詢，實際回饋時間依商戶作業時間為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">如有退貨將比對該筆退貨交易原始消費之適用權益方案，依該方案計算回饋後予以扣除，若商家退款交易資料不足以辨認原始消費之適用權益方案，則依一般消費計算扣除回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\"><span style=\"color: rgb(255,0,0);\">自2024/2/1起於特約商店分期付款消費不適用各權益方案之「指定消費」加碼回饋（含提前結清），如分期付款消費項目屬一般消費，則仍適用原一般消費0.3%回饋。</span>2024/1/31(含)前特約商店分期付款消費分期仍適用權益方案「指定消費」回饋，於每期入帳後回饋至正卡人信用卡帳戶，消費日依帳單列示日期為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\"><span style=\"color: rgb(255,0,0);\">自2026/1/1起，CUBE信用卡每月指定消費之累計消費金額以「消費日當日信用額度」加計新臺幣50萬元為限。持卡人因信用額度異動，致當月份有不同之消費日當日信用額度時，其調整後金額上限，不溯及適用至當月已核發小樹點(信用卡)之消費，超出此限額之消費如屬一般消費，仍適用一般消費0.3%回饋。</span>正、附卡信用額度與溢繳金額合併計算。持卡人當月回饋之小樹點（信用卡）總額，以本行最終檢核之結果為準，持卡人同意本行得逕行扣回逾發之小樹點（信用卡）。若點數扣回作業執行時持卡人已將點數使用完畢，將改以1點小樹點(信用卡)等值NT$1之價值入信用卡帳單，持卡人仍應繳納。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">各權益方案之「指定消費」或「優惠券」消費，限直接使用CUBE卡刷卡或使用該卡加入Apple Pay /Samsung Pay/Google Pay/Garmin Pay消費，皆不含透過綠界支付平台、藍新支付平台、91APP或其它第三方支付平台之交易，亦不含透過綁定其他型態支付工具之消費(如：LINE Pay、街口支付、全盈+PAY、全支付、Pi錢包、橘子支付、歐付寶、icash pay、OPEN錢包、My FamiPay、悠遊付、ezPay、GOMAJI Pay、friday wallet、PayPal、支付寶等)。「指定消費」包含玩數位之指定線上消費、樂饗購之指定美食/購物消費、趣旅行之指定旅遊消費、集精選之指定品牌/生活消費包含OPEN錢包於超商消費、My FamiPay超商消費、 PX Pay店內消費，排除菸品、代收代售、禮券購買消費。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">各權益方案之「指定消費」回饋皆已包含一般消費回饋0.3%。CUBE卡之「一般消費」係排除以下消費或費用：信用卡相關利息及費用(包含但不限於利息、年費、掛失費、預借現金手續費、違約金、國外交易手續費、調閱簽帳單手續費、補發帳單手續費等非消費款項)、預借現金、帳單分期、單筆消費分期(刷卡樂分期)、通信貸款、餘額代償金額及經本行公告除外之專案、稅款、學費、公用事業費用(包含但不限於網路通訊／影音服務等相關費用及附加費)、路邊停車費、公務機關各項費用、透過繳費平台（如<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://www.nccc.com.tw/wps/wcm/connect/zh/home/BusinessOperations/CardBusiness\">公務機關暨醫療院所信用卡繳費平台</a>，含公務機關／國營事業／公私立醫療院所等、電子化繳費稅處理平台、醫指付、本行CUBE網銀或CUBE App線上繳費服務)繳納之費用、代繳國泰人壽「躉繳」、「投資型」及「利率變動型年金」保單、代扣基金、悠遊卡加值、一卡通加值、icash加值、便利超商消費、透過聯合信用卡處理中心<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://www.nccc.com.tw/wps/wcm/connect/zh/home/BusinessOperations/CardBusiness/MicroPayment\">小額支付平台之特約商店</a>之消費（如便利超商、連鎖速食店、停車費等）、全聯福利中心消費、大全聯消費（含實體門市與線上通路）、eTag儲值/eTag智慧停車費代扣繳、遠東SOGO百貨貴賓廳之消費金額、國壽不動產租金代收、未經主管機關核准之境外投資交易平台（包含但不限於eToro）、匯兌平台（包含但不限於Wise）、數位（虛擬）貨幣及旅行支票（包含但不限於MCC code為4829、6012、6211、6051）之交易、博奕類（包含但不限於MCC code為7995）之交易、其他經本行公告排除之項目。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">各權益方案之「指定消費」之消費回饋項目及注意事項依CUBE卡權益方案頁面說明為準；「優惠券」之適用通路及注意事項依優惠券頁面說明為準。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">持卡人於計算回饋時須持有效卡，且上一期無逾期未繳款之紀錄；若持卡人終止信用卡或遭停止使用信用卡權利、延滯繳款或其他違反信用卡約定條款等情事時，將喪失活動回饋資格。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">消費回饋之認定依本行系統為主，本行將依商店提供之交易說明比對，若因商店請款資料變更以致交易說明資訊和本行可判別之資訊不同，或上述回饋通路旗下商品之清算資料類別與本行認列之清算資料不同，導致未列入回饋計算(不包含各商家之排除項目)，請來電告知，本行將於確認後以個案方式提供回饋，且不另行通知，惟回饋恕不溯及既往。除本項說明項目之外，不符回饋通路者，不予個案回饋。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">持卡人於網路商店購物時，應注意是否為國外交易。凡「交易(含辦理退款)之貨幣非為新臺幣」，或「以新臺幣交易，惟特約商店登記國別碼非臺灣」，或「以新臺幣交易，惟特約商店所屬收單機構所在地非臺灣」皆為國外交易，將依信用卡國際組織之交易結匯日匯率換算為新臺幣，並須收取國外交易手續費，請參閱本行信用卡約定條款第十六條之約定。<span style=\"color: rgb(255,0,0);\">註：網頁以「tw」為網域名稱者，或於我國有設立分公司者，並非當然屬於我國境內特約商店，持卡人仍須注意是否為跨境交易；如無法辨識，建議於交易前先向商家確認後，再進行交易。</span></li>\r\n<li class=\"mb-2.5 ps-[5px]\">若有任何因為電腦、網路、電話、技術或不可歸責於本行之事由，而使持卡人之交易紀錄有遺失、錯誤、無法辨識或毀損情況，本行不負任何法律責任，持卡人亦不得因此異議。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">若刷卡消費為虛偽不實套利之交易，經本行查證後將逕行扣回已回饋之小樹點(信用卡)，若點數扣除作業時持卡人已將點數使用完畢，將改以1點小樹點(信用卡)等值新台幣壹元之價值入信用卡帳單。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本活動之相關活動辦法、未盡事項或變更，悉依本行/各合作店家規定及解釋為準。本行保留活動修改、變更及終止之權利，並於本行網站公告。</li>\r\n<li class=\"mb-2.5 ps-[5px]\">本頁所稱CUBE卡為CUBE信用卡，不含CUBE簽帳金融卡。</li>\r\n</ol>\r\n",
          "topSpace": "topspace100",
          "anchorKey": "blockname06",
          ":type": "cub-aem-cs/components/cub-content/cub-notice/v1/cub-notice"
@@ -7174,6 +7949,7 @@
         "cub_experiencefragme_1462845899",
         "cub_experiencefragme_1916958314",
         "cub_experiencefragme_577432954",
+        "cub_experiencefragme_1735352367",
         "cub_experiencefragme_372861707",
         "cub_experiencefragme_1388148381",
         "cub_experiencefragme_952464071",
@@ -7201,11 +7977,10 @@
         "repo:modifyDate": "2025-02-24T10:05:39Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       ":items": {
        "root": {
-        "columnCount": 12,
         "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+        "columnCount": 12,
         "columnClassNames": {
          "cub_warning": "aem-GridColumn aem-GridColumn--default--12"
         },
@@ -7228,6 +8003,7 @@
        "root",
        "cq:metadata"
       ],
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
@@ -7243,11 +8019,10 @@
         "repo:modifyDate": "2025-02-21T06:07:37Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       ":items": {
        "root": {
-        "columnCount": 12,
         "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+        "columnCount": 12,
         "columnClassNames": {
          "cub_footer": "aem-GridColumn aem-GridColumn--default--12",
          "separator": "aem-GridColumn aem-GridColumn--default--12"
@@ -7351,6 +8126,7 @@
             "alt": null
            }
           },
+          "alphaDomain": "www.cathaybk.com.tw",
           "socialMedias": [
            {
             "jcr:primaryType": "nt:unstructured",
@@ -7381,7 +8157,6 @@
             "text": "Linkedin"
            }
           ],
-          "alphaDomain": "www.cathaybk.com.tw",
           ":type": "cub-aem-cs/components/cub-content/cub-footer/v1/cub-footer"
          }
         },
@@ -7395,6 +8170,7 @@
       ":itemsOrder": [
        "root"
       ],
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
@@ -7421,12 +8197,13 @@
       ],
       "jcr:created": 1749793429194,
       "pwaDisplay": "standalone",
-      "cq:lastModified": 1792136285505,
+      "cq:lastModified": 1795168522100,
       "theme": "cube",
       "pwaCachestrategy": "staleWhileRevalidate",
       "jcr:baseVersion": "6a62a7dc-39e1-4241-b674-0d104b7bf33e",
       "jcr:isCheckedOut": true,
       "jcr:uuid": "b4188665-e2a6-49b4-b071-0966e8d1d3f1",
+      "scheduledate": 1795503600000,
       "sling:resourceType": "cub-aem-cs/components/structures/cub-page/v1/cub-page",
       "initiatorId": "88002",
       "hideInSiteMap": "false"
@@ -7450,6 +8227,7 @@
  ":itemsOrder": [
   "root"
  ],
+ ":type": "cub-aem-cs/components/structures/cub-page/v1/cub-page",
  ":hierarchyType": "page",
  ":path": "/cathaybk/personal/product/credit-card/cards/cube-list"
 }
