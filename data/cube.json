@@ -1,6 +1,5 @@
 {
  "title": "CUBE卡權益方案",
- "cssClassNames": "cub-page page basicpage",
  "lastModifiedDate": 1792136285505,
  "brandSlug": "",
  "componentsResourceTypes": [
@@ -20,12 +19,14 @@
  ],
  "htmlPageItems": [],
  "templateName": "cub-anchor-page",
+ "cssClassNames": "cub-page page basicpage",
  "designPath": "/libs/settings/wcm/designs/default",
  "language": "zh-TW",
  ":type": "cub-aem-cs/components/structures/cub-page/v1/cub-page",
  ":items": {
   "root": {
    "columnCount": 12,
+   "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
    "columnClassNames": {
     "cub_experiencefragme_1305994824": "aem-GridColumn aem-GridColumn--default--12",
     "cub_redirect": "aem-GridColumn aem-GridColumn--default--12",
@@ -35,7 +36,6 @@
     "cub_experiencefragme_1858489975": "aem-GridColumn aem-GridColumn--default--12",
     "cub_experiencefragme": "aem-GridColumn aem-GridColumn--default--12"
    },
-   "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
    ":items": {
     "cub_experiencefragme": {
      "experienceFragment": {
@@ -49,14 +49,13 @@
        }
       },
       ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
         "columnCount": 12,
+        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         "columnClassNames": {
          "cub_gascript": "aem-GridColumn aem-GridColumn--default--12"
         },
-        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "cub_gascript": {
           ":type": "cub-aem-cs/components/cub-content/cub-gascript/v1/cub-gascript",
@@ -71,7 +70,8 @@
       },
       ":itemsOrder": [
        "root"
-      ]
+      ],
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -87,14 +87,13 @@
        }
       },
       ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
         "columnCount": 12,
+        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         "columnClassNames": {
          "cub_header": "aem-GridColumn aem-GridColumn--default--12"
         },
-        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "cub_header": {
           "contentTrees": [
@@ -3238,7 +3237,8 @@
       },
       ":itemsOrder": [
        "root"
-      ]
+      ],
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -3254,14 +3254,13 @@
        }
       },
       ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
         "columnCount": 12,
+        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         "columnClassNames": {
          "cub_htmlscript": "aem-GridColumn aem-GridColumn--default--12"
         },
-        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "cub_htmlscript": {
           ":type": "cub-aem-cs/components/cub-content/cub-htmlscript/v1/cub-htmlscript",
@@ -3276,19 +3275,20 @@
       },
       ":itemsOrder": [
        "root"
-      ]
+      ],
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
     "responsivegrid": {
      "columnCount": 12,
+     "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
      "columnClassNames": {
       "cub_anchormenu": "aem-GridColumn aem-GridColumn--default--12",
       "cub_cubesearchkvbann": "aem-GridColumn aem-GridColumn--default--12",
       "cub_main": "aem-GridColumn aem-GridColumn--default--12",
       "cub_breadcrumb": "aem-GridColumn aem-GridColumn--default--12"
      },
-     "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
      ":items": {
       "cub_cubesearchkvbann": {
        "content": {
@@ -3480,6 +3480,7 @@
       },
       "cub_main": {
        "columnCount": 12,
+       "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
        "columnClassNames": {
         "cub_experiencefragme_353283357": "aem-GridColumn aem-GridColumn--default--12",
         "cub_experiencefragme_952464071": "aem-GridColumn aem-GridColumn--default--12",
@@ -3493,7 +3494,6 @@
         "cub_notice_copy_copy": "aem-GridColumn aem-GridColumn--default--12",
         "cub_experiencefragme_1388148381": "aem-GridColumn aem-GridColumn--default--12"
        },
-       "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
        ":items": {
         "cub_experiencefragme_227985757": {
          "experienceFragment": {
@@ -3507,14 +3507,13 @@
            }
           },
           ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-          "classNames": "aem-xf",
           ":items": {
            "root": {
             "columnCount": 12,
+            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
-            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             ":items": {
              "cub_cubelisttitle_co": {
               "anchorKey": "japanrewards",
@@ -4252,7 +4251,8 @@
           ":itemsOrder": [
            "root",
            "cq:metadata"
-          ]
+          ],
+          "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
         },
@@ -4268,14 +4268,13 @@
            }
           },
           ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-          "classNames": "aem-xf",
           ":items": {
            "root": {
             "columnCount": 12,
+            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
-            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             ":items": {
              "cub_cubelisttitle_co": {
               "anchorKey": "FPC",
@@ -4429,7 +4428,8 @@
           ":itemsOrder": [
            "root",
            "cq:metadata"
-          ]
+          ],
+          "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
         },
@@ -4445,14 +4445,13 @@
            }
           },
           ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-          "classNames": "aem-xf",
           ":items": {
            "root": {
             "columnCount": 12,
+            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
-            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             ":items": {
              "cub_cubelisttitle_co": {
               "anchorKey": "PXPayPlus",
@@ -4539,7 +4538,8 @@
           ":itemsOrder": [
            "root",
            "cq:metadata"
-          ]
+          ],
+          "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
         },
@@ -4555,14 +4555,13 @@
            }
           },
           ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-          "classNames": "aem-xf",
           ":items": {
            "root": {
             "columnCount": 12,
+            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
-            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             ":items": {
              "cub_cubelisttitle_co": {
               "anchorKey": "digital",
@@ -4775,7 +4774,8 @@
           ":itemsOrder": [
            "root",
            "cq:metadata"
-          ]
+          ],
+          "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
         },
@@ -4791,14 +4791,13 @@
            }
           },
           ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-          "classNames": "aem-xf",
           ":items": {
            "root": {
             "columnCount": 12,
+            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
-            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             ":items": {
              "cub_cubelisttitle_co": {
               "anchorKey": "shopdine",
@@ -5160,7 +5159,8 @@
           ":itemsOrder": [
            "root",
            "cq:metadata"
-          ]
+          ],
+          "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
         },
@@ -5176,14 +5176,13 @@
            }
           },
           ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-          "classNames": "aem-xf",
           ":items": {
            "root": {
             "columnCount": 12,
+            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
-            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             ":items": {
              "cub_cubelisttitle_co": {
               "anchorKey": "travel",
@@ -5643,7 +5642,8 @@
           ":itemsOrder": [
            "root",
            "cq:metadata"
-          ]
+          ],
+          "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
         },
@@ -5659,14 +5659,13 @@
            }
           },
           ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-          "classNames": "aem-xf",
           ":items": {
            "root": {
             "columnCount": 12,
+            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
-            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             ":items": {
              "cub_cubelisttitle_co": {
               "anchorKey": "select",
@@ -5875,7 +5874,8 @@
           ":itemsOrder": [
            "root",
            "cq:metadata"
-          ]
+          ],
+          "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
         },
@@ -5891,14 +5891,13 @@
            }
           },
           ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-          "classNames": "aem-xf",
           ":items": {
            "root": {
             "columnCount": 12,
+            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
-            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             ":items": {
              "cub_cubelisttitle_co": {
               "anchorKey": "B001",
@@ -5972,7 +5971,8 @@
           ":itemsOrder": [
            "root",
            "cq:metadata"
-          ]
+          ],
+          "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
         },
@@ -5988,14 +5988,13 @@
            }
           },
           ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-          "classNames": "aem-xf",
           ":items": {
            "root": {
             "columnCount": 12,
+            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             "columnClassNames": {
              "cub_cubelisttitle_co_1581592217": "aem-GridColumn aem-GridColumn--default--12"
             },
-            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             ":items": {
              "cub_cubelisttitle_co_1581592217": {
               "anchorKey": "birthday",
@@ -6526,7 +6525,8 @@
           ":itemsOrder": [
            "root",
            "cq:metadata"
-          ]
+          ],
+          "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
         },
@@ -6542,14 +6542,13 @@
            }
           },
           ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-          "classNames": "aem-xf",
           ":items": {
            "root": {
             "columnCount": 12,
+            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             "columnClassNames": {
              "cub_cubelisttitle_co": "aem-GridColumn aem-GridColumn--default--12"
             },
-            "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
             ":items": {
              "cub_cubelisttitle_co": {
               "anchorKey": "kids",
@@ -7154,7 +7153,8 @@
           ":itemsOrder": [
            "root",
            "cq:metadata"
-          ]
+          ],
+          "classNames": "aem-xf"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
         },
@@ -7202,14 +7202,13 @@
        }
       },
       ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
         "columnCount": 12,
+        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         "columnClassNames": {
          "cub_warning": "aem-GridColumn aem-GridColumn--default--12"
         },
-        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "cub_warning": {
           "text": "<div class=\"max-w-[960px] desktop:w-[960px] m-auto px-5 desktop:px-0 \"><p class=\"mb-2.5 text-lg text-center tracking-[7px] tablet:mb-[18px] desktop:mb-2.5 text-gray-900\">謹慎理財 信用無價</p>\r\n<p class=\"text-base text-cathay-graytextLight\">信用卡暨預借現金之各級別循環信用年利率為6.75％~15％（依本行信用評分制度定期評估，循環利率之基準日為104年9月1日）。<br>\r\n預借現金手續費：預借現金金額乘以3％加上新臺幣150元或美元5元，其他相關費用係依本行網站公告。<br>\r\n<br>\r\n為提供您最佳個人化且即時的服務，本網站透過使用Cookies記錄、存取及蒐集您的網路行為活動資料。當您使用本網站，即表示您同意Cookies技術支援。更多資訊請參閱<a class=\"text-cathay-green cursor-pointer underline hover:text-cathay-greenDark\" href=\"https://www.cathaybk.com.tw/cathaybk/about/about/customer-benefits/client-privacy\">隱私權保護政策</a></p>\r\n</div>\r\n",
@@ -7228,7 +7227,8 @@
       ":itemsOrder": [
        "root",
        "cq:metadata"
-      ]
+      ],
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -7244,15 +7244,14 @@
        }
       },
       ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
         "columnCount": 12,
+        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         "columnClassNames": {
          "cub_footer": "aem-GridColumn aem-GridColumn--default--12",
          "separator": "aem-GridColumn aem-GridColumn--default--12"
         },
-        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "separator": {
           ":type": "cub-aem-cs/components/separator"
@@ -7395,7 +7394,8 @@
       },
       ":itemsOrder": [
        "root"
-      ]
+      ],
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
