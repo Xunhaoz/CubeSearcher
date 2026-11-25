@@ -1,5 +1,8 @@
 {
  "title": "CUBE卡權益方案",
+ "lastModifiedDate": 1795168522100,
+ "htmlPageItems": [],
+ "templateName": "cub-anchor-page",
  "brandSlug": "",
  "componentsResourceTypes": [
   "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment",
@@ -16,11 +19,8 @@
   "nt:resource",
   "cub-aem-cs/components/cub-content/cub-anchormenu/v1/cub-anchormenu"
  ],
- "lastModifiedDate": 1795168522100,
- "templateName": "cub-anchor-page",
- "htmlPageItems": [],
- "designPath": "/libs/settings/wcm/designs/default",
  "cssClassNames": "cub-page page basicpage",
+ "designPath": "/libs/settings/wcm/designs/default",
  "language": "zh-TW",
  ":type": "cub-aem-cs/components/structures/cub-page/v1/cub-page",
  ":items": {
