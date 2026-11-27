@@ -1,9 +1,6 @@
 {
  "title": "Googler專屬薪轉優惠",
- "lastModifiedDate": 1786524228598,
- "templateName": "cub-campaign-content-page",
- "cssClassNames": "cub-campaignpage cub-page page basicpage",
- "designPath": "/libs/settings/wcm/designs/default",
+ "htmlPageItems": [],
  "brandSlug": "",
  "componentsResourceTypes": [
   "cub-aem-cs/components/structures/cub-campaignpage/v1/cub-campaignpage",
@@ -20,12 +17,13 @@
   "wcm/foundation/components/responsivegrid",
   "cub-aem-cs/components/cub-content/cub-anchormenu/v1/cub-anchormenu"
  ],
- "htmlPageItems": [],
+ "lastModifiedDate": 1786524228598,
+ "designPath": "/libs/settings/wcm/designs/default",
+ "cssClassNames": "cub-campaignpage cub-page page basicpage",
+ "templateName": "cub-campaign-content-page",
  "language": "zh-TW",
- ":type": "cub-aem-cs/components/structures/cub-campaignpage/v1/cub-campaignpage",
  ":items": {
   "root": {
-   "columnCount": 12,
    "columnClassNames": {
     "cub_experiencefragme_2081900506": "aem-GridColumn aem-GridColumn--default--12",
     "cub_experiencefragme_1743536487": "aem-GridColumn aem-GridColumn--default--12",
@@ -35,6 +33,7 @@
     "responsivegrid": "aem-GridColumn aem-GridColumn--default--12",
     "cub_experiencefragme": "aem-GridColumn aem-GridColumn--default--12"
    },
+   "columnCount": 12,
    "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
    ":items": {
     "cub_experiencefragme_2081900506": {
@@ -48,13 +47,12 @@
         "repo:modifyDate": "2024-06-24T07:24:23Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       ":items": {
        "root": {
-        "columnCount": 12,
         "columnClassNames": {
          "cub_gascript": "aem-GridColumn aem-GridColumn--default--12"
         },
+        "columnCount": 12,
         "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "cub_gascript": {
@@ -71,7 +69,8 @@
       ":itemsOrder": [
        "root"
       ],
-      "classNames": "aem-xf"
+      "classNames": "aem-xf",
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -86,13 +85,12 @@
         "repo:modifyDate": "2024-04-11T08:41:33Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       ":items": {
        "root": {
-        "columnCount": 12,
         "columnClassNames": {
          "cub_header": "aem-GridColumn aem-GridColumn--default--12"
         },
+        "columnCount": 12,
         "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "cub_header": {
@@ -3255,19 +3253,19 @@
       ":itemsOrder": [
        "root"
       ],
-      "classNames": "aem-xf"
+      "classNames": "aem-xf",
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
     "responsivegrid": {
-     "columnCount": 12,
      "columnClassNames": {
       "cub_main": "aem-GridColumn aem-GridColumn--default--12"
      },
+     "columnCount": 12,
      "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
      ":items": {
       "cub_main": {
-       "columnCount": 12,
        "columnClassNames": {
         "cub_textb_759010858_": "aem-GridColumn aem-GridColumn--default--12",
         "cub_anchormenu": "aem-GridColumn aem-GridColumn--default--12",
@@ -3288,6 +3286,7 @@
         "cub_textb_202333918__1543508262": "aem-GridColumn aem-GridColumn--default--12",
         "cub_notice_copy": "aem-GridColumn aem-GridColumn--default--12"
        },
+       "columnCount": 12,
        "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
        ":items": {
         "cub_campaignkvbanner": {
@@ -3674,13 +3673,12 @@
         "repo:modifyDate": "2024-04-11T08:43:35Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       ":items": {
        "root": {
-        "columnCount": 12,
         "columnClassNames": {
          "cub_htmlscript": "aem-GridColumn aem-GridColumn--default--12"
         },
+        "columnCount": 12,
         "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "cub_htmlscript": {
@@ -3697,7 +3695,8 @@
       ":itemsOrder": [
        "root"
       ],
-      "classNames": "aem-xf"
+      "classNames": "aem-xf",
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -3712,13 +3711,12 @@
         "repo:modifyDate": "2024-04-11T08:41:54Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       ":items": {
        "root": {
-        "columnCount": 12,
         "columnClassNames": {
          "cub_warning": "aem-GridColumn aem-GridColumn--default--12"
         },
+        "columnCount": 12,
         "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "cub_warning": {
@@ -3739,7 +3737,8 @@
        "root",
        "cq:metadata"
       ],
-      "classNames": "aem-xf"
+      "classNames": "aem-xf",
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -3754,14 +3753,13 @@
         "repo:modifyDate": "2024-04-11T08:42:29Z"
        }
       },
-      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
       ":items": {
        "root": {
-        "columnCount": 12,
         "columnClassNames": {
          "cub_footer": "aem-GridColumn aem-GridColumn--default--12",
          "separator": "aem-GridColumn aem-GridColumn--default--12"
         },
+        "columnCount": 12,
         "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
         ":items": {
          "separator": {
@@ -3906,7 +3904,8 @@
       ":itemsOrder": [
        "root"
       ],
-      "classNames": "aem-xf"
+      "classNames": "aem-xf",
+      ":type": "core/wcm/components/experiencefragment/v2/experiencefragment"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -3978,6 +3977,7 @@
  ":itemsOrder": [
   "root"
  ],
+ ":type": "cub-aem-cs/components/structures/cub-campaignpage/v1/cub-campaignpage",
  ":hierarchyType": "page",
  ":path": "/cathaybk/personal/event/overview/segment/2026/googler_package"
 }
