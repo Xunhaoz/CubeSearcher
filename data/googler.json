@@ -1,5 +1,9 @@
 {
  "title": "Googler專屬薪轉優惠",
+ "lastModifiedDate": 1786524228598,
+ "templateName": "cub-campaign-content-page",
+ "cssClassNames": "cub-campaignpage cub-page page basicpage",
+ "designPath": "/libs/settings/wcm/designs/default",
  "brandSlug": "",
  "componentsResourceTypes": [
   "cub-aem-cs/components/structures/cub-campaignpage/v1/cub-campaignpage",
@@ -16,10 +20,6 @@
   "wcm/foundation/components/responsivegrid",
   "cub-aem-cs/components/cub-content/cub-anchormenu/v1/cub-anchormenu"
  ],
- "designPath": "/libs/settings/wcm/designs/default",
- "lastModifiedDate": 1786524228598,
- "templateName": "cub-campaign-content-page",
- "cssClassNames": "cub-campaignpage cub-page page basicpage",
  "htmlPageItems": [],
  "language": "zh-TW",
  ":type": "cub-aem-cs/components/structures/cub-campaignpage/v1/cub-campaignpage",
@@ -49,7 +49,6 @@
        }
       },
       ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
         "columnCount": 12,
@@ -71,7 +70,8 @@
       },
       ":itemsOrder": [
        "root"
-      ]
+      ],
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -87,7 +87,6 @@
        }
       },
       ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
         "columnCount": 12,
@@ -3255,7 +3254,8 @@
       },
       ":itemsOrder": [
        "root"
-      ]
+      ],
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -3453,6 +3453,9 @@
          }
         },
         "cub_linkgroup": {
+         "pageInfo": {
+          "pageTheme": "cathybk"
+         },
          "componentData": {
           "topSpace": 0,
           "anchorKey": "blockname01",
@@ -3461,9 +3464,6 @@
           "imageAlt": null,
           "stages": null,
           "image": null
-         },
-         "pageInfo": {
-          "pageTheme": "cathybk"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-linkgroup/v1/cub-linkgroup"
         },
@@ -3497,6 +3497,9 @@
          ":type": "cub-aem-cs/components/cub-content/cub-textb/v1/cub-textb"
         },
         "cub_linkgroup_copy_1216935210": {
+         "pageInfo": {
+          "pageTheme": "cathybk"
+         },
          "componentData": {
           "topSpace": 0,
           "anchorKey": "blockname05",
@@ -3505,9 +3508,6 @@
           "imageAlt": null,
           "stages": null,
           "image": null
-         },
-         "pageInfo": {
-          "pageTheme": "cathybk"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-linkgroup/v1/cub-linkgroup"
         },
@@ -3522,6 +3522,9 @@
          ":type": "cub-aem-cs/components/cub-content/cub-textb/v1/cub-textb"
         },
         "cub_linkgroup_copy": {
+         "pageInfo": {
+          "pageTheme": "cathybk"
+         },
          "componentData": {
           "topSpace": 0,
           "anchorKey": "blockname02",
@@ -3530,9 +3533,6 @@
           "imageAlt": null,
           "stages": null,
           "image": null
-         },
-         "pageInfo": {
-          "pageTheme": "cathybk"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-linkgroup/v1/cub-linkgroup"
         },
@@ -3603,11 +3603,14 @@
           "hideInSiteMap": "false",
           "navTitle": "Googler專屬薪轉優惠"
          },
-         "mainbButtonText": "查看活動詳情",
          "btnNumber": 1,
+         "mainbButtonText": "查看活動詳情",
          ":type": "cub-aem-cs/components/cub-content/cub-button/v1/cub-button"
         },
         "cub_linkgroup_copy_c_319883186": {
+         "pageInfo": {
+          "pageTheme": "cathybk"
+         },
          "componentData": {
           "topSpace": 0,
           "anchorKey": "blockname04",
@@ -3616,9 +3619,6 @@
           "imageAlt": null,
           "stages": null,
           "image": null
-         },
-         "pageInfo": {
-          "pageTheme": "cathybk"
          },
          ":type": "cub-aem-cs/components/cub-content/cub-linkgroup/v1/cub-linkgroup"
         },
@@ -3675,7 +3675,6 @@
        }
       },
       ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
         "columnCount": 12,
@@ -3697,7 +3696,8 @@
       },
       ":itemsOrder": [
        "root"
-      ]
+      ],
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -3713,7 +3713,6 @@
        }
       },
       ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
         "columnCount": 12,
@@ -3739,7 +3738,8 @@
       ":itemsOrder": [
        "root",
        "cq:metadata"
-      ]
+      ],
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
@@ -3755,7 +3755,6 @@
        }
       },
       ":type": "core/wcm/components/experiencefragment/v2/experiencefragment",
-      "classNames": "aem-xf",
       ":items": {
        "root": {
         "columnCount": 12,
@@ -3906,7 +3905,8 @@
       },
       ":itemsOrder": [
        "root"
-      ]
+      ],
+      "classNames": "aem-xf"
      },
      ":type": "cub-aem-cs/components/cub-content/cub-experiencefragment/v1/cub-experiencefragment"
     },
