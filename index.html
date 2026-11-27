@@ -491,7 +491,7 @@ function render() {
 }
 
 // ---------- 載入 ----------
-const STALE_HOURS = 6; // 資料超過這麼久沒更新就提醒（排程可能壞了）
+const STALE_HOURS = 24; // 資料超過這麼久沒更新就提醒（GitHub 排程常延遲 6–10 小時，24 小時才算真的停了）
 const errBox = (title, desc) => `<div class="alert mb-3" data-variant="destructive">${svg(ICON.alert)}<h2>${esc(title)}</h2><section>${esc(desc)}</section></div>`;
 
 async function load(force) {
